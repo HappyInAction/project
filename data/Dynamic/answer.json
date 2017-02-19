@@ -1,0 +1,16 @@
+{
+	"sign" : 1,
+	"msg":{
+				"stu_id":"11293",
+				"dynamic_id":"57242691",
+				"right_answer":"B",
+				"stu_answer":"C",
+				"is_right":"1",
+				"is_gold":"1",
+				"create_time":"2015-10-23 10:57:47",
+				"dyn_que_replynum":"398",
+				"dyn_que_rightnum":"183",
+				"right_num":"2",
+				"analysisimg_path":"http://x01.xesimg.com/dynamic/36b6e8efe233757cf97f84a8d69a68c1_big.jpg"
+		   } 
+}

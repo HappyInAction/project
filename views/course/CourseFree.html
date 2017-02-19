@@ -1,0 +1,626 @@
+<!-- 公共头部 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商城</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- 这是CSS库文件 -->
+    <link href="../lib/bootstrap/3.3.5-custom/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="../lib/bootstrap/3.3.5-custom/js/html5shiv.min.js"></script>
+      <script src="../lib/bootstrap/3.3.5-custom/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../lib/Font-Awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/default.css">
+    <!-- 这是当前模块样式文件 -->
+        <link rel="stylesheet" type="text/css" href="../static/css/xue.mall.css" />
+</head>
+
+<body>
+    <!-- module.topbar -->
+    <!--
+    @require widget/Public.Topbar/topbar.less
+    @require widget/Module.Dropdown/dropdown.js
+    @require widget/Module.Follow/follow.less
+    @require widget/Module.Follow/follow.js    
+-->
+
+<!-- 登录后 -->
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li class="">
+                <em class="text-danger">你好，圣诞老人圣诞老人圣诞老人圣诞老人圣诞老人圣诞老人</em>
+                <a href="#">退出</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">消息<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li data-type="1">
+                        <a href="/LearningCenter/message#_1">网校通知<em class="text-danger">(100)</em></a>
+                    </li>
+                    <li data-type="4">
+                        <a href="/LearningCenter/message#_4">教师留言</a>
+                    </li>
+                    <li data-type="3">
+                        <a href="/LearningCenter/message#_3">直播提醒</a>
+                    </li>
+                    <li data-type="5">
+                        <a href="/LearningCenter/message#_5">考试提醒</a>
+                    </li>
+                    <li data-type="2">
+                        <a href="/LearningCenter/message#_2">资料提醒<em class="text-danger">(100)</em></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">购物车 <em class="text-danger">2</em></a></li>
+            <li><a href="#">订单</a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="#">收藏夹</a></li>
+            <li><a href="#">设置</a></li>
+            <li class="ui-dropdown">
+                    <span class="dropdown-handle">更多<i class="fa fa-angle-down dropdown-icon"></i></span>
+                    <ul class="dropdown-body">
+                            <li><a href="#">线下小班</a></li>
+                            <li><a href="#">线下1对1</a></li>
+                    </ul>
+            </li>
+            <li class="phone-400 active">400-800-2211</li>
+        </ul>
+
+    </div>
+</div>
+<!-- 登录前 -->
+
+
+<!--
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li>
+                <span class="xes">学而思网校欢迎你</span>
+                <a href="#" class="login text-danger">请登录</a>
+                <a href="#" class="register">免费注册</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">购物车<em class="text-danger">2</em></a></li>
+            <li><a href="#">订单<em class="text-danger">2</em></a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.speiyou.com/" target="_blank">更多课程</a></li>
+            <li class="phone-400">400-800-2211</li>
+        </ul>
+    </div>
+</div>
+-->
+
+    <!-- module.Header -->
+    <!--
+    @require widget/Public.Header/header.less
+    @require widget/Public.Header/header.js
+-->
+<div class="modele-header-pic">
+    <img src="http://file.xueersi.com/web/2016/01/25/14537065408790.png" alt="下半年卡9折优惠倒计时" usemap="#Map" border="0">
+      <map name="Map" id="Map">
+      <area shape="rect" coords="905,22,995,59" href="http://www.xueersi.com/1" target="_blank"/>
+      <area shape="rect" coords="1002,22,1090,58" href="http://www.xueersi.com/2" target="_blank"/>
+      <area shape="rect" coords="1093,22,1186,57" href="http://www.xueersi.com/3" target="_blank"/>
+    </map>
+    <p class="settime" endtime="2016-1-29 23:59:59"></p>
+</div>
+    <div id="module-header">
+        <div class="h-logo"><a herf="#">学而思网校</a></div>
+        <div class="h-search">
+            <input type="text" class="h-text pull-left" placeholder="搜索:秋季满分冲刺班" autocomplete="on">
+            <button type="button" class="btn btn-primary btn-search pull-left">搜索</button>
+        </div>
+        <div class="h-words pull-left">
+            <a target="_blank" href="#" class="text-muted">免费课</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+            <a target="_blank" href="#" class="text-muted">11月11天</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+            <a target="_blank" href="#" class="text-muted">11月11天</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        </div>
+        <!-- 头部购物车ui部分调用 -->
+        <!--
+    //@require widget/Module.Dropdown/dropdown.js
+    @require widget/Public.MiniCart/minicart.js
+    @require widget/Public.MiniCart/minicart.less
+-->
+
+<div id="module-minicart" class="pull-right ui-dropdown-miniCart">
+    <div class="dropdown-handle btn btn-default">
+        <i class="fa fa-shopping-cart pull-left"></i>
+        <a href="http://cart.wx4.0.com" target="_blank" id="myCartUrl">我的购物车</a>
+        <i class="fa fa-angle-right pull-right"></i>
+        <small class="minicart-total badge small">2</small>
+    </div>
+    <!-- 上半部分 -->
+    <div class="dropdown-body">111</div>
+</div>
+
+    </div>
+
+    <!-- module.Nav -->
+    <!--
+    @require widget/Public.Nav/nav.js
+    @require widget/Public.Nav/nav.less
+-->
+<div id="module-nav" class="ui-head-nav">
+    <div class="container">
+        <div id="ui-categorys" class="ui-categorys pull-left">
+            <div class="category-dt"><a href="">全部课程分类<i class="ci-right"><s>◇</s></i></a></div>
+            <div class="category-dd">
+                <div class="category-items"></div>
+                <div class="category-layer"></div>
+            </div>
+        </div>
+        <ul class="head-nav pull-left">
+            <li class="current"><a href="">找老师</a></li>
+            <li><a href="">免费课</a></li>
+            <li><a href="">看学霸</a></li>
+            <li><a href="">新鲜事</a></li>
+            <li><a href="">逛书城</a></li>
+            <li><a href="">泡论坛</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- 学习中心区域 -->
+<div class="container">
+    <ol id="module-breadcrumb" class="breadcrumb">
+        <li><a href="#">课程分类</a></li>
+        <li class="active">三年级</li>
+    </ol>
+    <div class="row top m20">
+        <!--   12栏的用这个    -->
+        <div class="col-md-12">
+            <!--
+   年级选择：
+    @require widget/Public.Selector/selector.less
+    @require widget/Public.Selector/selector.js
+-->    
+    <div class="choice">
+      <div class="row">
+        <dl class="choice-dl clearfix">
+            <dt class="choice-title col-xs-2 col-sm-2 clo-md-1 ">所在年级</dt>
+            <dd class="choice-items col-xs-10 col-sm-10 clo-md-11 ">
+                <ul class="nav nav-pills">
+                  <li role="presentation" class="active"><a href="#" class="choice-item-each">全部</a></li>
+                  <li role="presentation"><a class="choice-item-each" href="#">一年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">二年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">三年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">四年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">五年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">六年级</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">初一</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">初二</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">初三</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">高一</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">高二</a></li>
+                  <li role="presentation"><a href="#" class="choice-item-each">高三</a></li>
+                </ul>    
+            </dd>
+        </dl>
+      </div>
+      <div class="row">
+        <dl class="choice-dl clearfix">
+            <dt class="choice-title col-xs-2 col-sm-2 col-md-1 ">学习科目</dt>
+            <dd class="choice-items col-xs-10 col-sm-10 col-md-11 ">
+              <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a class="choice-item-each">全部</a></li>
+                <li role="presentation"><a class="choice-item-each">语文</a></li>
+                <li role="presentation"><a class="choice-item-each">数学</a></li>
+                <li role="presentation"><a class="choice-item-each">英语</a></li>
+              </ul>
+            </dd>
+        </dl>
+      </div>
+      <div class="row">
+        <dl class="choice-dl clearfix choice-special">
+            <dt class="choice-title col-xs-1 col-sm-2 col-md-1 ">知识点</dt>
+            <dd class="choice-items-spe col-xs-8 col-sm-8 col-md-9">
+              <ul class="nav nav-pills">
+                <li role="presentation"><a class="choice-item-each">代数法</a></li>
+                <li role="presentation" class="active"><a class="choice-item-each">物质的检验</a></li>
+                <li role="presentation"><a class="choice-item-each">三角函数</a></li>
+                <li role="presentation"><a class="choice-item-each">数论</a></li>
+                <li role="presentation"><a class="choice-item-each">图论</a></li>
+                <li role="presentation"><a class="choice-item-each">数学分析</a></li>
+                <li role="presentation"><a class="choice-item-each">高等代数</a></li>
+                <li role="presentation"><a class="choice-item-each">大学英语</a></li>
+                <li role="presentation"><a class="choice-item-each">TOFFEL</a></li>
+                <li role="presentation"><a class="choice-item-each">IELTS</a></li>
+                <li role="presentation"><a class="choice-item-each">平行</a></li>
+                <li role="presentation"><a class="choice-item-each">计算机基础</a></li>
+                <li role="presentation"><a class="choice-item-each">社会学</a></li>
+                <li role="presentation"><a class="choice-item-each">新闻学</a></li>
+                <li role="presentation"><a class="choice-item-each">机器学习</a></li>
+                <li role="presentation"><a class="choice-item-each">数据挖掘</a></li>
+                <li role="presentation"><a class="choice-item-each">MOOC</a></li>
+                <li role="presentation"><a class="choice-item-each">C语言</a></li>
+                <li role="presentation"><a class="choice-item-each">JAV</a></li>
+                <li role="presentation"><a class="choice-item-each">C#</a></li>
+                <li role="presentation"><a class="choice-item-each">数据结构</a></li>
+                <li role="presentation"><a class="choice-item-each">伦理学</a></li>
+                <li role="presentation"><a class="choice-item-each">公共关系学</a></li>
+                <li role="presentation"><a class="choice-item-each">数学建模</a></li>
+                <li role="presentation"><a class="choice-item-each">英语四级</a></li>
+                <li role="presentation"><a class="choice-item-each">英语六级</a></li>
+                <li role="presentation"><a class="choice-item-each">大话西游</a></li>
+                <li role="presentation"><a class="choice-item-each">JavaScript设计模式</a></li>
+                <li role="presentation"><a class="choice-item-each">格斗</a></li>
+                <li role="presentation"><a class="choice-item-each">拳皇</a></li>
+                <li role="presentation"><a class="choice-item-each">前端工程</a></li>
+              </ul>
+                    
+            </dd>
+            <dt class="choice-more col-xs-3 col-sm-2 col-md-2  clearfix">
+<!--
+                <div class="choice-more-download pull-left">
+                    <a>更多知识点</a>
+                    <i class="fa fa-angle-down fa-chevron-down que-body-arrow"></i>
+                </div>
+-->
+                <!--<div class="chocie-point-download left">下载复习笔记</div>-->
+            </dt>
+        </dl>
+      </div>
+    </div> 
+        </div>
+        <!--   12栏结束    -->
+        <!--   左右分栏的用这个    -->
+        <div class="col-md-10 wrap-body wrap-mall">
+
+            <!-- *********************** 内容区域开始 *********************** -->
+
+            <div class="panel panel-default ">
+                <div class="panel-body pd0">
+                	<!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js   
+    @require widget/Module.Pagination/paginations.js   
+-->
+
+<div class="course-list">
+    <div class="ui-avatar">
+        <div class="avatar-photo">
+            <ul class="avatar-items">
+                <li data-params="userId=292" class="ui-userinfo" data-id="292">
+                    <a target="_blank" class="userpic" href="http://www.xueersi.com/t/yangyajing/">
+                        <img alt="" src="http://r03.xesimg.com/teacher/2014/02/28/13935689945281.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="course-detail-wrap">
+        <div class="course-detail pull-left">
+            <p class="course-title">
+                <label class="course-label course-yellow-label">化学</label>
+                <label class="course-label course-green-label">录播</label>
+                <a href="##" class="title-detail">【飞遍化学】炸开你的化学世界大门(第三季)——大揭秘 </a>
+            </p>
+            <p class="tip-for">适用于：想要培养化学学习兴趣的初三学员</p>
+            <p class="avatar-name"><a target="_blank"  href="###" class="ui-username">赵紫涵</a></p>
+            <p class="amount-show">
+                <a href="##" class="btn btn-default"><em class="button-icon icon-record"></em>立即听课</a>
+            </p>
+        </div>
+        <div class="course-num">
+            <p>听课人数</p>
+            <strong>1324</strong>
+        </div>
+    </div>
+</div>
+
+
+
+                	<!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js   
+    @require widget/Module.Pagination/paginations.js   
+-->
+
+<div class="course-list">
+    <div class="ui-avatar">
+        <div class="avatar-photo">
+            <ul class="avatar-items">
+                <li data-params="userId=292" class="ui-userinfo" data-id="292">
+                    <a target="_blank" class="userpic" href="http://www.xueersi.com/t/yangyajing/">
+                        <img alt="" src="http://r03.xesimg.com/teacher/2014/02/28/13935689945281.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="course-detail-wrap">
+        <div class="course-detail pull-left">
+            <p class="course-title">
+                <label class="course-label course-yellow-label">化学</label>
+                <label class="course-label course-green-label">录播</label>
+                <a href="##" class="title-detail">【飞遍化学】炸开你的化学世界大门(第三季)——大揭秘 </a>
+            </p>
+            <p class="tip-for">适用于：想要培养化学学习兴趣的初三学员</p>
+            <p class="avatar-name"><a target="_blank"  href="###" class="ui-username">赵紫涵</a></p>
+            <p class="amount-show">
+                <a href="##" class="btn btn-default"><em class="button-icon icon-record"></em>立即听课</a>
+            </p>
+        </div>
+        <div class="course-num">
+            <p>听课人数</p>
+            <strong>1324</strong>
+        </div>
+    </div>
+</div>
+
+
+
+                </div>
+            </div>
+
+            <!-- *********************** 内容区域结束 *********************** -->
+        </div>
+        <div class="col-md-2 col-sm-2 wrap-side wrap-mall pull-right">
+            <div class="panel panel-default ">
+                <div class="panel-body sideright-body pd0">
+                	<div class="sideright-ad">
+                      <a href="###"><img src="http://x04.xesimg.com/web/2015/11/19/14479235823994.jpg" ></a>
+                  </div>
+                  <div class="sideright-ad">
+                      <a href="###"><img src="http://x04.xesimg.com/web/2015/11/19/14479235823994.jpg" ></a>
+                  </div>
+                  <div class="sideright-hotcourse">
+                      <h3>热门专题课</h3>
+                      <!--
+   课程列表：
+    @require widget/Public.Module/courses.less      
+    @require widget/Public.Module/courses.js          
+-->
+<div class="course-list hot-course-list hot-course-link">
+    <div class="ui-avatar">
+        <div class="avatar-photo">
+            <ul class="avatar-items">
+                <li data-id="292" class="ui-userinfo" data-params="userId=292">
+                    <a href="http://www.xueersi.com/t/yangyajing/" class="userpic" target="_blank">
+                        <img src="http://r03.xesimg.com/teacher/2014/02/28/13935689945281.jpg" alt="">
+                    </a>
+                </li>
+                <li data-id="292" class="ui-userinfo" data-params="userId=292">
+                    <a href="http://www.xueersi.com/t/yangyajing/" class="userpic" target="_blank">
+                        <img src="http://r03.xesimg.com/teacher/2014/02/28/13935689945281.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="avatar-roll">
+                <a href="javascript:void(0);" class="prev none">
+                    <em class="icon-chevron-left">左</em>
+                </a>
+                <a href="javascript:void(0);" class="next ">
+                    <em class="icon-chevron-right">右</em>
+                </a>
+            </div>
+        </div>    </div>
+    <div class="course-detail">
+        <p class="course-title">
+            <a target="_blank"  href="###" class="title-detail">【飞遍化学】炸开你的化学世界大门(第三季)——大揭秘 </a>
+        </p>
+        <p class="avatar-name">
+            <a class="title-detail" href="###" target="_blank">赵紫涵老师</a>
+            <span class="course-static">
+                <em class="icon-people"></em><strong>92.52</strong>
+            </span>
+        </p>
+    </div>
+</div>
+                  </div>
+                  <div class="sideright-hotcourse">
+                      <h3>热门新鲜事</h3>
+                      <!--
+    @require widget/Public.Dynamic/fresh.less
+    @require ../Module.Modal/modal.less
+    @require widget/Module.popover/xue.popover.js
+    @require widget/Module.Modal/Modal.js
+    @require static/js/xue.ajax.js
+    @require widget/Public.Dynamic/fresh.js
+    @require widget/Public.Dynamic/fresh.load.min.js
+-->
+
+<!--新鲜事单条列表信息开始————热门新鲜事list加fresh-popular-list fresh-hover-item代表滑过效果-->
+<div class="fresh-list fresh-hover-item fresh-popular-list">
+    <div class="fresh-avatar pull-left ui-userinfo" data-id="292" class="ui-userinfo" data-params="userId=292">
+        <a target="_blank" href="http://www.xueersi.com/s/979168" class="userpic">
+            <img src="../static/img/fresh_avatar.png" date-role="fresh-avatar"/>
+        </a>
+    </div>
+    <div class="fresh-detail">
+       <!--新鲜事右侧头部文本消息显示开始-->
+       <div class="fresh-text">
+          <div class="fresh-myname">
+             <a target="_blank" data-params="userId=979168" href="http://www.xueersi.com/s/979168" class="pull-left">顾斐</a>
+             <i class="fresh-v fresh-v-yellow"></i>
+          </div>
+          <div class="fresh-info">
+            快来看看认真的韬哥和小帆老师在为来访的学员题词~！ 信韬哥！得满分！ 新小帆！<a target="_blank" href="http://t.xueersi.com/7boW01nx">http://t.xueersi.com/7boW01nx</a>
+          </div>
+       </div> 
+       <!--新鲜事右侧头部文本消息显示结束-->
+       <!--评论区域开始-->
+       <div class="fresh-barinfo">
+          <span class="fresh-time pull-left">11小时前</span> 
+          <div class="fresh-right pull-right">
+              <span class="fresh-right-btn">
+                  <a target="_blank" href="http://www.xueersi.com/homes/show/57783276" title="评论">评论</a>
+                  <em>(33)</em>
+              </span>
+              <span class="fresh-right-btn">
+                  <a target="_blank" href="http://www.xueersi.com/homes/show/57783276" title="收藏">收藏</a>
+                  <em>(125)</em>
+              </span>
+          </div>
+       </div>
+       <!--评论区域结束-->
+    </div>
+</div>
+<!--新鲜事单条列表信息结束————热门新鲜事-->
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--    左右分栏结束    -->
+      
+  </div><!-- row end -->
+  
+  <div class="ui-pages text-center"></div>
+</div>
+<!-- 页面配置 -->
+
+
+    <!-- 公共底部 -->
+    
+
+
+
+
+    <!-- module.footer -->
+    <!--
+    @require widget/Public.Footer/footer.less
+-->
+   <!-- 这是页脚部分代码  -->
+    <div id="module-footer">
+        <div class="foot-service">
+            <div class="service-share" href="http://www.xueersi.com/article/detail/1825">
+                <span>名师</span>
+                <p>38%清华毕业平均教龄5.1年100%面授S级老师</p>
+            </div>
+            <div class="service-system" href="http://www.xueersi.com/article/detail/1824">
+                <span>陪伴</span>
+                <p>直播授课,QQ群,APP随时答疑名师就在你身边</p>
+            </div>
+            <div class="service-live" href="http://www.xueersi.com/article/detail/1814">
+                <span>方便</span>
+                <p>足不出户，免去路途奔波随时随地反复看</p>
+            </div>
+            <div class="service-interaction" href="http://www.xueersi.com/app">
+                <span>有效</span>
+                <p>在线练习及时反馈已累计培养39名中高考状元</p>
+            </div>
+        </div>
+
+        <div class="foot-area">
+            <p>
+                <a href="http://www.xueersi.com">网校首页</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1219">关于我们</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1220">合作专区</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1538">联系我们</a>
+                |
+                <a class="text-danger" href="http://www.xueersi.com/article/detail/1495">版权声明</a>
+                |
+                <a href="http://www.xueersi.com/article/">帮助中心</a>
+            </p>
+            <p>
+                客服电话： <strong class="text-danger">400-800-2211</strong>
+                （免长途话费） Copyright &copy; 2009-2015 www.xueersi.com All Rights Reserved
+            </p>
+            <p>
+                北京学而思教育科技有限公司
+                <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备09032638号</a>
+                京公网安备:1101082103
+            </p>
+            <p class="link">
+                <a target="_blank" href="https://search.szfw.org/cert/l/CX20120925001738002003" id="___szfw_logo___"><img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+            </p>
+        </div>
+    </div>
+     <script src="../lib/jQuery/1.11.1/jquery.min.js"></script> 
+<!--    <script src="http://js04.xesimg.com/xue.jquery.min.js"></script>ignore-->
+    <script src="../lib/bootstrap/3.3.5-custom/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../static/js/xue.mall.js"></script>
+<script type="text/javascript" src="../static/js/xue.ajax.js"></script>
+<script>
+			$(function(){
+			   xue.updateEndTime('.settime');//执行倒计时函数
+			});
+	
+
+var PAGE_CONFIG = {
+    ID: 'Index',
+    MODULE: 'Mall',
+    TITLE: '二级-免费课',
+        NAV_FIXED: false // 如果想要头部分类展开的话，设为true，如果不想直接展开设为false
+    };
+    $('.ui-pages').pages({
+            total : 29, // 总记录数
+            size: 10, // 每页显示记录数
+            index : 1, // 当前页
+            // 点击分页时的回调，返回被点击的页数
+            click : function(e){
+             
+            }
+        });
+    </script>
+<script src="..../static/js/public.onload.js"></script>
+    
+</body>
+
+</html>
+

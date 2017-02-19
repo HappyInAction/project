@@ -1,0 +1,637 @@
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: transparent;
+    color: #fff;
+}
+.btn {
+    border: 0 none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+body{
+ background: #f1f2f6;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 "Hiragino Sans GB",arial,tahoma,"SimSun",sans-serif;
+}
+i {
+    font-style: normal;
+}
+a{
+  color: #1e89e0;
+  text-decoration: none;
+}
+
+#xue_logo {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 52px;
+    margin: 0 auto;
+}
+#xue_logo .logo_center {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1120px;
+}
+
+#xue_logo .logo_center .logo_passport {
+    background: url("../img/logo_new1.png") no-repeat scroll 0 0;
+    border-right: 1px solid #d9d9d9;
+    float: left;
+    height: 30px;
+    margin-right: 18px;
+    width: 163px;
+}
+
+#xue_logo .logo_center .logo_tips {
+    color: #333;
+    float: left;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    font-weight: normal;
+    height: 32px;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    width: 190px;
+}
+.wrapper_body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1050px;
+}
+.wrapper_body .log {
+  width: 1020px;
+  padding: 5px;
+  margin: 30px auto 30px;
+  border-radius: 3px;
+  background: #ECECEC none;
+  clear: both;
+  overflow: hidden;
+}
+.wrapper_body .log .log_title {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px #dcdfe6 solid;
+  color: #343434;
+  background: url(http://img04.xesimg.com/bg11.jpg) repeat-x;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  font-weight: bold;
+  padding-left: 15px;
+  clear: both;
+}
+.wrapper_body .log .forget_password {
+  border: 1px #E3E3E3 solid;
+  background-color: #FFF;
+}
+.wrapper_body .log .log_left {
+  width: 573px;
+  float: left;
+}
+.wrapper_body .log .log_left p.validate_tips {
+  width: 210px;
+  margin-left: 70px;
+  height: auto;
+}
+.wrapper_body .log .log_left p {
+  color: #333;
+  overflow: hidden;
+}
+.wrapper_body .log .log_left p label {
+  width: 60px;
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.wrapper_body .log .log_left p input {
+  width: 221px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px #D5D5D5 solid;
+  border-top-color: #B1B1B1;
+  border-left-color: #B1B1B1;
+  padding: 0 3px;
+  vertical-align: middle;
+  float: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+}
+.wrapper_body .log .log_left p input.current,
+.wrapper_body .log .log_left p input:focus {
+  border-color: #FADE7B;
+}
+.wrapper_body .log .log_left p .login_btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  background: #ff6600;
+  padding: 0;
+  width: 229px;
+  height: 29px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrapper_body .log .log_left .login_third_api {
+  border: 0;
+  height: 75px;
+  bottom: 25px;
+}
+.wrapper_body .log .log_left .login_third_api .third_title {
+  line-height: 30px;
+  color: #999;
+  border-bottom: 1px dotted #ccc;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.wrapper_body .log .log_left .login_third_api a {
+  float: left;
+  display: inline;
+  margin: 10px 10px 0 0;
+  text-indent: -9999em;
+}
+.wrapper_body .log .log_left .login_third_api .tencent {
+  width: 49px;
+  background: url(http://img04.xesimg.com/qq.png) no-repeat;
+}
+.wrapper_body .log .log_left .login_third_api .weibo {
+  width: 76px;
+  background: url(http://img04.xesimg.com/weibosina.png) no-repeat;
+}
+.wrapper_body .log .log_left .login_third_api .ed {
+  width: 59px;
+  background: url(http://img04.xesimg.com/ed.png) no-repeat;
+}
+.wrapper_body .log .log_right {
+  float: right;
+}
+.wrapper_body .log .log_right {
+  width: 360px;
+  height: 450px;
+  _height: 435px;
+  float: right;
+  padding: 20px 10px 20px 10px;
+  color: #676767;
+  font-size: 14px;
+  text-align: center;
+  background: #ffffff url("http://img04.xesimg.com/passport/hline.gif") no-repeat left center;
+}
+.wrapper_body .log .log_right .joinxes {
+  border: none;
+  font-size: 12px;
+  margin-left: 55px;
+  padding-bottom: 10px;
+  line-height: 28px;
+  color: #676767;
+  text-align: left;
+}
+.wrapper_body .log .log_right .newpeople {
+  width: 320px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #d6d6d6;
+  margin-bottom: 10px;
+}
+.wrapper_body .log .log_right .newpeople a {
+  color: #363135;
+  font-weight: bold;
+  display: inline-block;
+  width: 112px;
+  height: 35px;
+  line-height: 35px;
+  background: url(http://img04.xesimg.com/checkCode.gif) no-repeat;
+  text-decoration: none;
+}
+/**注册页**/
+.wrapper_body .log .log_title span {
+  float: right;
+  font-weight: normal;
+  padding-right: 10px;
+}
+.wrapper_body .log .register {
+  width: 568px;
+  height: 450px;
+  _height: 435px;
+  margin: 0;
+  padding-top: 40px;
+  background-color: #FFF;
+}
+.wrapper_body .log .register p.reg_agreement a {
+  display: block;
+  margin-left: 130px;
+  width: 150px;
+}
+.wrapper_body .log .register p {
+  clear: left;
+  height: 50px;
+}
+.wrapper_body .log .register p .tips_strength {
+  display: inline-block;
+  width: 400px;
+}
+.wrapper_body .log .register p label {
+  width: 120px;
+  height: 50px;
+  float: left;
+}
+.wrapper_body .log .register p label i {
+  color: #cc0000;
+  padding-right: 3px;
+}
+.wrapper_body .log .register p input {
+  margin-right: 2px;
+}
+.wrapper_body .log .register p input#phonecode {
+  width: 109px;
+}
+.wrapper_body .log .register p .login_btn {
+  width: 225px;
+  height: 29px;
+  font-family: "SimSun";
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #D25D07;
+}
+.wrapper_body .log .register p select {
+  line-height: 24px;
+}
+.wrapper_body .log .register p span.vcode {
+  width: 106px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 2px;
+  float: left;
+  border: 1px #d5d5d5 solid;
+  cursor: pointer;
+  background-color: #EFEFEF;
+}
+.wrapper_body .log .register p span.vcode.vcode_countdown {
+  cursor: text;
+}
+.wrapper_body .log .register p a {
+  display: block;
+}
+.wrapper_body .log .register p.reg_agreement {
+  height: 22px;
+}
+.wrapper_body .log .register p.validate_tips {
+  width: auto;
+  margin: 0;
+}
+.wrapper_body .log .register p.validate_tips label {
+  display: block;
+}
+.wrapper_body .log .register p.validate_tips span.tips {
+  margin: 0;
+  line-height: 26px;
+  background-position: 4px center;
+}
+.wrapper_body .log .register .errTips {
+  width: 175px;
+  height: 26px;
+  line-height: 26px;
+}
+.wrapper_body .log .register .tips {
+  float: left;
+  display: inline;
+  _margin-right: -3px;
+  width: 195px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 10px;
+  color: #999;
+}
+.wrapper_body .log .register .error {
+  color: #666;
+  border: 1px #FADE7B solid;
+  background-color: #FFFAE1;
+}
+.wrapper_body .log .register .error input {
+  display: none;
+}
+.wrapper_body .log .register .success {
+  color: #666;
+  width: 165px;
+  padding-left: 30px;
+  background: url("http://img04.xesimg.com/passport/icon_success.gif") no-repeat 10px center;
+}
+.wrapper_body .log .register.validate_tips {
+  margin: 2px 0;
+}
+.wrapper_body .log .register.validate_tips .tips {
+  display: none;
+}
+.wrapper_body .log .register.validate_tips .tips.error,
+.wrapper_body .log .register.validate_tips .tips.success {
+  padding-left: 20px;
+  line-height: 16px;
+  display: block;
+}
+.wrapper_body .log .register.validate_tips .error {
+  color: #cc0000;
+  background: url(http://img04.xesimg.com/icon/14x14/bonus.gif) no-repeat left center;
+}
+.wrapper_body .log .register.validate_tips .success {
+  color: #999;
+  background: url(http://img04.xesimg.com/icon/14x14/check.gif) no-repeat left center;
+}
+.wrapper_body .log .what_from {
+  width: 320px;
+  overflow: hidden;
+  padding-left: 30px;
+}
+.wrapper_body .log .what_from .past_time {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 1px  #D7D5D5;
+  padding-left: 10px;
+}
+.wrapper_body .log .what_from ul {
+  text-align: left;
+  line-height: 18px;
+  height: 250px;
+  overflow: hidden;
+}
+.wrapper_body .log .what_from ul li {
+  /*height:42px;*/
+  color: #999;
+  padding: 8px 5px;
+  border-bottom: 1px dotted #D7D5D5;
+}
+.wrapper_body .log .what_from ul li h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.wrapper_body .log .what_from ul li span {
+  color: #333;
+}
+.approveItem {
+  padding: 0px;
+  margin: 30px auto 30px;
+  border-radius: 3px;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+.approveItem.approveItem_1 {
+  height: 450px;
+}
+.approveItem.approveItem_1 .approveCon {
+  height: 400px;
+}
+.approveItem.approveItem_2 {
+  height: 695px;
+}
+.approveItem.approveItem_2 .approveCon {
+  height: 644px;
+}
+.approveItem.approveItem_3 {
+  height: 475px;
+}
+.approveItem.approveItem_3 .approveCon {
+  height: 424px;
+}
+.approveItem.approveItem_3 .approveCon .approve_button {
+  border: 0;
+}
+.approveItem.approveItem_3 .approveCon .approve_button .btn_blue {
+  margin: 20px 0 0 400px;
+  background: #36bc9b;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0;
+}
+.approveItem .approve_title {
+  width: 1050px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 0;
+  background: url('../img/confirm_v.png') no-repeat;
+}
+.approveItem .approve_title.approve_1 {
+  background-position: 0 0;
+}
+.approveItem .approve_title.approve_2 {
+  background-position: 0 -51px;
+}
+.approveItem .approve_title.approve_3 {
+ background-position: 0 -102px;
+}
+.approveItem .approveCon {
+  background: #fff;
+  overflow: hidden;
+}
+.approveItem .approveCon table.approve_table {
+  width: 850px;
+  margin: 30px 0 30px 50px;
+  color: #333;
+  overflow: hidden;
+}
+.approveItem .approveCon table.approve_table td {
+  line-height: 40px;
+}
+.approveItem .approveCon table.approve_table td a,
+.approveItem .approveCon table.approve_table td span {
+  padding-left: 20px;
+}
+.approveItem .approveCon table.approve_table td a em,
+.approveItem .approveCon table.approve_table td span em {
+  color: #cc0000;
+}
+.approveItem .approveCon table.approve_table td.text {
+  width: 100px;
+  text-align: right;
+  color: #999;
+}
+.approveItem .approveCon .approve_info {
+  width: 880px;
+  min-height: 530px;
+  margin-left: 50px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic {
+  overflow: hidden;
+  margin-top: 20px;
+  _width: 100%;
+}
+.approveItem .approveCon .approve_info .formFileUpPic label {
+  float: left;
+  margin-top: 5px;
+  color: #999;
+  margin-right: 10px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic span {
+  float: left;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic {
+  position: relative;
+  overflow: hidden;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic .input_file {
+  width: 110px;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic .btn_up {
+  width: 110px;
+  height: 28px;
+  background: url("../img/button_avatar.jpg") no-repeat;
+  text-indent: -9999em;
+  margin-right: 15px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .grey {
+  margin-top: 5px;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .up_avatar_con {
+  overflow: hidden;
+  margin-top: 20px;
+  _width: 100%;
+}
+.approveItem .approveCon .approve_info .up_avatar_con .up_avatar_pic {
+  float: left;
+  display: inline;
+  width: 140px;
+  height: 140px;
+  background: url('../img/up_pic.png') no-repeat;
+  margin-right: 15px;
+}
+.approveItem .approveCon .approve_info .up_avatar_con .up_avatar_pic #big_pic{
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+    max-height: 140px;
+    max-width: 140px;
+
+}
+.approveItem .approveCon .approve_info .up_avatar_con .up_avatar_info {
+  float: left;
+  display: inline;
+  color: #999;
+  line-height: 180%;
+}
+.approveItem .approveCon .approve_info .approve_award {
+  overflow: hidden;
+  margin-top: 20px;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_award span {
+  float: left;
+  display: inline;
+  line-height: 28px;
+}
+.approveItem .approveCon .approve_info .approve_award input {
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+.approveItem .approveCon .approve_info .approve_award textarea {
+  float: left;
+  display: inline;
+  height: 18px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  padding: 5px;
+  box-sizing: content-box;
+  resize: none;
+  width:690px;
+}
+.approveItem .approveCon .approve_info .approve_award_title {
+  height: 50px;
+  line-height: 60px;
+  color: #999;
+  overflow: hidden;
+}
+.approveItem .approveCon .approve_info .approve_award_title em {
+  color: #cc0000;
+  padding-left: 10px;
+}
+.approveItem .approveCon .approve_info .approve_textarea {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.approveItem .approveCon .approve_info .approve_textarea textarea#acceptanceSpeech {
+  width: 690px;
+  height: 180px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: #999;
+  resize: none;
+}
+.approveItem .approveCon .approve_info .approve_textarea *::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_checkbox {
+  overflow: hidden;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_checkbox input {
+  margin-right: 5px;
+}
+.approveItem .approveCon .approve_button {
+  width: 900px;
+  height: 70px;
+  margin: 0 auto;
+  border-top: 1px dashed #ededed;
+}
+.approveItem .approveCon .approve_button .btn-danger{
+  width: 110px;
+  height: 40px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0 0 70px;
+}
+.approveItem .approve_finish {
+  width: 678px;
+  height: 65px;
+  background: #fcfcfc;
+  border: 1px solid #f2f2f2;
+  margin: 50px auto;
+  padding: 50px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.approveItem .approve_finish .approve_tips1 {
+  height: 40px;
+  line-height: 40px;
+  background: url('../img/right_icon.png') no-repeat;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #cc0000;
+}
+.approveItem .approve_finish .approve_tips2 {
+  line-height: 30px;
+  color: #999;
+  padding-left: 40px;
+}
+.approve_table{
+  font: 12px/1.5 "Hiragino Sans GB",arial,tahoma,"SimSun",sans-serif;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}

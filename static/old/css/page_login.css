@@ -1,0 +1,4225 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Sam Shih (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+/**
+ * Base style
+ */
+/**
+ * Colors
+ *---------------------------
+ */
+/**
+ * 全站链接样式
+ *
+ */
+/**
+ * font-family
+ *fa:font-family:"Arial";
+ *fg:font-family:"Georgia";
+ *ft:font-family:"Tahoma";
+ *fl:font-family:"Lucida Console";
+ *fs:font-family:"宋体";
+ *fw:font-family:"Microsoft YaHei";
+ *fd:font-family:"verdana";
+ *------------------------------------
+ */
+/**
+ * padding值设定
+ *
+ *-----------------------------------------------
+ */
+/**
+ * margin值设定
+ *@margin0, @margin5
+ *-------------------------------------------------
+ */
+/**
+ * width值设定
+ *@w1=width:1px;
+ *可以使用计算值调用
+ *-------------------------------------------------
+ */
+/**
+ * font-size:
+ *f0:font-size:0;
+ *f10:font-size:0;
+ *f12:font-size:12px;
+ *f13:font-size:13px;
+ *f14:font-size:14px;
+ *f16:font-size:16px;
+ *f18:font-size:18px;
+ *f20:font-size:20px;
+ *f24:font-size:24px;
+ *------------------------------------
+ */
+/**
+ * Align & Direction
+ * l:left
+ * r:right
+ * c:center
+ * t:top
+ * m:middle
+ * b:bottom
+ *ti:text-index:-9999em;
+ *--------------------------------------
+ */
+/**
+ * HL:high-light属性设置
+ * hl14:high-light:14px;
+ * hl16:high-light:16px;
+ * hl18:high-light:18px;
+ * hl20:high-light:20px;
+ * hl22:high-light:22px;
+ * hl24:high-light:24px;
+ * hl150:high-light:150%;
+ * hl180:high-light:180%;
+ *--------------------------------------
+ */
+/**
+ * border设置
+ * bbr:base border redius:3px;
+ *--------------------------------------
+ */
+/**
+ * button
+ * btnColor:btn-color:#fff;
+ * btnfh:btn-first-height;
+ * btnzh:btn-zero-high-light:0%; //没有渐变
+ * btnsh:btn-zero-high-light:5%; //渐变从5%开始
+ *--------------------------------------
+ */
+/**
+ * 雪碧图路径设置
+ *----------------------------------------
+ */
+/**
+ * table设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+/**
+ * Form设置
+ *tbg: tableBackground
+ *tbga: tableBackgroundAccent
+ *tbhb:table-th-background
+ *tborder:table-border
+ *----------------------------------------
+ */
+.mtop_10 {
+  margin-top: 10px;
+}
+.mtop_20 {
+  margin-top: 20px;
+}
+.mtop_30 {
+  margin-top: 30px;
+}
+.ptop_10 {
+  padding-top: 10px;
+}
+.ptop_20 {
+  padding-top: 20px;
+}
+.ptop_30 {
+  padding-top: 30px;
+}
+/**
+ * 路径
+ */
+/**
+ * Typography
+ *---------------------------
+ */
+.bl {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+.b {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.red {
+  color: #cc0000;
+}
+.line {
+  display: inline-block;
+  padding: 0 10px;
+  color: #999;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.border_none {
+  border: 0;
+}
+/**
+ * 用.border-radius(@radius)定义了一个带参数@radius(默认值为bbr)的属性
+ * 可以在less文件中使用.border-radius(5px)调用
+ *--------------------------------------------------------------------
+ */
+/**
+ * 用.box-shadow(arguments)定义了一个带参数@arguments(可以设置默认值)的属性集合
+ * 可以在less文件中使用.box-shadow(argument,argument,argument....)调用
+ *------------------------------------------------------
+ */
+/**
+ * 用.placeholder(argument)为placeholder设定一个颜色值
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 
+ * 可以在less文件中使用.placeholder()调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用background-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换背景颜色
+ * 可以在less文件中使用border-color(@color)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以换元素透明度，默认值为1
+ * 可以在less文件中使用.alpha(opacity的值)调用
+ *----------------------------------------------------
+ */
+/**
+ * 可以修改背景图片
+ * 可以在less文件中使用传入参数：X,Y,图片路径以及重复方向
+ *----------------------------------------------------
+ */
+/**
+ * 解决firefox不支持text-overflow属性
+ *
+ */
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -moz-binding: url('ellipsis.xml#ellipsis');
+}
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 "Hiragino Sans GB", arial, tahoma, "SimSun", sans-serif;
+}
+body {
+  _background-image: url(about:blank);
+  /*用浏览器空白页面作为背景*/
+  _background-attachment: fixed;
+  position: relative;
+  background: #fff;
+  /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new,courier,monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a,
+a:link {
+  text-decoration: none;
+  color: #0076b3;
+}
+a:visited {
+  text-decoration: none;
+  color: #0076b3;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0076b3;
+}
+a:active {
+  text-decoration: underline;
+  color: #F00;
+}
+a {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+strong {
+  color: #cc0000;
+  font-weight: normal;
+}
+button {
+  font-size: 100%;
+  border: 0;
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+u {
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+.f_blue {
+  color: #0076b3;
+}
+.clearfix {
+  clear: both;
+}
+/*base,重置，变量*/
+/**
+ * Button 公用样式
+ */
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  text-indent: -9999em;
+  background-image: url("http://img04.xesimg.com/icon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+}
+/**
+ *icon按钮样式
+ * <em>于icon图片类，<i>用于文字类
+ *
+ *认证加V以及顶部图标
+ *icon_bverify：蓝V
+ *icon_bbverify：大蓝V
+ *icon_yverify：黄V
+ *icon_byverify：大黄V
+ *icon_new:有新消息状态;
+ *icon_shopping：顶部购物图标
+ *icon_messages：顶部信息图标
+ *icon_settsings：顶部设置图标
+ *-------------------------------------------
+ *nav-list图标
+ *icon_home:我的网校;
+ *icon_star:我的收藏;
+ *icon_heart:我的关注; 
+ *icon_th:我的错题本; 
+ *icon_exam:我的考试;
+ *icon_report:效果报告;
+ *icon_schedule:课程表;
+ *icon_shield:我的挑战;
+ *icon_diamond:金币兑礼;
+
+ *--------------------------------------------
+ *个人中心头部icons
+ *icon_lv:个人学力;
+ *icon_user:个人学习经历/学员;
+ *icon_orders:个人订单;
+ *icon_coins:个人金币;
+ *icon_card:激活听课证;
+ *--------------------------------------------
+ *课程列表，课程动态，课程评论，购物车推荐课程;
+ *icon_chevron_right:老师轮播图右侧按钮;
+ *icon_chevron_right_reverse:老师轮播图右侧变暗按钮;
+ *icon_chevron_left:老师轮播图左侧按钮;
+ *icon_chevron_left_reverse:老师轮播图左侧变亮按钮;
+ *icon_yellow_sign:课程标题橙色标记;
+ *icon_thumbs_up:课程功能区赞图标;
+ *icon_rmb:课程功能区价格图标;
+ *icon_gray_user:课程功能区总学员数图标;
+ *icon_clock:课程功能区请假按钮;
+ *icon_word:课程功能区资料按钮;
+ *icon_horn:课程功能区续保按钮;
+ *icon_manuscript:课程功能区考试按钮;
+ *icon_tv:课程功能区直播按钮;
+ *icon_square_orange: 排行橘色图标;
+ *icon_square_gray:排行灰色图标;
+ *--------------------------------------------
+ *alert图标
+ *icon_info_sign:警告框图标;
+ *icon_info_search:搜索图标;
+ *-------------------------------------------
+ *关注按钮
+ *icon_add：关注添加图标
+ *icon_gray_add：未关注图标
+ *-------------------------------------------
+ *icon_coursecard:课程卡大图标;
+ *icon_guide:新手指南;
+ *icon_courseselect:怎样选课图标;
+ *icon_forward:去看看按钮;
+ *icon_blue_sign：蓝色的对勾
+ *icon_point ：alert图标
+ *icon_timer ：timer图标
+ *
+ */
+.icon_bbverify,
+.icon_byverify {
+  width: 23px;
+}
+.icon_lv {
+  width: 30px;
+  height: 15px;
+}
+.icon_yellow_sign {
+  width: 35px;
+  height: 17px;
+}
+.icon_coursecard,
+.icon_courseselect,
+.icon_guide {
+  width: 238px;
+  height: 41px;
+}
+.icon_forward {
+  width: 150px;
+  height: 36px;
+}
+.icon_follow_add {
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+}
+.icon_dot {
+  width: 0;
+}
+.icon_timer {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.icon_arrow_up,
+.icon_arrow_down {
+  width: 12px;
+  height: 17px;
+}
+.icon_new {
+  margin-left: -7px;
+}
+.icon_rmb {
+  width: 13px;
+}
+.icon_new {
+  background-position: 0 0;
+}
+.icon_shopping {
+  background-position: -22px -75px;
+}
+.icon_messages {
+  background-position: -22px -270px;
+}
+.icon_settsings {
+  background-position: -22px -124px;
+}
+.icon_bverify {
+  background-position: -99px 2px;
+}
+.icon_bbverify {
+  background-position: -100px -50px;
+}
+.icon_yverify {
+  background-position: -100px -24px;
+  vertical-align: text-top;
+}
+.icon_byverify {
+  background-position: -100px -75px;
+}
+.icon_home {
+  background-position: 0 -20px;
+}
+.icon_star {
+  background-position: 0 -50px;
+}
+.icon_heart {
+  background-position: 0 -75px;
+}
+.icon_th {
+  background-position: 0 -270px;
+}
+.icon_exam {
+  background-position: 0 0;
+}
+.icon_report {
+  background-position: 0 0;
+}
+.icon_schedule {
+  background-position: 0 0;
+}
+.icon_user {
+  background-position: 8px -98px;
+}
+.icon_shield {
+  background-position: 0 -125px;
+}
+.icon_diamond {
+  background-position: 0 -145px;
+}
+.icon_lv {
+  background-position: -127px 0;
+}
+.icon_orders {
+  background-position: -50px -125px;
+}
+.icon_coins {
+  background-position: -22px -25px;
+}
+.icon_card {
+  background-position: -22px -45px;
+}
+.icon_courses {
+  background-position: -18px -147px;
+}
+.icon_chevron_left {
+  background-position: -74px -276px;
+}
+.icon_chevron_right {
+  background-position: -76px -225px;
+}
+.icon_chevron_left_reverse {
+  background-position: -75px -200px;
+}
+.icon_chevron_right_reverse {
+  background-position: -75px -252px;
+}
+.icon_yellow_sign {
+  background-position: -127px -211px;
+}
+.icon_thumbs_up {
+  background-position: -69px -48px;
+}
+.icon_rmb {
+  background-position: -74px 3px;
+}
+.icon_gray_user {
+  background-position: -71px -24px;
+}
+.icon_clock {
+  background-position: -75px -75px;
+}
+.icon_word {
+  background-position: -75px -100px;
+}
+.icon_horn {
+  background-position: -75px -125px;
+}
+.icon_manuscript {
+  background-position: -75px -150px;
+}
+.icon_tv {
+  background-position: -75px -175px;
+}
+.icon_info_sign {
+  background-position: -75px -75px;
+}
+.icon_info_search {
+  background-position: -50px 0;
+}
+.icon_follow_add {
+  background-position: -50px -177px;
+}
+.icon_coursecard {
+  background-position: -123px -375px;
+}
+.icon_guide {
+  background-position: -123px -420px;
+}
+.icon_courseselect {
+  background-position: -123px -466px;
+}
+.icon_forward {
+  background-position: -127px -366px;
+}
+.icon_arrow_up {
+  background-position: -104px -126px;
+}
+.icon_arrow_down {
+  background-position: -104px -100px;
+}
+.icon_arrow_right {
+  background-position: -43px -200px;
+}
+.icon_square_orange {
+  background-position: -47px -48px;
+}
+.icon_square_gray {
+  background-position: -47px -73px;
+}
+.icon_blue_sign {
+  background-position: -47px -145px;
+}
+.icon_dot {
+  background-position: 0 -215px;
+}
+.icon_star {
+  background-position: -50px -199px;
+}
+.icon_point {
+  background-position: -50px -22px;
+}
+.icon_live {
+  background-position: -45px -97px;
+}
+.icon_timer {
+  background-position: -17px -189px;
+}
+.icon_white_clock {
+  background-position: -129px -235px;
+}
+.icon_public_video {
+  background-position: -127px -258px;
+}
+.icon_student_xiao {
+  background: url("http://img04.xesimg.com/student_icon_xiao.png") no-repeat;
+  width: 20px;
+}
+/**
+ *From 公用样式
+ *table元素已经设定了BG和border-collapse属性
+ */
+form {
+  font-size: 12px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+label {
+  display: block;
+  text-align: right;
+}
+textarea {
+  height: auto;
+}
+/**
+ * 设定select, checkbox样式
+ */
+select,
+label,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  font-size: 12px;
+}
+/**
+ * 设定表单元素placeholder的字体颜色值
+ */
+input[type="text"]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999999;
+}
+input[type="text"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.form_submiting {
+  position: absolute;
+  z-index: 10;
+}
+/* ============= 下面是表单验证相关的样式 ============= */
+/* 这里是表单提示 */
+/* 这是表单验证提示 */
+.form_tips {
+  width: 256px;
+  height: 30px;
+  clear: both;
+  overflow: hidden;
+  color: #999;
+}
+.form_tips.tips_error {
+  color: #c00;
+}
+.form_tips.tips_strength {
+  _line-height: 24px;
+}
+.form_tips.tips_strength .strength_text {
+  float: left;
+}
+.form_tips.tips_strength strong {
+  width: 104px;
+  height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  background: url("http://img04.xesimg.com/passport/bg_strength.gif") no-repeat left 0;
+}
+.form_tips.tips_strength strong.strength_1 {
+  background-position: left 0;
+}
+.form_tips.tips_strength strong.strength_2 {
+  background-position: left -30px;
+}
+.form_tips.tips_strength strong.strength_3 {
+  background-position: left -60px;
+}
+/**
+ * Button 公用样式
+ */
+/**
+ * 按钮边框处理方法 == 用span标签包裹
+ * 边线 = border
+ * 内边距 = padding
+ * 背景 = background
+ */
+.btn_wrap {
+  display: inline-block;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 1px;
+}
+.btn_wrap_orange {
+  border: 1px solid #e75007;
+  background: #f38920;
+}
+.btn_wrap_gray {
+  border: 1px solid #f3f3f3;
+  background: #f3f3f3;
+}
+.btn_wrap_red {
+  border: 1px solid #ccc;
+  background: #cb0000;
+}
+.btn_wrap_blue {
+  border: 1px solid #3399cc;
+  background: #3399cc;
+}
+.btn_wrap_disable {
+  border: 1px solid #666;
+  background: #666;
+}
+/**
+ * 按钮
+ * 去除边框，
+ */
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+}
+/**
+ * 按钮按大小分类
+ * large:10px 20px;
+ * small:3px 5px;
+ * medium:5px 20px;
+ */
+.btn_text {
+  border: none;
+  background: none;
+}
+.btn_large {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn_small {
+  padding: 3px 5px;
+}
+.btn_medium {
+  padding: 5px 20px;
+}
+/**
+ * 按钮按颜色分类
+ * gray：取消按钮，
+ * red：提交类按钮以及课程列表听课按钮激活状态
+ * blue：页面按钮
+ * orange:关注按钮;
+ */
+.btn_gray {
+  color: #333;
+  background: #f3f3f3;
+}
+.btn_red {
+  background: #cb0000;
+}
+.btn_blue {
+  background: #3399cc;
+}
+.btn_sky {
+  background: #3399cc;
+}
+.btn_orange {
+  background: #ff6600;
+}
+.pure_gray {
+  background: #9A9A9A;
+}
+/**
+ * 按钮按功能分类(默认样式)
+ * 
+ */
+.btn_disable {
+  background: #666;
+  /*box-shadow: 1px 1px 1px rgba(255,255,255,1) inset, -1px -1px 1px rgba(255,255,255,1) inset;*/
+}
+/*图标，表单，按钮*/
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:36:00
+ * @version $Id$
+ *@ layout.css  框架和公用样式
+ */
+/**/
+#container {
+  /*overflow: hidden;*/
+  width: 100%;
+  margin: 0;
+}
+.layout {
+  width: 980px;
+  margin: 0 auto;
+}
+.layout_content {
+  overflow: hidden;
+}
+.layout_back {
+  background: #f5f5f5;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.layout_back .layout_body {
+  background: #fff;
+  min-height: 1000px;
+}
+.layout_back .w_740 .content_box {
+  width: 730px;
+  overflow: hidden;
+}
+.layout_back .w_740 .main_header {
+  width: 730px;
+  overflow: hidden;
+}
+.layout_home {
+  background: #ffffff url("http://img04.xesimg.com/sida_nav_bg.jpg") left top repeat-y;
+  overflow: hidden;
+}
+.w_310 .panel .ui_feed .feed_detail {
+  width: 250px;
+}
+.w_310 .panel .ui_feed {
+  border-bottom: 1px dotted #f1f1f1;
+}
+/*公用样式*/
+.panle {
+  overflow: hidden;
+}
+.panel_content {
+  overflow: hidden;
+}
+.left {
+  float: left;
+  display: inline;
+}
+.right {
+  float: right;
+  display: inline;
+}
+.w_215 {
+  width: 215px;
+  padding-bottom: 50px;
+}
+.w_240 {
+  width: 240px;
+  padding-bottom: 50px;
+}
+.w_235 {
+  width: 235px;
+  padding-bottom: 50px;
+}
+.w_240 {
+  width: 240px;
+}
+.w_310 {
+  width: 310px;
+  margin-right: 5px;
+}
+.w_655 {
+  width: 655px;
+}
+.w_645 {
+  width: 645px;
+}
+.w_730 {
+  width: 730px;
+  padding-bottom: 50px;
+}
+.w_740 {
+  width: 740px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.w_753 {
+  width: 753px;
+  padding-bottom: 50px;
+}
+.w_307 {
+  width: 307px;
+}
+/**
+ * [广告块]
+ *
+ */
+.advert {
+  margin-top: 10px;
+}
+/**
+ * [邮箱后缀提示]
+ *
+ */
+.out_box {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 13px;
+}
+.list_box {
+  cursor: pointer;
+  padding: 0 5px;
+}
+.focus_box {
+  background: #F38920;
+  padding: 0 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.focus_box span.mark_box {
+  color: #fff;
+}
+.mark_box {
+  color: #666;
+}
+/**
+ * [特殊字体]
+ *
+ */
+.f_14 {
+  font-size: 20px;
+  color: #e60012;
+  font-weight: bold;
+}
+.f_c_1 {
+  color: #333333;
+}
+/**
+ * 
+ * authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:44:46
+ * @version $Id$  公用底部
+ */
+#footer {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  padding: 0px;
+  overflow: hidden;
+}
+/*===============/下：关于我们部分/====================*/
+#footer .foot_area {
+  padding: 20px 0px;
+}
+#footer .foot_area p {
+  text-align: center;
+  line-height: 180%;
+}
+#footer .foot_area p a {
+  padding: 0px 5px;
+  color: #333333;
+}
+#footer .foot_area p.link {
+  padding-top: 15px;
+}
+/*===============/上：学习经验分享/====================*/
+#footer .foot_service {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F1F1F1;
+}
+#footer .foot_service a {
+  float: left;
+  display: inline;
+  width: 140px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  margin: 10px 10px 0px 20px;
+  padding-left: 68px;
+  text-decoration: none;
+}
+#footer .foot_service a p {
+  line-height: 150%;
+  color: #666;
+  text-align: left;
+}
+#footer .foot_service a.service_share {
+  background: url(http://img04.xesimg.com/service/A1_01.gif) no-repeat;
+}
+#footer .foot_service a.service_live {
+  background: url(http://img04.xesimg.com/service/A2_01.gif) no-repeat;
+}
+#footer .foot_service a.service_system {
+  background: url(http://img04.xesimg.com/service/B3_01.gif) no-repeat;
+}
+#footer .foot_service a.service_interaction {
+  background: url(http://img04.xesimg.com/service/A4_01.gif) no-repeat;
+}
+#footer .foot_service a.service_share:hover {
+  background: url(http://img04.xesimg.com/service/A1.gif) no-repeat;
+}
+#footer .foot_service a.service_live:hover {
+  background: url(http://img04.xesimg.com/service/A2.gif) no-repeat;
+}
+#footer .foot_service a.service_system:hover {
+  background: url(http://img04.xesimg.com/service/B3new.gif) no-repeat;
+}
+#footer .foot_service a.service_interaction:hover {
+  background: url(http://img04.xesimg.com/service/A4.gif) no-repeat;
+}
+#footer .foot_service a span {
+  display: block;
+  line-height: 22px;
+  font-weight: bold;
+  color: #333333;
+}
+/**
+ * 
+ * Copyright 2013 xueersi.com All rights reserved.
+ *
+ * @description 
+ *
+ * @author Marco (marco@xesui.com)
+ * @modify 2013-07-12 20:37:35
+ * @version $Id$
+ */
+/**
+ * ui_follow.less 公用样式
+ */
+/**
+ * Dialog
+ *
+ * z-index:
+ *     dialog: 1000;
+ *     dialog_close: 1001;
+ *     dialog_arrow: 1001;
+ *     dialog_bg : 999;
+ *     
+ * @type {String}
+ */
+ /* 透明边框宽度 */
+ /* 四个角的背景 */
+ /* 上下水平边框 */
+ /* 左右垂直边框 */
+ .dialog {
+  width: auto;
+  /*overflow:hidden;*/
+  position: fixed;
+  _position: absolute;
+  top: 100px;
+  left: 40%;
+  z-index: 1000;
+  /**
+     * 指示箭头：
+     * 上左：arrow_tl
+     * 上右：arrow_tr
+     * 上中：arrow_tc
+     * 下左：arrow_bl
+     * 下右：arrow_br
+     * 下中：arrow_bc
+     */
+  /**
+     * 关闭按钮
+     */
+  /**
+     * 处理弹窗透明边框及内容区域背景
+     */
+  /**
+     * 弹窗头部 Title 区域
+     */
+  /**
+     * 弹窗内容区域
+     */
+  /**
+     * 弹窗底部按钮区域
+     */
+  /**
+     * 没有边框的情况
+     */
+   }
+   .dialog table {
+    background-color: transparent;
+  }
+  .dialog .dialog_arrow {
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    height: 11px;
+    background-repeat: no-repeat;
+    /* 底部：左中右 */
+    /* 顶部：左中右 */
+    /* 左右侧 */
+    /* 左侧：上中下 */
+    /* 右侧：上中下 */
+  }
+  .dialog .dialog_arrow.arrow_bl,
+  .dialog .dialog_arrow.arrow_bc,
+  .dialog .dialog_arrow.arrow_br {
+    bottom: -7px;
+    background-image: url("http://img04.xesimg.com/dialog/dialog_arrow_b.png");
+  }
+  .dialog .dialog_arrow.arrow_tl,
+  .dialog .dialog_arrow.arrow_tc,
+  .dialog .dialog_arrow.arrow_tr {
+    top: -7px;
+    background-image: url("http://img04.xesimg.com/dialog/dialog_arrow_t.png");
+  }
+  .dialog .dialog_arrow.arrow_bl,
+  .dialog .dialog_arrow.arrow_tl {
+    background-position: 30% 0;
+  }
+  .dialog .dialog_arrow.arrow_br,
+  .dialog .dialog_arrow.arrow_tr {
+    background-position: 70% 0;
+  }
+  .dialog .dialog_arrow.arrow_bc,
+  .dialog .dialog_arrow.arrow_tc {
+    background-position: center 0;
+  }
+  .dialog .dialog_arrow.arrow_lt,
+  .dialog .dialog_arrow.arrow_lc,
+  .dialog .dialog_arrow.arrow_lb,
+  .dialog .dialog_arrow.arrow_rt,
+  .dialog .dialog_arrow.arrow_rc,
+  .dialog .dialog_arrow.arrow_rb {
+    width: 11px;
+    height: 100%;
+    top: 0;
+  }
+  .dialog .dialog_arrow.arrow_lt,
+  .dialog .dialog_arrow.arrow_lc,
+  .dialog .dialog_arrow.arrow_lb {
+    left: -7px;
+    background-image: url("http://img04.xesimg.com/dialog/dialog_arrow_l.png");
+  }
+  .dialog .dialog_arrow.arrow_rt,
+  .dialog .dialog_arrow.arrow_rc,
+  .dialog .dialog_arrow.arrow_rb {
+    right: -7px;
+    background-image: url("http://img04.xesimg.com/dialog/dialog_arrow_r.png");
+  }
+  .dialog .dialog_arrow.arrow_lt,
+  .dialog .dialog_arrow.arrow_rt {
+    background-position: 0 30%;
+  }
+  .dialog .dialog_arrow.arrow_lb,
+  .dialog .dialog_arrow.arrow_rb {
+    background-position: 0 70%;
+  }
+  .dialog .dialog_arrow.arrow_lc,
+  .dialog .dialog_arrow.arrow_rc {
+    background-position: 0 center;
+  }
+  .dialog .dialog_close {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    z-index: 1001;
+    overflow: hidden;
+    text-indent: -2000px;
+    background: url("http://img04.xesimg.com/dialog/dialog_close_new.png") no-repeat left 0;
+  }
+  .dialog .dialog_close:hover {
+    background: url("http://img04.xesimg.com/dialog/dialog_close_hover.png") no-repeat left 0;
+  }
+  .dialog .dialog_box .tl,
+  .dialog .dialog_box .tc,
+  .dialog .dialog_box .tr,
+  .dialog .dialog_box .bl,
+  .dialog .dialog_box .bc,
+  .dialog .dialog_box .br {
+    height: 4px;
+  }
+  .dialog .dialog_box .tl,
+  .dialog .dialog_box .tr,
+  .dialog .dialog_box .cl,
+  .dialog .dialog_box .cr,
+  .dialog .dialog_box .bl,
+  .dialog .dialog_box .br {
+    width: 4px;
+  }
+  .dialog .dialog_box .tl {
+    background: url("http://img04.xesimg.com/dialog/dialog_tl.png") no-repeat left 0;
+  }
+  .dialog .dialog_box .tr {
+    background: url("http://img04.xesimg.com/dialog/dialog_tr.png") no-repeat right 0;
+  }
+  .dialog .dialog_box .bl {
+    background: url("http://img04.xesimg.com/dialog/dialog_border.png") no-repeat left bottom;
+  }
+  .dialog .dialog_box .br {
+    background: url("http://img04.xesimg.com/dialog/dialog_border.png") no-repeat right bottom;
+  }
+  .dialog .dialog_box .tc {
+    background: url("http://img04.xesimg.com/dialog/dialog_hline.png") repeat-x left 0;
+  }
+  .dialog .dialog_box .bc {
+    background: url("http://img04.xesimg.com/dialog/dialog_hline.png") repeat-x left bottom;
+  }
+  .dialog .dialog_box .cl {
+    background: url("http://img04.xesimg.com/dialog/dialog_vline.png") repeat-y left 0;
+  }
+  .dialog .dialog_box .cr {
+    background: url("http://img04.xesimg.com/dialog/dialog_vline.png") repeat-y right 0;
+  }
+  .dialog .dialog_box .dialog_handle,
+  .dialog .dialog_box .dialog_content_wrap {
+    background-color: #FFF;
+  }
+  .dialog .dialog_handle {
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 35px 5px 15px;
+    background: url("http://img04.xesimg.com/dialog/dialog_header.png");
+  }
+  .dialog .dialog_handle .dialog_title {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+  }
+  .dialog .dialog_content {
+    /*position:relative;*/
+    min-width: 100px;
+    padding: 25px 20px;
+    overflow: auto;
+  }
+  .dialog .dialog_content .dialog_icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 10px;
+    float: left;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+  .dialog .dialog_content .dialog_success .dialog_icon {
+    background-image: url("http://img04.xesimg.com/dialog/icon/check-64.png");
+  }
+  .dialog .dialog_content .dialog_warning .dialog_icon {
+    background-image: url("http://img04.xesimg.com/dialog/icon/attention.png");
+  }
+  .dialog .dialog_content .dialog_error .dialog_icon {
+    background-image: url("http://img04.xesimg.com/dialog/icon/delete_2.png");
+  }
+  .dialog .dialog_content .dialog_info .dialog_icon {
+    background-image: url("http://img04.xesimg.com/dialog/icon/information.png");
+  }
+  .dialog .dialog_buttons {
+    padding: 10px 20px 10px;
+    text-align: center;
+    /*background-color:#f9f9f9;*/
+    background-color: #FFF;
+    /*border-top:1px #eee dotted;*/
+  }
+  .dialog .dialog_buttons .btn {
+    padding: 5px 20px;
+    margin: 0 5px;
+  }
+  .dialog .dialog_buttons .btna {
+    color: #FFF;
+  }
+  .dialog .dialog_buttons .btn_graya {
+    color: #555;
+  }
+  .dialog.dialog_noborder {
+    /*箭头去掉边框*/
+    /*有头部时的圆角*/
+    /*有底部时的圆角*/
+    /*无头部、底部时中间部分的圆角*/
+    /* 当没有边框，且没有遮罩时，需要增加1px的border */
+  }
+  .dialog.dialog_noborder .tl,
+  .dialog.dialog_noborder .tc,
+  .dialog.dialog_noborder .tr,
+  .dialog.dialog_noborder .cl,
+  .dialog.dialog_noborder .cr,
+  .dialog.dialog_noborder .bl,
+  .dialog.dialog_noborder .bc,
+  .dialog.dialog_noborder .br {
+    background: none;
+  }
+  .dialog.dialog_noborder .dialog_arrow {
+    background: url("http://img04.xesimg.com/dialog/dialog_arrow_b_n.png") no-repeat left 0;
+  }
+  .dialog.dialog_noborder .dialog_arrow.arrow_tl,
+  .dialog.dialog_noborder .dialog_arrow.arrow_tr {
+    background-image: url("http://img04.xesimg.com/dialog/dialog_arrow_t_n.png");
+  }
+  .dialog.dialog_noborder .dialog_arrow.arrow_bl,
+  .dialog.dialog_noborder .dialog_arrow.arrow_br {
+    bottom: -6px;
+  }
+  .dialog.dialog_noborder .dialog_arrow.arrow_tl,
+  .dialog.dialog_noborder .dialog_arrow.arrow_tr {
+    top: -6px;
+  }
+  .dialog.dialog_noborder .dialog_handle {
+    border-radius: 5px 5px 0 0;
+  }
+  .dialog.dialog_noborder .dialog_buttons {
+    border-radius: 0 0 5px 5px;
+  }
+  .dialog.dialog_noborder .dialog_content_wrap.dialog_radius_top {
+    border-radius: 3px 3px 0 0;
+  }
+  .dialog.dialog_noborder .dialog_content_wrap.dialog_radius_top.dialog_radius_bottom {
+    border-radius: 3px;
+  }
+  .dialog.dialog_noborder .dialog_content_wrap.dialog_radius_bottom {
+    border-radius: 0 0 3px 3px;
+  }
+  .dialog.dialog_noborder.dialog_noMask .dialog_handle {
+    border: 1px #ccc solid;
+    border-width: 1px 1px 0 1px;
+  }
+  .dialog.dialog_noborder.dialog_noMask .dialog_buttons {
+    border: 1px #ccc solid;
+    border-width: 0px 1px 1px ;
+  }
+  .dialog.dialog_noborder.dialog_noMask .dialog_content_wrap {
+    border: 1px #ccc solid;
+    border-width: 0 1px;
+  }
+  .dialog.dialog_noborder.dialog_noMask .dialog_content_wrap.dialog_radius_top {
+    border-top-width: 1px;
+  }
+  .dialog.dialog_noborder.dialog_noMask .dialog_content_wrap.dialog_radius_bottom {
+    border-bottom-width: 1px;
+  }
+  .dialog.dialog_alert .dialog_buttons {
+    padding: 0 20px 10px 20px;
+    text-align: center;
+  }
+  .dialog.dialog_alert .dialog_buttons .btn {
+    margin: 0 5px;
+  }
+  .dialog.dialog_alert .dialog_buttons .btna {
+    color: #FFF;
+  }
+  .dialog.dialog_alert .dialog_buttons .btn_graya {
+    color: #555;
+  }
+  .dialog.dialog_alert .dialog_content {
+    text-align: center;
+    padding: 20px 30px 10px;
+  }
+  .dialog.dialog_poptips {
+    position: absolute;
+  }
+  .dialog.dialog_poptips .dialog_content {
+    text-align: center;
+    line-height: 32px;
+    padding: 15px 20px 15px 10px;
+  }
+  .dialog.dialog_follow {
+    position: absolute;
+  }
+  .dialog.dialog_userinfo {
+    position: absolute;
+  }
+  .dialog.dialog_userinfo .dialog_content {
+    padding: 0px;
+  }
+  .dialog.dialog_userinfo .arrow_bl {
+    background-position: 20% 0;
+  }
+  .dialog.dialog_userinfo .arrow_br {
+    background-position: 80% 0;
+  }
+  .dialog.dialog_userinfo .arrow_tl {
+    background-position: 20% 0;
+  }
+  .dialog.dialog_userinfo .arrow_tr {
+    background-position: 80% 0;
+  }
+  .dialog.dialog_gift {
+    position: absolute;
+  }
+  .dialog.dialog_gift .arrow_lt {
+    background-position: 0 20%;
+  }
+  .dialog.dialog_gift .arrow_rt {
+    background-position: 0 20%;
+  }
+  .dialog.dialog_leave .dialog_content {
+    padding: 10px;
+  }
+  .dialog.dialog_noshadow {
+  /**
+         * 处理弹窗透明边框及内容区域背景
+         */
+  /**
+         * 弹窗头部 Title 区域
+         */
+  /**
+         * 关闭按钮
+         */
+  /**
+         * 指示箭头：
+         * 上左：arrow_tl
+         * 上右：arrow_tr
+         * 上中：arrow_tc
+         * 下左：arrow_bl
+         * 下右：arrow_br
+         * 下中：arrow_bc
+         */
+       }
+       .dialog.dialog_noshadow .dialog_box .tl {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_tl.gif") no-repeat left 0;
+      }
+      .dialog.dialog_noshadow .dialog_box .tr {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_tr.gif") no-repeat right 0;
+      }
+      .dialog.dialog_noshadow .dialog_box .bl {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_border.gif") no-repeat left bottom;
+      }
+      .dialog.dialog_noshadow .dialog_box .br {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_border.gif") no-repeat right bottom;
+      }
+      .dialog.dialog_noshadow .dialog_box .tc {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_hline.gif") repeat-x left 0;
+      }
+      .dialog.dialog_noshadow .dialog_box .bc {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_hline.gif") repeat-x left bottom;
+      }
+      .dialog.dialog_noshadow .dialog_box .cl {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_vline.gif") repeat-y left 0;
+      }
+      .dialog.dialog_noshadow .dialog_box .cr {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_vline.gif") repeat-y right 0;
+      }
+      .dialog.dialog_noshadow .dialog_handle {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_header.gif");
+      }
+      .dialog.dialog_noshadow .dialog_close {
+        background: url("http://img04.xesimg.com/dialog/gif/dialog_close.gif") no-repeat left 0;
+      }
+      .dialog.dialog_noshadow .dialog_arrow {
+        position: absolute;
+        z-index: 1001;
+        width: auto;
+        height: 11px;
+        background-repeat: no-repeat;
+        /* 底部：左中右 */
+        /* 顶部：左中右 */
+        /* 左右侧 */
+        /* 左侧：上中下 */
+        /* 右侧：上中下 */
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_bl,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_bc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_br {
+        bottom: -11px;
+        background-image: url("http://img04.xesimg.com/dialog/gif/dialog_arrow_b.gif");
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tl,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tr {
+        top: -7px;
+        background-image: url("http://img04.xesimg.com/dialog/gif/dialog_arrow_t.gif");
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_bl,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tl {
+        background-position: 20% 0;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_br,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tr {
+        background-position: 80% 0;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_bc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_tc {
+        background-position: center 0;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lt,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lb,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rt,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rb {
+        width: 11px;
+        height: auto;
+        top: 0;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lt,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lb {
+        left: -7px;
+        background-image: url("http://img04.xesimg.com/dialog/gif/dialog_arrow_l.gif");
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rt,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rb {
+        right: -7px;
+        background-image: url("http://img04.xesimg.com/dialog/gif/dialog_arrow_r.gif");
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lt,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rt {
+        background-position: 0 15%;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lb,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rb {
+        background-position: 0 85%;
+      }
+      .dialog.dialog_noshadow .dialog_arrow.arrow_lc,
+      .dialog.dialog_noshadow .dialog_arrow.arrow_rc {
+        background-position: 0 center;
+      }
+      .dialog_mask {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        _position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: #000;
+        filter: alpha(opacity=30);
+        opacity: 0.3;
+      }
+      .dialog_mask.mask_bg {
+        background: url("http://img04.xesimg.com/dialog/dialog_mask.png") left 0;
+      }
+/**
+ * 增加别名
+ */
+ /*.xuebox { .dialog; }*/
+ /* 上传图片时的弹窗样式 */
+ .img_preview {
+  position: absolute;
+}
+.img_preview .dialog_arrow.arrow_tl {
+  background-position: 10% 0;
+}
+.img_preview .dialog_content {
+  padding: 10px;
+}
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-07-30 18:40:40
+ * @version $Id$
+ */
+ .rightResearch {
+  width: 67px;
+  height: 256px;
+  position: fixed;
+  z-index: 119;
+  right: 0;
+  bottom: 0px;
+  _top: 300px;
+  outline: none;
+}
+.rightResearch ul {
+  background: transparent;
+}
+.rightResearch li {
+  overflow: hidden;
+}
+.rightResearch li a {
+  display: block;
+  width: 67px;
+  height: 64px;
+  background-image: url("http://img04.xesimg.com/feedback.gif");
+  background-repeat: no-repeat;
+}
+.rightResearch li #r_guide {
+  background: url("http://img04.xesimg.com/school_guide.gif") -273px -82px no-repeat;
+}
+.rightResearch li #r_copyright {
+  background-position: 0 0;
+}
+.rightResearch li #r_copyright.current,
+.rightResearch li #r_copyright:hover {
+  background-position: 0 -192px;
+}
+.rightResearch li #r_feedBack {
+  background-position: 0 -64px;
+}
+.rightResearch li #r_feedBack:hover {
+  background-position: 0 -256px;
+}
+.rightResearch li #r_toTop {
+  height: 63px;
+  background-position: 0 -129px;
+}
+.rightResearch li #r_toTop:hover {
+  background-position: 0 -321px;
+}
+#copy_notice {
+  text-align: center;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #3399cc;
+  position: fixed;
+  bottom: 65px;
+  right: 67px;
+  display: none;
+  width: 155px;
+  height: 116px;
+  overflow: hidden;
+}
+#copy_notice p {
+  line-height: 24px;
+  color: #3399cc;
+  font: 14px "Microsoft YaHei", SimHei, arial;
+  overflow: hidden;
+}
+#copy_notice p.copy_notice_num {
+  font-size: 24px;
+}
+#copy_notice p.group_join {
+  margin-top: 3px;
+}
+#copy_notice p.group_join a {
+  background: none;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-right: 3px;
+}
+#copy_notice p.group_join a img {
+  vertical-align: middle;
+}
+.layer_feedback {
+  width: 530px;
+  height: 165px;
+  overflow: hidden;
+}
+.layer_feedback .feedback_icon {
+  height: 90px;
+  line-height: 40px;
+  overflow: hidden;
+  margin: 35px 0 0 70px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  padding-left: 40px;
+  color: #333333;
+  background: url("http://img04.xesimg.com/icon/32x32/check-64.png") 0 3px no-repeat;
+}
+.layer_feedback .feedback_time {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  color: #999999;
+  padding-right: 30px;
+}
+#school_guide {
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  bottom: 193px;
+  right: 67px;
+  display: none;
+  width: 274px;
+  height: 61px;
+  overflow: hidden;
+  border: 1px solid #3399cc;
+}
+#school_guide a {
+  float: left;
+  width: 67px;
+  height: 61px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+#school_guide .studyway {
+  background: url("http://img04.xesimg.com/school_guide.gif") -1px -83px no-repeat;
+  margin: 0;
+}
+#school_guide .studyway2 {
+  background: url("http://img04.xesimg.com/school_guide.gif") -1px -1px no-repeat;
+  margin: 0;
+}
+#school_guide .buyclass {
+  background: url("http://img04.xesimg.com/school_guide.gif") -69px -83px no-repeat;
+}
+#school_guide .buyclass2 {
+  background: url("http://img04.xesimg.com/school_guide.gif") -69px -1px no-repeat;
+}
+#school_guide .listenclass {
+  background: url("http://img04.xesimg.com/school_guide.gif") -137px -83px no-repeat;
+}
+#school_guide .listenclass2 {
+  background: url("http://img04.xesimg.com/school_guide.gif") -137px -1px no-repeat;
+}
+#school_guide .register {
+  background: url("http://img04.xesimg.com/school_guide.gif") -205px -83px no-repeat;
+}
+#school_guide .register2 {
+  background: url("http://img04.xesimg.com/school_guide.gif") -205px -1px no-repeat;
+}
+/**
+ * new login / registar / forget password
+ * upload: 2013-08-13;
+ * author: Marco(wujie@xueersi.com);
+ */
+/**
+ * 
+ * @authors Sam Shih (liuyanbin@xueersi.com)
+ * @date    2013-06-27 14:42:05
+ * @version $Id$
+ */
+ /*base,重置，变量*/
+ /*图标，表单，按钮*/
+ /*头部，内容，底部*/
+ /**登陆页**/
+/**
+ * new login / registar / forget password
+ * upload: 2013-08-13;
+ * author: Marco(wujie@xueersi.com);
+ */
+
+#xue_logo {
+  width: 980px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#xue_logo .logo_passport {
+  width: 225px;
+  height: 32px;
+  float: left;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px #D9D9D9 solid;
+  background: url("http://img04.xesimg.com/passport/xeslogo.jpg") no-repeat left 0;
+}
+#xue_logo .logo_tips {
+  width: 100px;
+  height: 32px;
+  float: left;
+  text-indent: -100px;
+  overflow: hidden;
+}
+#xue_logo .logo_tips.login_font {
+  background: url("http://img04.xesimg.com/passport/font_login.png") no-repeat left 6px;
+}
+#xue_logo .logo_tips.regist_font {
+  background: url("http://img04.xesimg.com/passport/font_regist.jpg") no-repeat left 0;
+}
+#xue_logo .logo_tips.forget_font {
+  background: url("http://img04.xesimg.com/passport/font_forget.jpg") no-repeat left 0;
+}
+#xue_logo .logo_tips.approve_font {
+  width: 110px;
+  background: url("http://img04.xesimg.com/passport/approve.png") no-repeat left 0;
+}
+.passport_wrap {
+  width: 948px;
+  padding: 5px;
+  margin: 30px auto 30px;
+  border-radius: 3px;
+  position: relative;
+  /*background: #ECECEC none;*/
+  clear: both;
+}
+.passport_wrap .passport_box {
+  border: 1px #E3E3E3 solid;
+  background-color: #FFF;
+}
+.passport_wrap .passport_box .passport_head {
+  height: 46px;
+  background-color: #F6F6F6;
+}
+.passport_wrap .passport_box .input_text {
+  width: 253px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px #D5D5D5 solid;
+  padding: 0 2px;
+  border-top-color: #B1B1B1;
+  border-left-color: #B1B1B1;
+}
+.passport_wrap .passport_box .input_text.w_170 {
+  width: 170px;
+}
+#passport_login {
+  height: 316px;
+}
+#passport_forget {
+  height: 280px;
+}
+#passport_forget .forget_step {
+  width: 450px;
+  _width: 500px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  font-weight: 700;
+}
+#passport_forget .forget_step li {
+  width: auto;
+  float: left;
+  color: #B1B1B1;
+  margin: 0 20px;
+  overflow: hidden;
+  background: url("http://img04.xesimg.com/passport/forget_step.gif") no-repeat left center;
+}
+#passport_forget .forget_step li.current {
+  color: #4A9FDB;
+  background-image: url("http://img04.xesimg.com/passport/forget_step_current.gif");
+}
+#passport_forget .forget_step li .step_num {
+  width: 20px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+  text-align: center;
+  color: #FFF;
+  font-family: arial;
+  font-weight: 500;
+}
+#passport_forget .forget_body {
+  margin: 30px auto;
+}
+#passport_forget .forget_body .btn_submit {
+  width: 83px;
+  height: 28px;
+  font-weight: 700;
+  border: 1px solid #E75007;
+  position: static;
+  background: linear-gradient(#f38920 1%, #ed7e12 50%, #e97305 100%) repeat scroll 0 0 transparent;
+  _background: url("http://img04.xesimg.com/passport/bg_submit.gif") repeat-x left 0;
+}
+#passport_forget .forget_body .form_item {
+  height: 30px;
+  line-height: 30px;
+}
+#passport_forget .forget_body .form_item.form_buttons {
+  text-align: center;
+}
+#passport_forget .forget_body .form_tips {
+  width: 256px;
+  height: 30px;
+  clear: both;
+  overflow: hidden;
+  color: #999;
+}
+#passport_forget .forget_body .form_tips.tips_error {
+  color: #c00;
+}
+#passport_forget .forget_body .form_tips.tips_strength {
+  _line-height: 24px;
+}
+#passport_forget .forget_body .form_tips.tips_strength span {
+  float: left;
+}
+#passport_forget .forget_body .form_tips.tips_strength strong {
+  width: 104px;
+  height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  background: url("http://img04.xesimg.com/passport/bg_strength.gif") no-repeat left 0;
+}
+#passport_forget .forget_body .form_tips.tips_strength strong.strength_1 {
+  background-position: left 0;
+}
+#passport_forget .forget_body .form_tips.tips_strength strong.strength_2 {
+  background-position: left -30px;
+}
+#passport_forget .forget_body .form_tips.tips_strength strong.strength_3 {
+  background-position: left -60px;
+}
+#passport_forget .forget_body label {
+  width: 80px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  color: #666;
+}
+#passport_forget .forget_body .input_text {
+  float: left;
+}
+#forget_form {
+  width: 280px;
+}
+#forget_form .codeimg {
+  float: left;
+}
+#forget_newpassword {
+  width: 360px;
+}
+#forget_newpassword.forget_body .btn_submit {
+  width: 110px;
+  margin: 0 auto;
+}
+#forget_newpassword .form_tips {
+  margin-left: 90px;
+}
+#forget_newpassword .form_tips.tips_text {
+  width: auto;
+  margin-left: 0;
+}
+#forget_proof {
+  width: 280px;
+}
+#forget_proof.forget_body {
+  margin: 50px auto;
+}
+#forget_proof .proof_success {
+  width: 130px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "微软雅黑";
+  padding-left: 40px;
+  margin: 30px auto;
+  background: url("http://img04.xesimg.com/passport/icon_success_64.gif") no-repeat left center;
+}
+#forget_proof .proof_tips {
+  line-height: 24px;
+  color: #666;
+}
+#login_ad {
+  width: 475px;
+  height: 316px;
+  overflow: hidden;
+  float: left;
+  background: url("http://img04.xesimg.com/passport/hline.gif") no-repeat right center;
+}
+#entry {
+  width: 470px;
+  height: 276px;
+  overflow: hidden;
+  margin-top: 30px;
+  float: right;
+}
+#entry .entry_item {
+  width: 310px;
+  _width: 311px;
+  height: auto;
+  line-height: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}
+#entry .entry_item label {
+  width: 49px;
+  color: #666;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+#entry .entry_item.padding {
+  width: 260px;
+  /*_width:290px;*/
+  padding: 0 0 0 50px;
+  _padding: 0 0 0 56px;
+}
+#entry .entry_item.apilogin_btns {
+  padding-top: 10px;
+  border-top: 1px #D6D6D6 dotted;
+}
+#entry .entry_item.entry_inputs {
+  margin-top: 10px;
+}
+#entry .entry_item.apilogin_tips {
+  color: #999;
+}
+#entry .entry_item.entry_submit {
+  margin-bottom: 10px;
+}
+#entry .entry_item #save_pass {
+  margin-top: 14px;
+  _margin: 9px 0 0 0;
+  float: left;
+  margin-right: 3px;
+}
+#entry .entry_item #forget_password {
+  padding-left: 13px;
+  color: #0076B3;
+}
+#regist_btns {
+  width: 97px;
+  height: 26px;
+  line-height: 25px;
+  padding: 0 5px 5px;
+  border-radius: 0 0 3px 3px;
+  /*background: #ECECEC none;*/
+  overflow: hidden;
+  position: absolute;
+  bottom: -26px;
+  right: 0;
+}
+#regist_btns .regist_button {
+  color: #FFF;
+  text-align: left;
+  border: 1px #E3E3E3 solid;
+  border-top: 0 none;
+  display: block;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  padding-left: 20px;
+  background-color: #FFF;
+  height: 26px;
+  background: #54c4f3 url("http://img04.xesimg.com/passport/regist_arrow.gif") no-repeat 70px 9px;
+  _height: 24px;
+  _padding-top: 2px;
+}
+#regist_btns .regist_button:hover {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #70CDF5;
+}
+#apilogin_qq,
+#apilogin_weibo,
+#apilogin_eduu {
+  float: left;
+  height: 21px;
+  display: block;
+  overflow: hidden;
+  text-indent: -500px;
+  margin-right: 8px;
+  background: url("http://img04.xesimg.com/passport/apilogo.gif") no-repeat left 0;
+}
+#apilogin_qq {
+  width: 50px;
+  background-position: left -40px;
+}
+#apilogin_weibo {
+  width: 78px;
+  background-position: left 0;
+}
+#apilogin_eduu {
+  width: 49px;
+  background-position: left -80px;
+}
+#login_submit {
+  width: 257px;
+  height: 29px;
+  overflow: hidden;
+  background: #ed7d11 url("http://img04.xesimg.com/passport/btn_login.gif") no-repeat left 0;
+  text-indent: -300px;
+  *text-indent: 0;
+  _text-indent: -300px;
+  _margin: 0 0 0 300px;
+  _padding: 0;
+  *line-height: 100px;
+}
+#login_error {
+  width: 253px;
+  height: 30px;
+  padding: 4px 4px 11px 4px;
+  position: absolute;
+  right: 87px;
+  _right: 85px;
+  top: 12px;
+  _top: 10px;
+  background: url("http://img04.xesimg.com/passport/login_tips.gif") no-repeat center top;
+}
+#login_error .error_tips {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  _line-height: 34px;
+  color: #666;
+  overflow: hidden;
+  float: left;
+  padding-left: 22px;
+  _display: inline;
+  background: url("http://img04.xesimg.com/passport/icon_attention.gif") no-repeat 4px 8px;
+}
+#login_error .error_close {
+  display: inline-block;
+  width: 24px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  text-indent: -100px;
+  _text-indent: -30px;
+  _font-size: 0;
+  overflow: hidden;
+  background: url("http://img04.xesimg.com/dialog/gif/dialog_close.gif") no-repeat center center;
+}
+#FeedBack {
+  display: none;
+}
+/*头部，内容，底部*/
+/**登陆页**/
+#xrs_login {
+  height: 70px;
+  overflow: hidden;
+}
+#xrs_login .menu_top {
+  line-height: 26px;
+  height: 26px;
+  border-color: #E4E4E4;
+  border-style: solid;
+  border-width: 1px 0;
+  font-size: 12px;
+  background-color: #efefef;
+}
+#xrs_login .menu_top .area {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#xrs_login .menu_top .area .xes,
+#xrs_login .menu_top .area .helpcenter {
+  line-height: 26px;
+  font-family: SimSun;
+}
+#xrs_login .menu_top .area .xes {
+  float: left;
+  color: #999;
+}
+#xrs_login .menu_top .area .helpcenter {
+  float: right;
+}
+#xrs_login .xes_logo {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#xrs_login .xes_logo a {
+  display: block;
+  width: 330px;
+  height: 78px;
+  background: url(http://img04.xesimg.com/logo/indexLogo.jpg) 0 -13px no-repeat;
+  text-indent: -9999em;
+}
+.wrapper_body .log {
+  width: 968px;
+  _width: 1000px;
+  padding: 5px;
+  margin: 30px auto 30px;
+  border-radius: 3px;
+  background: #ECECEC none;
+  clear: both;
+  overflow: hidden;
+}
+.wrapper_body .log .log_title {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px #dcdfe6 solid;
+  color: #343434;
+  background: url(http://img04.xesimg.com/bg11.jpg) repeat-x;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  font-weight: bold;
+  padding-left: 15px;
+  clear: both;
+}
+.wrapper_body .log .forget_password {
+  border: 1px #E3E3E3 solid;
+  background-color: #FFF;
+}
+.wrapper_body .log .log_left {
+  width: 573px;
+  float: left;
+}
+.wrapper_body .log .log_left p.validate_tips {
+  width: 210px;
+  margin-left: 70px;
+  height: auto;
+}
+.wrapper_body .log .log_left p {
+  color: #333;
+  overflow: hidden;
+}
+.wrapper_body .log .log_left p label {
+  width: 60px;
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.wrapper_body .log .log_left p input {
+  width: 221px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px #D5D5D5 solid;
+  border-top-color: #B1B1B1;
+  border-left-color: #B1B1B1;
+  padding: 0 3px;
+  vertical-align: middle;
+  float: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset 1px #ffffff inset;
+}
+.wrapper_body .log .log_left p input.current,
+.wrapper_body .log .log_left p input:focus {
+  border-color: #FADE7B;
+}
+.wrapper_body .log .log_left p .login_btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  background: #ff6600;
+  padding: 0;
+  width: 229px;
+  height: 29px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrapper_body .log .log_left .login_third_api {
+  border: 0;
+  height: 75px;
+  bottom: 25px;
+}
+.wrapper_body .log .log_left .login_third_api .third_title {
+  line-height: 30px;
+  color: #999;
+  border-bottom: 1px dotted #ccc;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.wrapper_body .log .log_left .login_third_api a {
+  float: left;
+  display: inline;
+  margin: 10px 10px 0 0;
+  text-indent: -9999em;
+}
+.wrapper_body .log .log_left .login_third_api .tencent {
+  width: 49px;
+  background: url(http://img04.xesimg.com/qq.png) no-repeat;
+}
+.wrapper_body .log .log_left .login_third_api .weibo {
+  width: 76px;
+  background: url(http://img04.xesimg.com/weibosina.png) no-repeat;
+}
+.wrapper_body .log .log_left .login_third_api .ed {
+  width: 59px;
+  background: url(http://img04.xesimg.com/ed.png) no-repeat;
+}
+.wrapper_body .log .log_right {
+  float: right;
+}
+.wrapper_body .log .log_right {
+  width: 360px;
+  height: 450px;
+  _height: 435px;
+  float: right;
+  padding: 20px 10px 20px 10px;
+  color: #676767;
+  font-size: 14px;
+  text-align: center;
+  background: #ffffff url("http://img04.xesimg.com/passport/hline.gif") no-repeat left center;
+}
+.wrapper_body .log .log_right .joinxes {
+  border: none;
+  font-size: 12px;
+  margin-left: 55px;
+  padding-bottom: 10px;
+  line-height: 28px;
+  color: #676767;
+  text-align: left;
+}
+.wrapper_body .log .log_right .newpeople {
+  width: 320px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #d6d6d6;
+  margin-bottom: 10px;
+}
+.wrapper_body .log .log_right .newpeople a {
+  color: #363135;
+  font-weight: bold;
+  display: inline-block;
+  width: 112px;
+  height: 35px;
+  line-height: 35px;
+  background: url(http://img04.xesimg.com/checkCode.gif) no-repeat;
+  text-decoration: none;
+}
+/**注册页**/
+.wrapper_body .log .log_title span {
+  float: right;
+  font-weight: normal;
+  padding-right: 10px;
+}
+.wrapper_body .log .register {
+  width: 568px;
+  height: 450px;
+  _height: 435px;
+  margin: 0;
+  padding-top: 40px;
+  background-color: #FFF;
+}
+.wrapper_body .log .register p.reg_agreement a {
+  display: block;
+  margin-left: 130px;
+  width: 150px;
+}
+.wrapper_body .log .register p {
+  clear: left;
+  height: 50px;
+}
+.wrapper_body .log .register p .tips_strength {
+  display: inline-block;
+  width: 400px;
+}
+.wrapper_body .log .register p label {
+  width: 120px;
+  height: 50px;
+  float: left;
+}
+.wrapper_body .log .register p label i {
+  color: #cc0000;
+  padding-right: 3px;
+}
+.wrapper_body .log .register p input {
+  margin-right: 2px;
+}
+.wrapper_body .log .register p input#phonecode {
+  width: 109px;
+}
+.wrapper_body .log .register p .login_btn {
+  width: 225px;
+  height: 29px;
+  font-family: "SimSun";
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #D25D07;
+}
+.wrapper_body .log .register p select {
+  line-height: 24px;
+}
+.wrapper_body .log .register p span.vcode {
+  width: 106px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 2px;
+  float: left;
+  border: 1px #d5d5d5 solid;
+  cursor: pointer;
+  background-color: #EFEFEF;
+}
+.wrapper_body .log .register p span.vcode.vcode_countdown {
+  cursor: text;
+}
+.wrapper_body .log .register p a {
+  display: block;
+}
+.wrapper_body .log .register p.reg_agreement {
+  height: 22px;
+}
+.wrapper_body .log .register p.validate_tips {
+  width: auto;
+  margin: 0;
+}
+.wrapper_body .log .register p.validate_tips label {
+  display: block;
+}
+.wrapper_body .log .register p.validate_tips span.tips {
+  margin: 0;
+  line-height: 26px;
+  background-position: 4px center;
+}
+.wrapper_body .log .register .errTips {
+  width: 175px;
+  height: 26px;
+  line-height: 26px;
+}
+.wrapper_body .log .register .tips {
+  float: left;
+  display: inline;
+  _margin-right: -3px;
+  width: 195px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 10px;
+  color: #999;
+}
+.wrapper_body .log .register .error {
+  color: #666;
+  border: 1px #FADE7B solid;
+  background-color: #FFFAE1;
+}
+.wrapper_body .log .register .error input {
+  display: none;
+}
+.wrapper_body .log .register .success {
+  color: #666;
+  width: 165px;
+  padding-left: 30px;
+  background: url("http://img04.xesimg.com/passport/icon_success.gif") no-repeat 10px center;
+}
+.wrapper_body .log .register.validate_tips {
+  margin: 2px 0;
+}
+.wrapper_body .log .register.validate_tips .tips {
+  display: none;
+}
+.wrapper_body .log .register.validate_tips .tips.error,
+.wrapper_body .log .register.validate_tips .tips.success {
+  padding-left: 20px;
+  line-height: 16px;
+  display: block;
+}
+.wrapper_body .log .register.validate_tips .error {
+  color: #cc0000;
+  background: url(http://img04.xesimg.com/icon/14x14/bonus.gif) no-repeat left center;
+}
+.wrapper_body .log .register.validate_tips .success {
+  color: #999;
+  background: url(http://img04.xesimg.com/icon/14x14/check.gif) no-repeat left center;
+}
+.wrapper_body .log .what_from {
+  width: 320px;
+  overflow: hidden;
+  padding-left: 30px;
+}
+.wrapper_body .log .what_from .past_time {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 1px  #D7D5D5;
+  padding-left: 10px;
+}
+.wrapper_body .log .what_from ul {
+  text-align: left;
+  line-height: 18px;
+  height: 250px;
+  overflow: hidden;
+}
+.wrapper_body .log .what_from ul li {
+  /*height:42px;*/
+  color: #999;
+  padding: 8px 5px;
+  border-bottom: 1px dotted #D7D5D5;
+}
+.wrapper_body .log .what_from ul li h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.wrapper_body .log .what_from ul li span {
+  color: #333;
+}
+/*=====================/注册成功/========================*/
+.register_succeed {
+  overflow: hidden;
+  padding: 50px 200px;
+}
+.register_succeed .succeed_item {
+  overflow: hidden;
+  background: url(http://img04.xesimg.com/succeed_bg.gif) no-repeat;
+}
+.register_succeed .succeed_item span {
+  float: left;
+  display: inline;
+  font-size: 25px;
+  font-family: "Microsoft YaHei";
+  color: #3ca000;
+  padding-left: 45px;
+}
+.register_succeed .succeed_item a {
+  float: left;
+  display: inline;
+}
+.register_succeed .succeed_item .btn_orange {
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 6px 20px 0 10px;
+}
+.register_succeed .succeed_item .home {
+  text-decoration: underline;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.register_succeed p {
+  line-height: 40px;
+  font-size: 14px;
+  color: #666666;
+}
+/*=====================/忘记密码页/========================*/
+.pass_step {
+  height: 46px;
+  background: #F6F6F6;
+  overflow: hidden;
+}
+.pass_step ul {
+  width: 410px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.pass_step ul li {
+  width: auto;
+  float: left;
+  display: inline;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #999999;
+  font-weight: 700;
+}
+.pass_step ul li .text_num {
+  float: left;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin-top: 2px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: arial;
+  font-weight: 500;
+  background: url("http://img04.xesimg.com/passport/forget_step.gif") no-repeat;
+}
+.pass_step ul li p {
+  float: left;
+  margin: 0 30px 0 5px;
+  _margin-right: 10px;
+}
+.pass_step ul .next_step {
+  color: #4a9fdb;
+}
+.pass_step ul .next_step .text_num {
+  background: url("http://img04.xesimg.com/passport/forget_step_current.gif") no-repeat;
+}
+.u_recovery_form {
+  overflow: hidden;
+  width: 400px;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+.u_recovery_form .f1 {
+  overflow: hidden;
+  height: 55px;
+}
+.u_recovery_form .f1 label {
+  display: inline-block;
+  width: 72px;
+  float: left;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.u_recovery_form .f1 p {
+  float: left;
+  overflow: hidden;
+  width: 280px;
+}
+.u_recovery_form .f1 p .input_text {
+  float: left;
+  border: 1px solid #ccc;
+  width: 255px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 5px;
+  color: #333;
+}
+.u_recovery_form .f1 p .w_180 {
+  width: 180px;
+}
+.u_recovery_form .f1 p a {
+  float: left;
+  margin-left: 5px;
+  height: 25px;
+  overflow: hidden;
+}
+.u_recovery_form .f1 p a.btn_orange {
+  margin-left: 140px;
+}
+.u_recovery_form .f1 p .btn_orange {
+  width: 100px;
+  height: 27px;
+  line-height: 27px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  /*margin-left:48px;*/
+}
+.u_recovery_form .f1 .text {
+  color: #999999;
+}
+.u_recovery_form .email {
+  width: 170px;
+  height: 76px;
+  margin: auto;
+  position: relative;
+}
+.u_recovery_form .email span {
+  display: block;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  background: url("http://img04.xesimg.com/passport/icon_success_64.gif") no-repeat left center;
+}
+.u_recovery_form .email_text {
+  width: 280px;
+  margin: 20px auto 10px auto;
+  line-height: 180%;
+  color: #666666;
+  padding-top: 10px;
+}
+.u_recovery_form.forget_newpassword .f1 p.text {
+  width: auto;
+}
+.u_recovery_form.forget_newpassword .f1 p .btn_orange {
+  margin-left: 97px;
+}
+.u_recovery_form.forget_form {
+  width: 270px;
+}
+.u_recovery_form.forget_form .f1 p .btn_orange {
+  margin-top: 10px;
+}
+.w_450 {
+  width: 500px;
+}
+.w_450 .f1 p .btn_orange {
+  margin-left: 100px;
+}
+.errTips {
+  width: 250px;
+  height: 22px;
+  line-height: 22px;
+  float: left;
+  color: #666;
+  border: 1px #FADE7B solid;
+  padding-left: 10px;
+  background-color: #FFFAE1;
+}
+.errTips input {
+  display: none;
+}
+/*=====================/第三方登录/========================*/
+.welcomeuser {
+  width: 914px;
+  line-height: 180%;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border: 1px solid #F9D65C;
+  font-size: 16px;
+  text-align: left;
+  color: #999999;
+  font-family: "Microsoft YaHei";
+  overflow: hidden;
+  background-color: #FFF;
+}
+.welcomeuser strong {
+  color: #ff870f;
+}
+.welcomeuser p {
+  color: #666;
+  width: auto;
+  float: left;
+}
+.newuserlogin {
+  width: 948px;
+  padding: 5px;
+  margin: 10px auto 30px;
+  border-radius: 3px;
+  position: relative;
+  background: #ECECEC none;
+  clear: both;
+}
+.newuserlogin .tabs_list {
+  height: 38px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 8px;
+  background-color: #F6F6F6;
+}
+.newuserlogin .tabs_list li {
+  width: auto;
+  height: 28px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 10px 15px 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  border: 1px #F6F6F6 solid;
+  border-bottom: 0;
+}
+.newuserlogin .tabs_list .current {
+  color: #666;
+  border-color: #ECECEC;
+  background: #fff;
+}
+.newuserlogin .contentbind {
+  height: 318px;
+  overflow: hidden;
+  background-color: #FFF;
+}
+.newuserlogin .contentbind p.infortext {
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  line-height: 40px;
+  padding-top: 20px;
+}
+.bind_from {
+  width: 630px;
+  margin: 0 auto 0 260px;
+  overflow: hidden;
+}
+.bind_from .f1 {
+  overflow: hidden;
+}
+.bind_from .f1 label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin-top: 5px;
+}
+.bind_from .f1 p {
+  float: left;
+  display: inline;
+  width: 520px;
+  height: 50px;
+  color: #333333;
+  margin-left: 10px;
+}
+.bind_from .f1 p input {
+  width: 220px;
+  height: 26px;
+  line-height: 26px;
+  float: left;
+  border: 1px solid #d5d5d5;
+  /*color:#ccc;*/
+  padding-left: 5px;
+  margin: 0 10px 0 0;
+}
+.bind_from .f1 p .newPeople {
+  padding-left: 62px;
+  border: 0;
+}
+.bind_from .f1 p input.focus {
+  color: #000;
+}
+.bind_from .f1 p .errTips,
+.bind_from .f1 p .tips {
+  display: none;
+  width: 220px;
+  padding: 0 8px;
+}
+.bind_from .f1 p .errTips.error,
+.bind_from .f1 p .tips.error {
+  width: 250px;
+  height: 22px;
+  line-height: 22px;
+  float: left;
+  color: #666;
+  border: 1px #FADE7B solid;
+  padding-left: 10px;
+  background-color: #FFFAE1;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+}
+.bind_from .f1 p .errTips.error input,
+.bind_from .f1 p .tips.error input {
+  display: none;
+}
+.bind_from .f1 p .tips_strength {
+  width: 400px;
+  display: inline-block;
+}
+.bind_from .btn_orange {
+  height: 27px;
+  line-height: 27px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 110px;
+  padding: 0 12px;
+}
+.bind_from .callback_error {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 110px;
+}
+.pass_text {
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+}
+a.btn_orange {
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper_body .log .register .grade_option {
+  overflow: hidden;
+}
+#grade {
+  float: left;
+  color: #999;
+  border: 1px #D5D5D5 solid;
+  border-top-color: #B1B1B1;
+  border-left-color: #B1B1B1;
+  padding: 4px 10px;
+  margin-bottom: 3px;
+}
+.grade_promote {
+  height: 30px;
+  clear: both;
+  overflow: hidden;
+  color: #999;
+  display: inline-block;
+  width: 400px;
+}
+/*========================/login_succeed_landpage/================================*/
+.login_succeed {
+  width: 648px;
+  overflow: hidden;
+  padding: 40px 150px 95px 150px;
+  background: #fff;
+  position: relative;
+}
+.login_succeed .qqgroup_headline {
+  width: 585px;
+  padding: 18px 29px 25px 33px;
+  border: 1px solid #f2f1f1;
+  background: #fcfcfc;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font: 16px "Microsoft YaHei", SimHei, arial;
+  line-height: 29px;
+}
+.login_succeed .qqgroup_headline img {
+  float: left;
+  width: 55px;
+  height: 58px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.login_succeed .qqgroup_headline a.join_qq img {
+  width: 93px;
+  height: 23px;
+  float: none;
+}
+.login_succeed .qqgroup_headline a.join_qq_qa img {
+  width: 24px;
+  height: 23px;
+  float: none;
+}
+.login_succeed .qqgroup_headline .copy_btn {
+  font-weight: normal;
+  font-size: 12px;
+}
+.login_succeed dl {
+  width: 285px;
+  float: left;
+  font-size: 12px;
+  color: #666;
+  line-height: 30px;
+  margin-right: 78px;
+}
+.login_succeed dl dt {
+  font-weight: bold;
+}
+.login_succeed dl.special {
+  margin: 0;
+}
+.friend_tips {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  color: #999999;
+}
+.friend_tips .friend_tip {
+  margin-left: 5px;
+}
+.succeed_tip {
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  text-align: center;
+  color: #cc0000;
+  margin-bottom: 40px;
+  font: 20px "Microsoft YaHei", SimHei, arial;
+}
+.succeed_tip a {
+  padding: 3px 15px;
+  font-size: 12px;
+  margin-left: 15px;
+  color: #666666;
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  vertical-align: middle;
+}
+.succeed_tip {
+  padding-left: 45px;
+}
+.succeed_tip img {
+  width: 34px;
+  height: 32px;
+  vertical-align: -20%;
+}
+#xue_logo .no_passport {
+  border: none;
+}
+.xue_login_dialog {
+  display: none;
+}
+.dialog_layer_login ul.tabs_list {
+  width: 708px;
+  height: 31px;
+  background: url(http://img04.xesimg.com/passport/tabs_bg.jpg) 0 4px repeat-x;
+  padding-left: 15px;
+  overflow: hidden;
+}
+.dialog_layer_login ul.tabs_list li {
+  float: left;
+  display: inline;
+  width: 87px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  overflow: hidden;
+  background: url(http://img04.xesimg.com/passport/tabs_li.jpg) no-repeat;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.dialog_layer_login ul.tabs_list .current {
+  height: 31px;
+  line-height: 31px;
+  background: url(http://img04.xesimg.com/passport/tabs_cur.jpg) no-repeat;
+  margin-top: 0;
+  color: #cc0000;
+  font-weight: bold;
+}
+.dialog_layer_login .login_content_tabs {
+  width: 723px;
+  overflow: hidden;
+}
+.dialog_layer_login .login_content_tabs .login_content_item {
+  display: none;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .wrapper_body .log {
+  background: #fff;
+  border: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .wrapper_body .log .register {
+  margin-left: 70px;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .passport_wrap {
+  background: #fff;
+  border: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .passport_wrap .passport_box {
+  border: none;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .passport_wrap .passport_box #entry {
+  float: left;
+  margin-left: 70px;
+}
+.dialog_layer_login .login_content_tabs .login_content_item .passport_wrap .passport_box #entry .entry_item #forget_password {
+  float: right;
+}
+.xue_succeed_dialog {
+  display: none;
+}
+.xue_succeed_dialog .dialog_succeed_content {
+  width: 723px;
+  overflow: hidden;
+}
+.xue_succeed_dialog .dialog_succeed_content .passport_wrap {
+  background: #fff;
+  border: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.xue_succeed_dialog .dialog_succeed_content .passport_wrap .login_succeed {
+  padding: 40px 38px 95px;
+}
+#xue_logo .logo_tips.regist_glory {
+  background: url('http://img04.xesimg.com/glory/glory_label.png') -5px 0 no-repeat;
+}
+.glory_body .glory_log_submit {
+  _height: 780px;
+}
+.glory_body .glory_log_submit .log_left {
+  height: 780px;
+  _height: 740px;
+  overflow: hidden;
+}
+.glory_body .glory_log_submit .log_left .form_glory {
+  width: 510px;
+  margin-left: 40px;
+}
+.glory_body .glory_log_submit .log_left .form_glory label {
+  float: left;
+  display: inline;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.glory_body .glory_log_submit .log_left .form_glory label i {
+  color: #CC0000;
+  padding-right: 3px;
+}
+.glory_body .glory_log_submit .log_left .form_glory span {
+  float: left;
+  display: inline;
+}
+.glory_body .glory_log_submit .log_left .form_glory .grey {
+  color: #999;
+}
+.glory_body .glory_log_submit .log_left .formLabel_text span.grey {
+  margin-top: 2px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_text p.text {
+  height: 110px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_text p.text textarea {
+  width: 397px;
+  height: 82px;
+  color: #999;
+  border: 1px solid #999;
+  padding: 5px;
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.glory_body .glory_log_submit .log_left .formLabel_text p.info {
+  color: #cc0000;
+  padding-left: 10px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_teacher {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_teacher .teachers {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  margin: 25px 0 20px 10px;
+  *margin: 10px 0 10px 10px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_teacher .teachers span {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  *width: 80px;
+  *margin-right: 0;
+}
+.glory_body .glory_log_submit .log_left .formLabel_teacher .teachers span input {
+  float: left;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.glory_body .glory_log_submit .log_left .up_avatar_con {
+  overflow: hidden;
+  margin-bottom: 30px;
+  _width: 100%;
+}
+.glory_body .glory_log_submit .log_left .up_avatar_con .up_avatar_pic {
+  float: left;
+  display: inline;
+  width: 140px;
+  height: 140px;
+  background: url('http://img04.xesimg.com/glory/up_pic.png') no-repeat;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.glory_body .glory_log_submit .log_left .up_avatar_con .up_avatar_info {
+  float: left;
+  display: inline;
+  color: #666;
+  line-height: 180%;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic {
+  overflow: hidden;
+  margin-bottom: 20px;
+  _width: 100%;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic span {
+  float: left;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic .file_up_pic {
+  position: relative;
+  overflow: hidden;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic .file_up_pic .input_file {
+  width: 110px;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic .file_up_pic .btn_up {
+  width: 110px;
+  height: 28px;
+  background: url("http://img04.xesimg.com/button_avatar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  text-indent: -9999em;
+  margin-right: 15px;
+}
+.glory_body .glory_log_submit .log_left .formFileUpPic .grey {
+  margin-top: 5px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_btn {
+  padding-left: 12px;
+}
+.glory_body .glory_log_submit .log_left .formLabel_btn .btn {
+  width: 99px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  background: #F38920;
+}
+.glory_body .glory_log_submit .log_left .formLabel {
+  height: 50px;
+  margin-bottom: 5px;
+  *margin-bottom: 0;
+  clear: left;
+  color: #333333;
+  overflow: hidden;
+}
+.glory_body .glory_log_submit .log_left .formLabel select {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #B1B1B1 #D5D5D5 #D5D5D5 #B1B1B1;
+  border-image: none;
+  border-right: 1px solid #D5D5D5;
+  border-style: solid;
+  border-width: 1px;
+  color: #999999;
+  margin-bottom: 3px;
+  padding: 4px 1px;
+  margin-right: 5px;
+  width: 130px;
+  overflow: hidden;
+}
+.glory_body .glory_log_submit .log_left .tx_tips {
+  float: left;
+  width: 100%;
+  padding-left: 85px;
+  height: 20px;
+  color: #ff6633;
+}
+.glory_body .glory_log_submit .log_left .tx_tips strong {
+  color: #ff6633;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.glory_body .glory_log_submit .log_right {
+  height: 780px;
+  _height: 740px;
+  background: url("http://img04.xesimg.com/glory/hline.png") no-repeat left center #ffffff;
+}
+.glory_body .glory_log_submit .log_right .glory_from_pic {
+  width: 340px;
+}
+.layer_con_submit {
+  width: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+}
+.layer_con_submit .leyer_text {
+  line-height: 180%;
+  color: #666;
+  margin-bottom: 20px;
+}
+.layer_con_submit .submits_con {
+  overflow: hidden;
+  width: 170px;
+  margin: 10px auto 0;
+}
+.layer_con_submit .submits_con .btn_wrap_orange {
+  float: left;
+}
+.layer_con_submit .submits_con .btn_wrap_orange button {
+  width: 68px;
+  height: 27px;
+  line-height: 25px;
+  background: #F38920;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #fff;
+}
+.layer_con_submit .submits_con .btn_wrap_gray {
+  float: right;
+  display: inline;
+}
+.layer_con_submit .submits_con .btn_wrap_gray .againReview {
+  display: block;
+  width: 82px;
+  height: 27px;
+  line-height: 27px;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.thank_teacher {
+  width: 468px;
+  height: 40px;
+  background: #fff6de;
+  border: 1px solid #f5d0b2;
+  color: #dd6300;
+  line-height: 40px;
+  margin: 10px 0 0 0;
+  padding-left: 22px;
+}
+#noSubject {
+  float: left;
+  wdith: 100%;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.approveItem {
+  width: 948px;
+  padding: 5px;
+  margin: 30px auto 30px;
+  border-radius: 3px;
+  position: relative;
+  background: #ECECEC none;
+  clear: both;
+  overflow: hidden;
+}
+.approveItem.approveItem_1 {
+  height: 450px;
+}
+.approveItem.approveItem_1 .approveCon {
+  height: 400px;
+}
+.approveItem.approveItem_2 {
+  height: 695px;
+}
+.approveItem.approveItem_2 .approveCon {
+  height: 644px;
+}
+.approveItem.approveItem_3 {
+  height: 475px;
+}
+.approveItem.approveItem_3 .approveCon {
+  height: 424px;
+}
+.approveItem.approveItem_3 .approveCon .approve_button {
+  border: 0;
+}
+.approveItem.approveItem_3 .approveCon .approve_button .btn_blue {
+  margin: 20px 0 0 400px;
+}
+.approveItem .approve_title {
+  width: 948px;
+  height: 50px;
+  overflow: hidden;
+}
+.approveItem .approve_title.approve_1 {
+  background: url('http://img04.xesimg.com/approve/approve_bg.png') 0 -1px no-repeat;
+}
+.approveItem .approve_title.approve_2 {
+  background: url('http://img04.xesimg.com/approve/approve_bg.png') 0 -56px no-repeat;
+}
+.approveItem .approve_title.approve_3 {
+  background: url('http://img04.xesimg.com/approve/approve_bg.png') 0 -112px no-repeat;
+}
+.approveItem .approveCon {
+  background: #fff;
+  overflow: hidden;
+}
+.approveItem .approveCon table.approve_table {
+  width: 850px;
+  margin: 30px 0 30px 50px;
+  color: #333;
+  overflow: hidden;
+}
+.approveItem .approveCon table.approve_table td {
+  line-height: 40px;
+}
+.approveItem .approveCon table.approve_table td a,
+.approveItem .approveCon table.approve_table td span {
+  padding-left: 20px;
+}
+.approveItem .approveCon table.approve_table td a em,
+.approveItem .approveCon table.approve_table td span em {
+  color: #cc0000;
+}
+.approveItem .approveCon table.approve_table td.text {
+  width: 100px;
+  text-align: right;
+  color: #999;
+}
+.approveItem .approveCon .approve_info {
+  width: 880px;
+  height: 530px;
+  margin-left: 50px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic {
+  overflow: hidden;
+  margin-top: 20px;
+  _width: 100%;
+}
+.approveItem .approveCon .approve_info .formFileUpPic label {
+  float: left;
+  margin-top: 5px;
+  color: #999;
+  margin-right: 10px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic span {
+  float: left;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic {
+  position: relative;
+  overflow: hidden;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic .input_file {
+  width: 110px;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .file_up_pic .btn_up {
+  width: 110px;
+  height: 28px;
+  background: url("http://img04.xesimg.com/button_avatar.jpg") no-repeat;
+  text-indent: -9999em;
+  margin-right: 15px;
+}
+.approveItem .approveCon .approve_info .formFileUpPic .grey {
+  margin-top: 5px;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .up_avatar_con {
+  overflow: hidden;
+  margin-top: 20px;
+  _width: 100%;
+}
+.approveItem .approveCon .approve_info .up_avatar_con .up_avatar_pic {
+  float: left;
+  display: inline;
+  width: 140px;
+  height: 140px;
+  background: url('http://img04.xesimg.com/glory/up_pic.png') no-repeat;
+  margin-right: 15px;
+}
+.approveItem .approveCon .approve_info .up_avatar_con .up_avatar_info {
+  float: left;
+  display: inline;
+  color: #999;
+  line-height: 180%;
+}
+.approveItem .approveCon .approve_info .approve_award {
+  overflow: hidden;
+  margin-top: 20px;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_award span {
+  float: left;
+  display: inline;
+  line-height: 28px;
+}
+.approveItem .approveCon .approve_info .approve_award input {
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+.approveItem .approveCon .approve_info .approve_award textarea {
+  float: left;
+  display: inline;
+  height: 18px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  padding: 5px;
+}
+.approveItem .approveCon .approve_info .approve_award_title {
+  height: 50px;
+  line-height: 60px;
+  color: #999;
+  overflow: hidden;
+}
+.approveItem .approveCon .approve_info .approve_award_title em {
+  color: #cc0000;
+  padding-left: 10px;
+}
+.approveItem .approveCon .approve_info .approve_textarea {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.approveItem .approveCon .approve_info .approve_textarea textarea#acceptanceSpeech {
+  width: 615px;
+  height: 120px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_textarea *::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_checkbox {
+  overflow: hidden;
+  color: #999;
+}
+.approveItem .approveCon .approve_info .approve_checkbox input {
+  margin-right: 5px;
+}
+.approveItem .approveCon .approve_button {
+  width: 900px;
+  height: 70px;
+  margin: 0 auto;
+  border-top: 1px dashed #ededed;
+}
+.approveItem .approveCon .approve_button .btn_blue {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0 0 70px;
+}
+.approveItem .approve_finish {
+  width: 678px;
+  height: 65px;
+  background: #fcfcfc;
+  border: 1px solid #f2f2f2;
+  margin: 50px auto;
+  padding: 50px;
+  overflow: hidden;
+}
+.approveItem .approve_finish .approve_tips1 {
+  height: 40px;
+  line-height: 40px;
+  background: url('http://img04.xesimg.com/approve/right_icon.png') no-repeat;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #cc0000;
+}
+.approveItem .approve_finish .approve_tips2 {
+  line-height: 30px;
+  color: #999;
+  padding-left: 40px;
+}
+.body_new {
+  background: #fff;
+  font-family: "微软雅黑";
+}
+.body_new #xrs_login .xes_logo {
+  width: 980px;
+}
+.login_new {
+  border-bottom: 2px solid #e6e6e6;
+  height: 65px;
+  width: 980px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+.login_new ul.login_ulnew {
+  display: inline-block;
+  padding-top: 10px;
+}
+.login_new ul.login_ulnew li {
+  display: inline-block;
+  padding: 10px 80px 10px;
+  height: 35px;
+  line-height: 26px;
+  color: #999999;
+  font-size: 16px;
+  float: left;
+}
+.login_new ul.login_ulnew li span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: #cccccc;
+  border-radius: 13px;
+  margin-right: 10px;
+  color: #fff;
+}
+.login_new ul.login_ulnew li span img {
+  vertical-align: middle;
+}
+.login_new ul.login_ulnew .cur {
+  border-bottom: 2px solid #f69101;
+  color: #333333;
+}
+.login_new ul.login_ulnew .cur span {
+  background: #f69101;
+}
+.login_new ul.login_ulnew .cur span img {
+  vertical-align: middle;
+}
+.wrapper_body .log_new {
+  background: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrapper_body .log_new .register {
+  padding-top: 15px;
+}
+.wrapper_body .log_new .register p .login_btn_new {
+  width: 170px;
+  height: 36px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 36px;
+  border-radius: 4px;
+  float: left;
+  background: #ef8317;
+  text-shadow: none;
+  cursor: pointer;
+}
+.wrapper_body .log_new .register p .disable_t {
+  background: #e5e3e3;
+  color: #666;
+  cursor: not-allowed;
+}
+.wrapper_body .log_new .register p a.a_y {
+  line-height: 36px;
+  margin-left: 10px;
+  float: left;
+}
+.wrapper_body .log_new .register p.reg_agreement {
+  margin-top: 20px;
+  height: 30px;
+}
+.wrapper_body .log_new .register p.reg_agreement .a_new {
+  line-height: 22px;
+  width: auto;
+}
+.wrapper_body .log_new .register p.reg_agreement input.g_check {
+  width: 15px;
+  margin-right: 5px;
+  float: left;
+  border: none;
+}
+.wrapper_body .log_new .register p.reg_agreement span {
+  margin-left: 5px;
+  margin-right: 10px;
+  color: #333333;
+  float: left;
+  line-height: 24px;
+}
+.wrapper_body .log_new .register p.login_up_new {
+  padding-top: 30px;
+}
+.wrapper_body .log_new .what_from {
+  width: 388px;
+}
+.wrapper_body .log_new .r_new p {
+  text-align: left;
+  color: #676767;
+  font-size: 16px;
+  font-weight: 700;
+}
+.wrapper_body .log_new .r_new ul {
+  height: 90px;
+}
+.wrapper_body .log_new .r_new ul li {
+  float: left;
+  width: 179px;
+  border-bottom: none;
+  font-size: 14px;
+  padding-left: 0;
+}
+.wrapper_body .log_new .r_new ul li span {
+  color: #cc0000;
+}
+.wrapper_body .log_new .enwidth {
+  padding-right: 0;
+  width: 375px;
+  padding-top: 10px;
+  background: url("http://img04.xesimg.com/passport/hline.gif") no-repeat scroll left 10px #ffffff;
+}
+.wrapper_body .log_new .log_left {
+  width: 573px;
+}
+.wrapper_body_qq {
+  padding: 25px 0px 10px 30px;
+  width: 935px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrapper_body_qq .wrapper_title p {
+  font-size: 20px;
+  color: #333333;
+}
+.wrapper_body_qq .box_qq {
+  height: 115px;
+  background: url(http://img04.xesimg.com/box.jpg) no-repeat -8px 0;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding-left: 155px;
+  font-size: 32px;
+  color: #333333;
+  padding-top: 18px;
+  line-height: 36px;
+  position: relative;
+}
+.wrapper_body_qq .box_qq span.num_q {
+  color: #cc0000;
+  margin: 0 10px;
+}
+.wrapper_body_qq .box_qq span.yz_num {
+  color: #666;
+  font-size: 16px;
+  margin-left: 100px;
+}
+.wrapper_body_qq .box_qq span.yz_num i {
+  color: #cc0000;
+}
+.wrapper_body_qq .box_qq a.copy_btn {
+  font-size: 12px;
+  color: #2a75b8;
+}
+.wrapper_body_qq .box_qq .add_qun {
+  font-size: 22px;
+  color: #666;
+}
+.wrapper_body_qq .box_qq .key_addqq {
+  background: #3399cc;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 2px 6px;
+  position: absolute;
+  right: 95px;
+  top: 45px;
+}
+.wrapper_body_qq .box_code {
+  background: #fcfcfc;
+  border: 1px solid #f2f2f2;
+  width: 766px;
+  height: 89px;
+}
+.wrapper_body_qq .box_code .qun_num {
+  font-size: 22px;
+  color: #666;
+}
+.wrapper_body_qq .box_code .qun_num span {
+  color: #ff0000;
+}
+.wrapper_body_qq .box_code img {
+  position: absolute;
+  left: 32px;
+  top: 3px;
+  width: 100px;
+  height: 100px;
+}
+.wrapper_body_qq .jz_wrap {
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.wrapper_body_qq .jz_wrap .for_border {
+  border-right: 1px solid #f1f1f1;
+  overflow: hidden;
+  padding-right: 27px;
+}
+.wrapper_body_qq .jz_wrap .jz_L {
+  padding-top: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  float: left;
+}
+.wrapper_body_qq .jz_wrap .jz_L p {
+  font-size: 14px;
+  color: #666;
+}
+.wrapper_body_qq .jz_wrap .jz_L dl {
+  padding-top: 15px;
+  width: 109px;
+  text-align: center;
+  float: left;
+}
+.wrapper_body_qq .jz_wrap .jz_L dl dd {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  color: #666;
+}
+.wrapper_body_qq .jz_wrap .jz_L_noborder {
+  border-right: none;
+  padding-right: 0;
+  padding-left: 27px;
+}
+.wrapper_body_qq .add_q {
+  clear: both;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.wrapper_body_qq .add_q button {
+  height: 36px;
+  line-height: 36px;
+  width: 170px;
+  font-size: 16px;
+  background: #ef8317;
+  color: #fff;
+  border-radius: 5px;
+}
+.wrapper_body_qq .next_BTN {
+  padding: 0;
+  display: inline-block;
+}
+.submit_exper_UP {
+  background: none repeat scroll 0 0 #ef8317;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  width: 130px;
+}
+.wrapper_body .complete {
+  height: 105px;
+  background: url(http://img04.xesimg.com/complete.png) no-repeat 140px center;
+  padding-left: 250px;
+  padding-top: 30px;
+}
+.wrapper_body .complete p.tips01 {
+  color: #cc0000;
+  font-size: 16px;
+  line-height: 35px;
+}
+.wrapper_body .complete p.tips02 {
+  color: #666666;
+  font-size: 14px;
+}
+.wrapper_body .complete p.tips02 span {
+  color: #cc0000;
+}
+.wrapper_body .complete_after {
+  padding: 30px;
+  margin-top: 25px;
+  background: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  height: 315px;
+}
+.wrapper_body .complete_after p.tips_title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666666;
+}
+.wrapper_body .complete_after .tisps_all_wrap {
+  overflow: hidden;
+  height: 67px;
+}
+.wrapper_body .complete_after .tisps_all_wrap .tisps_all {
+  padding-top: 20px;
+  color: #666;
+}
+.wrapper_body .complete_after .tisps_all_wrap .tisps_all a {
+  background: #35b5eb;
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.wrapper_body .complete_after .tisps_all_wrap .tisps_all a i {
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  margin-left: 10px;
+  background: url(http://img04.xesimg.com/arrow.png) no-repeat left center;
+}
+.wrapper_body .complete_after .tisps_all_wrap .tisps_all a:hover {
+  text-decoration: none;
+}
+.noborder {
+  background: url();
+}
+.noborder .newPeople .login_btn_new {
+  border-radius: 4px;
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  width: 170px;
+  background: #ef8317;
+  text-shadow: 0;
+}
+.noborder #regist_btns {
+  background: url();
+}
+#xrs_login .xes_logo a {
+  background: url("http://img04.xesimg.com/logo_new.png") no-repeat 0 25px;
+}
+#xue_logo .logo_passport {
+  background: url("http://img04.xesimg.com/logo_new.png") no-repeat 0 -2px;
+}
+#xue_logo .logo_tips.regist_font {
+  background: url("http://img04.xesimg.com/wecome_login.png") no-repeat;
+}
+.disable_t {
+  background: #e5e3e3;
+  color: #666;
+  cursor: not-allowed;
+}
+.border_wrap {
+  border: 1px solid #f1f1f1;
+}
+/* 新版登陆-----------------------选择体验课 */
+body {
+  background: #fff;
+}
+.wrapper_body {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0;
+}
+.wrapper_body .login_success {
+  width: 100%;
+  height: 56px;
+}
+.wrapper_body .login_success .login_success_inner {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+}
+.wrapper_body .login_success .login_success_inner span {
+  line-height: 75px;
+}
+.wrapper_body .login_success .login_success_inner .conculate {
+  font-size: 16px;
+  color: #cc0000;
+  margin: 0 15px;
+}
+.wrapper_body .login_success .login_success_inner .remember_alert {
+  color: #666666;
+  font-size: 14px;
+}
+.wrapper_body .login_success .login_success_inner .remember_name {
+  font-size: 18px;
+  color: #cc0000;
+}
+.wrapper_body .experience_cource {
+  padding-top: 25px;
+}
+.wrapper_body .experience_cource .cource_equo {
+  color: #333;
+  font-size: 20px;
+  line-height: 40px;
+  overflow: hidden;
+  height: 40px;
+}
+.wrapper_body .experience_cource .cource_equo span {
+  float: left;
+}
+.wrapper_body .experience_cource .cource_equo span i {
+  font-size: 16px;
+  font-style: normal;
+}
+.wrapper_body .experience_cource .cource_equo a {
+  color: #fff;
+  margin-left: 10px;
+  float: right;
+  margin-right: 15px;
+  line-height: 40px;
+  font-size: 12px;
+  height: 40px;
+  display: inline-block;
+  background: url(http://img04.xesimg.com/question.png) no-repeat right center;
+  padding-right: 20px;
+}
+.wrapper_body .experience_cource .cource_equo a:hover {
+  text-decoration: none;
+}
+.wrapper_body .experience_cource .cource_equo a img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.wrapper_body .experience_cource .cource_wrap {
+  overflow: hidden;
+  width: 980px;
+}
+.wrapper_body .experience_cource .cource_wrap ul {
+  overflow: hidden;
+}
+.wrapper_body .experience_cource .cource_wrap ul li {
+  overflow: hidden;
+  height: 220px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner {
+  overflow: hidden;
+  margin-left: -10px;
+  position: absolute;
+  height: 152px;
+  _width: 990px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item {
+  display: inline-block;
+  float: left;
+  height: 125px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 318px;
+  cursor: pointer;
+  display: inline;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .ui_avatar {
+  display: inline;
+  float: left;
+  margin: 10px 10px 0;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .ui_avatar ul.avatar_items {
+  height: 50px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .ui_avatar ul.avatar_items .ui_userinfo .userpic {
+  width: 50px;
+  height: 50px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail {
+  display: inline;
+  float: left;
+  width: 248px;
+  _width: 238px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_title {
+  height: 46px;
+  overflow: hidden;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_title a:hover {
+  text-decoration: none;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_info {
+  height: auto;
+  line-height: 15px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_info span {
+  margin-right: 10px;
+  display: block;
+  width: 100%;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_info span a {
+  color: #333333;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_info .num_videos {
+  display: inline-block;
+  margin-top: 5px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .course_info .num_videos strong {
+  color: #333333;
+  font-weight: normal;
+  font-size: 12px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .experience_btn {
+  padding-left: 50px;
+  padding-top: 7px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .experience_btn a {
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 2px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .experience_btn a:hover {
+  text-decoration: none;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .experience_btn .will_exp {
+  background: #3398cc;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_inner .course_item .course_detail .experience_btn .cancer_exp {
+  background: #999999;
+}
+.wrapper_body .experience_cource .cource_wrap .selected_item {
+  border-color: #3398cc;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_wrap .course_item_list {
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+  border-bottom: 1px solid #3398cc;
+  line-height: 36px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 36px;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_wrap .course_item_list span {
+  float: left;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_wrap .course_item_list a {
+  font-size: 12px;
+  margin-left: 15px;
+  color: #3398cc;
+  float: right;
+}
+.wrapper_body .experience_cource .cource_wrap .course_item_wrap .course_item_list a:hover {
+  text-decoration: none;
+}
+/* 新版登陆-----------------------开启网校学校*/
+.wrapper_body .exper_wrap {
+  width: 710px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+.wrapper_body .exper_wrap .exper_inner {
+  height: 395px;
+  width: 320px;
+  border: 1px solid #f1f1f1;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+.wrapper_body .exper_wrap .exper_inner .study_students {
+  height: 262px;
+  margin-top: 30px;
+}
+.wrapper_body .exper_wrap .exper_inner .study_btn {
+  font-size: 16px;
+  margin-top: 40px;
+}
+.wrapper_body .exper_wrap .exper_inner .study_btn button {
+  background: #ef8317;
+  padding: 0px 0px;
+  width: 170px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 4px;
+}
+.wrapper_body .exper_wrap .exper_inner .no_qq button {
+  background: #f1f1f1;
+  color: #999999;
+  cursor: not-allowed;
+}
+.wrapper_body .exper_wrap .exper_left {
+  margin-right: 65px;
+}
+.wrapper_body .go_look_wrap {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrapper_body .go_look_wrap .go_look {
+  height: 42px;
+  padding-right: 10px;
+  background: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  margin-top: 35px;
+}
+.wrapper_body .go_look_wrap .go_look a {
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+  line-height: 42px;
+  color: #0000cc;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.wrapper_body .unsubmit {
+  cursor: not-allowed;
+  background: #cccccc;
+}
+.wrapper_body .add_q .unsubmit {
+  cursor: not-allowed;
+  background: #cccccc;
+}
+.body_new #xue_logo {
+  width: 980px;
+}
+.body_new #xue_logo img {
+  cursor: pointer;
+  float: right;
+}
+.body_new .exp_logo .exp_anasisy_wrap {
+  margin-top: -20px;
+  overflow: hidden;
+  _position: absolute;
+  float: right;
+}
+.body_new .exp_logo .exp_anasisy_wrap .exp_anasisy_para {
+  display: none;
+}
+#xuebox_examTips {
+  position: absolute;
+}
+.wrapper_body_qq .box_qq_logo {
+  width: 866px;
+  height: 90px;
+  background-image: none;
+  background: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  padding-left: 55px;
+  padding-top: 20px;
+}
+.wrapper_body_qq .box_qq_logo .chinaweblogo {
+  width: 445px;
+  height: 75px;
+  background: url('http://img04.xesimg.com/logo/logo_w.png') no-repeat;
+}
+.wrapper_body_qq .box_qq_logo .key_addqq {
+  width: 170px;
+  height: 43px;
+  background: #dd0506;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+  font-size: 20px;
+  top: 33px;
+  right: 36px;
+}

@@ -1,0 +1,28 @@
+.container{
+    width: 1190px;
+}
+
+/* 商城头部课程分类 */
+.ui-head-nav {
+    border-bottom: 1px solid #eee;
+}
+.ui-categorys .category-dd {
+    background-color: #1E89E0;
+}
+.ui-categorys .category-dd .category-layer {
+    border: 1px solid #1E89E0;
+}
+.ui-categorys .category-dd .category-item {
+    border-top: 1px solid #3A98E4;
+
+}
+.info_from_p .select{
+    padding: 9px 2px;
+}
+.find-teacher-hover-a{
+    width: 200px;
+    height: 200px;
+    background: url(../../static/img/find-teacher-hover.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

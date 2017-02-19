@@ -1,0 +1,619 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-11-14 18:42:51
+ * @version $Id$
+ */
+.ui_menu_pd_title em {
+  font-weight: normal;
+}
+.ui_mod_help_content {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*background:#f9f9f9;*/
+  /*border:1px solid #e6e6e6;*/
+}
+.ui_tabs_help {
+  height: 76px;
+  overflow: hidden;
+  margin-top: 15px;
+  background: url(http://img04.xesimg.com/help/tabs_bg.png) repeat-x;
+}
+.ui_tabs_help li {
+  float: left;
+  display: inline;
+  width: 218px;
+  margin: 10px 5px 0 0;
+}
+.ui_tabs_help li a {
+  display: block;
+  width: 218px;
+  height: 66px;
+}
+.ui_tabs_help li.one {
+  margin-left: 50px;
+}
+.ui_tabs_help li.one a {
+  background: url(http://img04.xesimg.com/help/tabs_1.png) 0 9px no-repeat;
+}
+.ui_tabs_help li.two a {
+  background: url(http://img04.xesimg.com/help/tabs_2.png) 0 9px repeat-x;
+}
+.ui_tabs_help li.three a {
+  background: url(http://img04.xesimg.com/help/tabs_3.png) 0 9px repeat-x;
+}
+.ui_tabs_help li.four a {
+  background: url(http://img04.xesimg.com/help/tabs_4.png) 0 9px repeat-x;
+}
+.ui_tabs_help li.one a.current {
+  background: url(http://img04.xesimg.com/help/tabs_current1.png) no-repeat;
+}
+.ui_tabs_help li.two a.current {
+  background: url(http://img04.xesimg.com/help/tabs_current2.png) repeat-x;
+}
+.ui_tabs_help li.three a.current {
+  background: url(http://img04.xesimg.com/help/tabs_current3.png) repeat-x;
+}
+.ui_tabs_help li.four a.current {
+  background: url(http://img04.xesimg.com/help/tabs_current4.png) repeat-x;
+}
+ul.ui_help_main li {
+  display: none;
+  overflow: hidden;
+}
+ul.ui_help_main .conFocus {
+  display: block;
+}
+ul.ui_help_main .line {
+  background: url(http://img04.xesimg.com/help/line_help.png) 425px 0 repeat-y;
+}
+.help_hotspot {
+  overflow: hidden;
+  width: 845px;
+  margin: 20px 0 20px 40px;
+}
+.left_help {
+  float: left;
+  width: 430px;
+  overflow: hidden;
+}
+.list_infor {
+  width: 350px;
+}
+.list_infor .title_spot {
+  background: url(http://www.xueersi.com/static/img/icon/ui_list_icon_triangle.png) 0px 8px no-repeat;
+  line-height: 30px;
+  padding-left: 12px;
+  font-size: 14px;
+}
+.list_infor .title_spot a {
+  color: #333;
+}
+.left_help .list_infor .current a {
+  font-weight: bold;
+  color: #666;
+}
+.list_infor .infor_spot {
+  display: none;
+  line-height: 180%;
+  margin-left: 12px;
+  color: #999;
+}
+.right_lelp {
+  float: right;
+  width: 350px;
+  padding-left: 40px;
+  border: 0;
+}
+/*快速指引*/
+.help_guide {
+  overflow: hidden;
+  width: 845px;
+  margin: 10px auto;
+}
+.help_guide dl {
+  float: left;
+  display: inline;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.help_guide dl dt {
+  width: 167px;
+  height: 42px;
+  line-height: 42px;
+  overflow: hidden;
+  text-align: center;
+  background: url(http://img04.xesimg.com/help/help_con_1.png) no-repeat;
+}
+.help_guide dl dd {
+  width: 104px;
+  height: 165px;
+  line-height: 2.2em;
+  padding: 10px 28px 0 30px;
+  border: 1px solid #F9F9F9;
+}
+.help_guide dl.current dt {
+  background: url(http://img04.xesimg.com/help/help_con_cur.png) no-repeat;
+  color: #fff;
+  font-weight: bold;
+}
+.help_guide dl.current dd {
+  background: #fef2f2;
+  border: 1px solid #f3d7d6;
+  overflow: hidden;
+}
+.help_guide dl dd a {
+  color: #333;
+}
+/*课程体系*/.help_service {
+  overflow: hidden;
+  width: 845px;
+  margin: 10px auto;
+}
+.help_service dl {
+  float: left;
+  display: inline;
+  width: 276px;
+  overflow: hidden;
+  padding: 14px 0 14px 5px;
+}
+.help_service dl dt {
+  font-weight: 700;
+  background: url(http://img04.xesimg.com/help/icon_help.png) no-repeat;
+  padding: 5px 0 5px 22px;
+  color: #666;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+.help_service dl dd {
+  height: 165px;
+  line-height: 2.2em;
+  padding-right: 28px;
+  white-space: nowrap;
+  padding-left: 22px;
+  background: url(http://img04.xesimg.com/help/line_h.png) 6px top repeat-y;
+}
+.help_service dl dd a {
+  color: #333;
+}
+/*帮助分类*/
+.help_classify {
+  overflow: hidden;
+  width: 845px;
+  margin: 10px auto;
+}
+.help_classify dl {
+  float: left;
+  display: inline;
+  width: 417px;
+  height: 76px;
+  overflow: hidden;
+  background: url(http://www.xueersi.com/img/help_right_xi.gif) no-repeat left bottom;
+  padding: 14px 0 14px 5px;
+}
+.help_classify dl dt {
+  color: #666;
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+.help_classify dl dd {
+  float: left;
+  line-height: 2.2em;
+  padding-right: 28px;
+  white-space: nowrap;
+}
+.help_classify dl dd a {
+  color: #333;
+}
+h1.title_help_new {
+  width: 845px;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #666;
+  font-family: "Microsoft YaHei";
+}
+/*帮助中心----常见问题 START*/
+.area_help {
+  margin: 10px auto;
+}
+.help_layout235 {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 197px;
+}
+.help_layout235 h3 {
+  background: url(http://www.xueersi.com/img/siderbar_bg.jpg) no-repeat;
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  border-right: 1px solid #CDD0D6;
+}
+.help_layout235 .siderbar {
+  border: 1px solid #CDD0D6;
+  border-top: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.help_layout235 .siderbar .problem-list {
+  padding: 10px 0;
+}
+.help_layout235 .siderbar .problem-list li {
+  background: url(http://www.xueersi.com/img/result.gif) no-repeat 15px -35px;
+  line-height: 2em;
+  padding-left: 25px;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.help_layout235 .siderbar .contact-dh {
+  overflow: hidden;
+  padding: 10px 15px;
+  width: 162px;
+}
+.help_layout730 {
+  background: url(http://www.xueersi.com/img/help_right_bg.jpg) repeat-x;
+  border: 1px solid #CDD0D6;
+  float: left;
+  overflow: hidden;
+  padding: 0px 13px 15px;
+  width: 745px;
+}
+.help_layout730 h3 {
+  background: url(http://www.xueersi.com/img/help_right_line.gif) no-repeat center bottom;
+  border-bottom: 1px solid #e0e0e0;
+  clear: both;
+  float: none;
+  height: 30px;
+  margin: 15px 0 20px;
+  overflow: hidden;
+}
+.help_layout730 h3 span {
+  background: url(http://www.xueersi.com/img/help_right_line_red.gif) repeat-x center bottom;
+  color: #333333;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  width: auto;
+}
+.help_layout_content {
+  clear: both;
+  float: none;
+  padding: 20px 0;
+}
+/*帮助中心----常见问题 END*/
+/*文章页面--公告页面*/
+/**文章列表页面**/
+.help_layout730 h3 {
+  font-weight: bold;
+  margin: 0;
+  background: none;
+}
+.help_layout730 h3 span {
+  background: none;
+}
+.help_layout730 .trends-list {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.help_layout730 .lasttrendlist {
+  border: none 0;
+}
+.help_layout730 .trends-list ul li,
+.area_article .article235 .problem-list li {
+  padding-left: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: url(http://img04.xesimg.com/help/articlegrey.jpg) no-repeat 10px center;
+}
+.area_article .article235 .problem-list li {
+  line-height: 2em;
+  padding-left: 20px;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.area_article .article235 h3 {
+  background: url(http://img04.xesimg.com/help/articletitle.jpg) repeat-x top center;
+  border: 1px solid #f1f1f1;
+}
+.area_article .article235 .siderbar {
+  border: 1px solid #f1f1f1;
+}
+.area_article .article730 {
+  border: 1px solid #f1f1f1;
+  background: none;
+}
+.help_layout730 .trends-list ul li a {
+  font-size: 14px;
+  float: left;
+}
+.help_layout730 .trends-list ul li span {
+  float: right;
+  color: #989898;
+}
+.help_layout730 .ui_public_page {
+  margin: 25px 0;
+}
+.help_layout730 .ui_public_page .fd-left {
+  margin-left: 200px;
+}
+.help_layout235 h3 span {
+  float: right;
+  margin-right: 5px;
+  font-size: 12px;
+}
+/**文章正文页面**/
+.art_layout730 h3 {
+  height: 60px;
+  line-height: 60px;
+  color: #333333;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  border: 0;
+}
+.art_layout730 .titbar {
+  height: 30px;
+  line-height: 30px;
+  color: #989898;
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+.art_layout730 .titbar span {
+  margin-right: 5px;
+}
+.art_layout730 .artbd {
+  padding: 25px 10px;
+  line-height: 24px;
+}
+.art_layout730 .artbd p {
+  text-indent: 2em;
+}
+/**文章info页面**/
+.area_article {
+  margin: 10px 0;
+}
+.text_layout980 {
+  width: 918px;
+  padding: 30px;
+  margin: 10px 0 30px 0;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+}
+.text_layout980 .sharebtn {
+  float: right;
+  width: 250px;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.text_layout980 .sharebtn .sharebtn-hd {
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+}
+.text_layout980 .sharebtn ul li {
+  float: left;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  overflow: hidden;
+}
+.text_layout980 .sharebtn ul li a {
+  display: block;
+  padding-left: 22px;
+  height: 22px;
+  background: url(http://img04.xesimg.com/help/qq.png) no-repeat left center;
+}
+.text-bd,
+.text-related {
+  clear: both;
+  padding: 0 20px;
+  overflow: hidden;
+  line-height: 24px;
+}
+.text-bd .bd-video {
+  padding: 60px 75px;
+  border: 1px solid #e8e8e8;
+  background: #fafafa;
+}
+.text-bd .video-info h4 {
+  line-height: 40px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.text-bd .video-info p {
+  text-indent: 2em;
+}
+.text-bd .ui_public_page {
+  margin: 50px 0;
+  font-size: 14px;
+}
+.text-bd .ui_public_page .fd-left {
+  margin-left: 260px;
+}
+.text-dl {
+  height: 35px;
+  padding: 10px;
+  line-height: 35px;
+  display: inline;
+  text-align: center;
+  font-size: 14px;
+  border: 1px dotted #dedede;
+}
+.text-nav {
+  margin: 50px 0 30px 0;
+  font-size: 14px;
+}
+.text-nav p,
+.text-related ul {
+  margin-left: 30px;
+  font-size: 14px;
+}
+.text-nav p a {
+  display: inline-block;
+  width: 320px;
+  line-height: 24px;
+  border: none 0;
+  color: #045cd7;
+}
+.text-nav p a:link {
+  color: #045cd7;
+}
+.text-nav p a:visited {
+  color: #045cd7;
+}
+.text-nav p a:hover {
+  color: #045cd7;
+}
+.text-related ul li {
+  float: left;
+  width: 400px;
+  padding-left: 15px;
+  background: url(http://img04.xesimg.com/help/icon_dian2.gif) no-repeat left center;
+}
+.text-related {
+  margin: 30px 0;
+  border-bottom: none 0;
+}
+.text-comment {
+  overflow: hidden;
+  background: #fbfbfb;
+  border: 1px solid #dcdcdc;
+}
+.text-comment .com-hd {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  font-size: 14px;
+  overflow: hidden;
+  background: url(/img/com-hdbg.jpg) repeat-x left top;
+}
+.text-comment .com-hd span {
+  float: right;
+}
+.text-comment .com-hd span a:link {
+  color: #045cd7;
+}
+.text-comment .com-hd span a:visited {
+  color: #045cd7;
+}
+.text-comment .com-hd span a:hover {
+  color: #045cd7;
+}
+.text-comment .text-comments {
+  padding: 0 15px;
+}
+.text-comment .text-comments .item {
+  width: 830px;
+  height: 107px;
+  position: relative;
+  padding: 10px 0 10px 58px;
+  color: #666666;
+  border-bottom: 1px dotted #dfdfdf;
+}
+.text-comment .text-comments .item .user {
+  width: 58px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+.text-comment .text-comments .item .i-item {
+  padding: 10px;
+}
+.text-comment .text-comments .item .i-item .com-top {
+  height: 30px;
+  line-height: 35px;
+  clear: both;
+}
+.text-comment .com-hd h2 {
+  width: 100px;
+  float: left;
+}
+.text-comment .com-hd span {
+  float: right;
+  font-size: 12px;
+}
+.text-comment .com-top span {
+  float: right;
+}
+.text-comment .text-comments .answer {
+  width: 790px;
+  padding: 0px 0 10px 100px;
+}
+.text-comment .text-comment-content {
+  height: 90px;
+  position: relative;
+  padding: 10px 10px 40px 10px;
+}
+.text-comment .text-comment-content .ui_comment_content {
+  width: 885px;
+  height: 80px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #dfdfdf;
+}
+.text-comment .text-comment-content .ui_text_comment_submit {
+  float: right;
+  width: 69px;
+  height: 24px;
+  line-height: 31px;
+  font-size: 14px;
+  color: #333;
+  background: url(http://img04.xesimg.com/help/articlebtn.jpg) no-repeat left top;
+}
+.text-related strong,
+.text-nav strong {
+  padding-left: 20px;
+  font-size: 14px;
+  background: url(http://img04.xesimg.com/help/squareicon.jpg) no-repeat left center;
+}
+.tt-comments {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  color: #666666;
+  border-bottom: 1px solid #dcdcdc;
+}
+.text-dl a {
+  text-transform: none;
+  cursor: pointer;
+}
+.text-dl span {
+  margin-right: 10px;
+}
+.text-dl span img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+}
+#pagination-digg2 {
+  margin: 5px;
+}
+.tccinfo {
+  width: 250px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}

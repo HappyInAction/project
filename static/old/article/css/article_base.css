@@ -1,0 +1,138 @@
+html{ 
+	font-size:100%;font-family: "Microsoft YaHei";
+  }
+body{
+	padding:0;
+	margin:0;
+	border:0;
+}
+img{
+	border:0 none;
+	display: block;
+	vertical-align: middle;
+	max-width:100%;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+img.emotion{
+	display: inline;
+}
+.article_main{
+	position:relative;
+	background:#fff;
+	overflow:hidden;
+	max-width:45rem;
+	margin:0 auto;
+}
+.fixed_content{
+	position:fixed;
+	top:0;
+	width:100%;
+	padding:0.5rem 0;
+	background:#eeeeee;
+}
+.fixed_content img{
+	float:left;
+	width:2.5rem;
+	margin:0 0.5rem 0 0.5rem;
+}
+.fixed_content .info_content{
+	float:left;
+	color:#666666;
+	font-size:0.8125rem;
+}
+.fixed_content .info_content .info_title{
+	color:#333333;
+	font-size:0.9375rem;
+	margin-bottom:0.2rem;
+}
+.fixed_content span{
+	display:block;
+	float:right;
+	width:18%;
+	height:1.8rem;
+	line-height:1.8rem;
+	color:#fff;
+	background: #ff6138;
+	border-radius: 2px;
+	font-size:0.75rem;
+	margin:0.5rem 1rem 0 0;
+	text-align: center;
+}
+.article_title{
+	margin-top:2rem;
+	margin-bottom:0.6rem;
+	color:#333;
+	font-size:1.25rem;
+	padding:0 1rem;
+	word-break:break-all;
+	line-height:1.875rem;
+}
+.article_author{
+	padding: 0 1rem;
+	color:#d6d6d6;
+	font-size:0.875rem;
+}
+.article_content{
+	margin:1.25rem 0 1.875rem 0;
+	color:#333;
+	font-size:1rem;
+	padding:0 1rem;
+	text-indent: 2rem;
+	line-height:1.625rem;
+}
+.article_content img{
+	max-width:100%;
+	margin:1rem auto;
+}
+
+
+/*文在不存在*/
+.datum_noexist{
+	margin:3rem 0;
+	text-align: center;
+	font-size:1.25rem;
+	color:#333;
+}
+.datum_noexist img{
+	width:40%;
+	max-width:16rem;
+	margin:0 auto 1rem;
+}
+
+
+
+/*下载资料*/
+.datum_download{
+	margin:3rem 0;
+	text-align: center;
+	font-size:1.25rem;
+	color:#333;
+}
+.datum_download img{
+	width:31%;
+	max-width:12.5rem;
+	margin:1.5rem auto;
+}
+.datum_download .datum_size{
+	color:#bcbcbc;
+	font-size:0.875rem;
+}
+.datum_download a{
+	color:#70b8e1;
+	width:88%;
+	height:2.75rem;
+	font-size:1rem;
+	margin:1.5rem auto;
+	border:1px solid #70b8e1;
+	border-radius: 5px;
+	line-height:2.75rem;
+}
+a.bottom_link{
+	text-align:center;
+	margin-bottom:1rem;
+	color:#2244dd;
+	text-decoration: underline;	
+}

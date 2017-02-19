@@ -1,0 +1,346 @@
+
+.download_top{
+	width:100%;
+	height:577px;
+	background:url(http://img04.xesimg.com/pc_download/main_bg.jpg) no-repeat #0786cb center;
+}
+.download_top_like{
+	width:100%;
+	height:610px;
+	background:url(http://img04.xesimg.com/pc_download/main_bg_like.jpg) no-repeat  center;
+}
+.download_buttom{
+	width:100%;
+	padding-bottom:43px;
+	background:#e6e6e6;
+	margin-top:-1px;
+}
+.download_way{
+	width:980px;
+	margin:0 auto;
+	height:200px;
+}
+.way_mod{
+	width:304px;
+	height:194px;
+	float:left;
+	margin-right:31px;
+	background:#f9f9f9;
+	border-radius: 5px;
+}
+div.right_mod{
+	margin:0px;
+}
+
+.bg_1{
+	background:url(http://img04.xesimg.com/pc_download/download_add.jpg) no-repeat 0 10px #f9f9f9;
+}
+.bg_2{
+	background:url(http://img04.xesimg.com/pc_download/download_add_axh.png) no-repeat 0 10px #f9f9f9;
+}
+
+.form_download p{
+	margin-top:20px;
+	padding-left:8px;
+}
+.phone_number{
+	width:278px;
+	height:36px;
+	color:#999999;
+	padding-left:8px;
+	border:1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.verify_enter{
+	width:190px;
+	height:36px;
+	color:#999999;
+	padding-left:8px;
+	border:1px solid #e6e6e6;
+	border-radius: 5px;
+	*float:left;
+}
+.verify_code{
+	float:right;
+	margin:3px 30px 0 0;
+	*display:inline;
+}
+.verify_code img{
+
+	cursor:pointer;
+}
+.get_message{
+	width:142px;
+	height:36px;
+	margin-left:70px;
+	font-family: "SimSun";
+	font-size:20px;
+	background:#91b630;
+	border:0px;
+	cursor:pointer;
+	border-radius: 5px;
+	color:#fff;
+	*margin-top:20px;
+}
+.way_mod ul{
+	display:block;
+	width:180px;
+	margin:20px auto;
+}
+.way_mod ul li{
+	margin-top:17px;
+}
+.way_mod ul li p{
+	width:180px;
+	text-align:center;
+	color:#333333;
+
+}
+a.iphone_way{
+	display:block;
+	width:176px;
+	height:44px;
+	margin-bottom:8px;
+	background:url(http://img04.xesimg.com/pc_download/iphone_download.png) no-repeat;
+}
+a.and_way{
+	display:block;
+	width:176px;
+	height:44px;
+	margin-bottom:8px;
+	background:url(http://img04.xesimg.com/pc_download/and_download.png) no-repeat;
+}
+
+
+/*底部*/
+.buttom_info{
+	width:100%;
+	height:33px;
+	margin-top:43px;
+	color:#999999;
+	font-family:"宋体";
+	background:#000;
+	line-height:33px;
+}
+.info_mod{
+	margin:0 auto;
+	overflow:hidden;
+	width:860px;
+}
+.info_mod li{
+	float:left;
+	margin-right:8px;
+}
+.info_mod a{
+	color:#999999;
+}
+
+/*新页*/
+.main_box{
+	position: relative;
+	width: 100%;
+	max-width:1500px;
+	height:776px;
+	overflow:hidden;
+	margin:0 auto;
+	background:url("http://img04.xesimg.com/pc_download/main_bg_two.png") no-repeat center;
+
+}
+.main_position{
+	position:relative;
+	width: 980px;
+	height:774px;
+	margin:0 auto;
+}
+.title_info{
+	display:block;
+	margin-top:12px;
+}
+.show_info{
+	overflow:hidden;
+	margin-top:18px;
+}
+.down_left_mod,.down_right_mod{
+	width:490px;
+	height:440px;
+}
+.down_left_mod{
+	float:left;
+}
+.down_right_mod{
+	float:right;
+}
+.qcode_info{
+	position: relative;
+	width:130px;
+	height:100%;
+	float:left;
+	margin:5px 66px 0 26px;
+}
+.qcode_img{
+	width:120px;
+	height:120px;
+	margin:5px auto;
+	overflow:hidden;
+
+}
+.arrow_up{
+	position:absolute;
+	top:126px;
+	left:54px;
+	width:22px;
+	height:22px;
+	margin:15px auto 0;
+	background:url("http://img04.xesimg.com/pc_download/arrow_up.png") no-repeat;
+  	-webkit-animation: triangle 2s 1s ease-in infinite;
+  	-moz-animation: triangle 2s 1s ease-in infinite;
+  	animation: triangle 2s 1s ease-in infinite;
+}	
+.text_info{
+	font-size:18px;
+	font-family: "微软雅黑";
+	margin:10px auto;
+	text-align: center;
+	/*-webkit-animation: ani 2s 1s ease-in infinite;*/
+	backface-visibility: hidden;
+	
+}
+.style1{
+	margin-top:40px;
+	color:#fff;
+}
+.style2 a{
+	text-decoration: none;
+	color:#000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+.phone_ico{
+	width:76px;
+	height:35px;
+	margin:0 auto;
+	background:url("http://img04.xesimg.com/pc_download/iphone_android.png") no-repeat;
+}
+.pic_show{
+	width:202px;
+	float:left;
+}
+.phone_bg{
+	width:100%;
+	height:398px;
+	position:relative;
+	overflow:hidden;
+	background:url("http://img04.xesimg.com/pc_download/phone_bg.png") no-repeat;
+}
+.img_window{
+	position:absolute;
+	top:48px;
+	left:1px;
+	width:200px;
+	height:308px;
+	overflow:hidden;
+}
+.img_mod{
+	position:absolute;
+	width:1000px;
+	height:308px;
+	left:-200px;
+	top:0;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.img_mod li{
+	float:left;
+	margin:0;
+	padding:0;
+	height:308px;	
+}
+.shadow_pen{
+	position: absolute;
+	z-index:100;
+	height:308px;
+	width:5px;
+	background:#000;
+	top:48px;
+	right:1px;
+	opacity: 0.2;
+	filter:alpha(opacity=20);
+}
+.click_btn{
+	width:141px;
+	margin:20px auto 0;
+	overflow:hidden;
+}
+.click_dot{
+	display:block;
+	float:left;
+	cursor: pointer;
+	width:10px;
+	height:10px;
+	margin-left:26px;
+	border-radius: 12px;
+	border:1px solid #000000;
+	opacity: 0.8;
+	background:url(about:blank);
+	filter:alpha(opacity=80);
+}
+.current_dot{
+	background:#000;
+}
+.no_margin{
+	margin:0;
+}
+.jiazhanghui_qcode{
+	background:url("http://img04.xesimg.com/jiazhanghui_qcode2.png") no-repeat center;
+}
+.aixuehui_qcode{
+	background:url("http://img04.xesimg.com/aixuehui_qcode2.png") no-repeat center;
+}
+.web_enter{
+	position: fixed;
+	width: 177px;
+	height: 79px;
+	top: 200px;
+	right: 0px;
+	border-radius: 8px 0px 0px 8px;
+}
+/* #0786cb*/
+.web_enter a{
+	display: block;
+	width:100%;
+	height:100%;
+	text-decoration: none;
+	background:url("http://img04.xesimg.com/pc_download/web_enter.png") no-repeat center;
+}
+/*animate*/
+@-webkit-keyframes triangle { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -webkit-transform: translateY(-3px); }
+  50% {opacity:1; -webkit-transform: translateY(-7px); }
+  75% {opacity: 0.7; -webkit-transform: translateY(-3px); }
+  100% { opacity: 0.3; -webkit-transform: translateY(-0px); } }
+  
+@-moz-keyframes triangle { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -moz-transform: translateY(-3px); }
+  50% {opacity:1; -moz-transform: translateY(-7px); }
+  75% {opacity: 0.7; -moz-transform: translateY(-3px); }
+  100% { opacity: 0.3; -moz-transform: translateY(-0px); } }
+
+@-ms-keyframes triangle { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -ms-transform: translateY(-3px); }
+  50% {opacity:1; -ms-transform: translateY(-7px); }
+  75% {opacity: 0.7; -ms-transform: translateY(-3px); }
+  100% { opacity: 0.3; -ms-transform: translateY(-0px); } }
+
+@-o-keyframes triangle { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -o-transform: translateY(-3px); }
+  50% {opacity:1; -o-transform: translateY(-7px); }
+  75% {opacity: 0.7; -o-transform: translateY(-3px); }
+  100% { opacity: 0.3; -o-transform: translateY(-0px); } }
+
+@keyframes triangle { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; transform: translateY(-3px); }
+  50% {opacity:1; transform: translateY(-7px); }
+  75% {opacity: 0.7; transform: translateY(-3px); }
+  100% { opacity: 0.3; transform: translateY(-0px); } }

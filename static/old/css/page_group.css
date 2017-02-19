@@ -1,0 +1,536 @@
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
+}
+body {
+  _background-image: url(about:blank);
+  /*用浏览器空白页面作为背景*/
+
+  _background-attachment: fixed;
+  position: relative;
+  /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new,courier,monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a,
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0076b3;
+}
+a:active {
+  text-decoration: underline;
+  color: #F00;
+}
+a {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+button {
+  font-size: 100%;
+  border: 0;
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+u {
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+.f_blue {
+  color: #0076b3;
+}
+
+
+/*新版直播小组*/
+
+
+/* 头部*/
+body{
+  background:url(http://img04.xesimg.com/logo/body_group_bg.png) repeat;
+}
+
+
+/*教师端样式*/
+.grounp_head{
+  width:100%;
+  height:78px;
+  background:url(http://img04.xesimg.com/logo/group_bg_header.png) repeat-x;
+  overflow: hidden;
+}
+.grounp_title{
+  width:1350px;
+  margin:0px auto;
+  height:100%;
+}
+.grounp_title a{
+  display:block;
+}
+.grounp_title img{
+  display:block;
+}
+.grounp_info{
+  height:78px;
+  width:803px;
+  float:left;
+  color:#808080;
+  font-size:16px;
+  font-family:"微软雅黑";
+  line-height: 70px;
+}
+.grounp_info img{
+  width:50px;
+  height:50px;
+  float:left;
+  margin-top:8px;
+}
+.grounp_info a{
+  color:#808080;
+  text-decoration: none;
+  
+}
+a.grounp_logo{
+  float:right;
+  margin-top:20px;
+  background: url(http://img04.xesimg.com/logo/logo_group.png) no-repeat;
+  display: inline;
+  width:220px;
+  height: 30px;
+  text-indent: -2000em;
+}
+
+.grounp_main{
+  width:1350px;
+  height:635px;
+  margin:0 auto 40px auto;
+
+}
+
+
+
+
+/* 学生端样式 */
+.stu_head{
+  width:100%;
+  height:45px;
+  background:url(http://img04.xesimg.com/logo/group_bg_header.png) repeat-x;
+  overflow: hidden;
+}
+.stu_title{
+  width:1078px;
+  margin:0px auto;
+  height:100%;
+}
+.stu_title a{
+  display:block;
+}
+.stu_title img{
+  display:block;
+}
+.stu_info{
+  height:45px;
+  width:803px;
+  float:left;
+  color:#808080;
+  font-size:16px;
+  font-family:"微软雅黑";
+  line-height: 45px;
+}
+.stu_info img{
+  width:50px;
+  height:50px;
+  float:left;
+  margin-top:8px;
+}
+.stu_info a{
+  color:#808080;
+  text-decoration: none;
+  
+}
+a.stu_logo{
+  float:right;
+  margin-top:12px;
+  margin-right: 20px;
+  background: url(http://img04.xesimg.com/logo/logo_group.png) no-repeat;
+  background-size: 100%;
+  display: inline;
+  width:165px;
+  *width: 225px;
+  height: 30px;
+  text-indent: -2000em;
+}
+
+a.huanshuo_logo{
+  background: url(http://img04.xesimg.com/logo/logo_huanshuo.png) no-repeat;
+  margin-top:4px;
+  width:120px;
+  height:36px;
+}
+
+.stu_main{
+  width:1076px;
+  /*height:600px;*/
+  margin:0 auto;
+
+}
+
+/*直播等待页面*/
+.main_a{
+  width:1070px;
+  height:108px;
+  background: url(http://img04.xesimg.com/group_a_bg.jpg) no-repeat;
+  margin:0px auto 0 auto;
+  overflow:hidden;
+}
+.main_b{
+  width:1070px;
+  height:201px;
+  background: url(http://img04.xesimg.com/group_b_bg.jpg) no-repeat;
+  margin:0 auto;
+  overflow:hidden;
+}
+.main_c{
+  width:1070px;
+  height:291px;
+  background: url(http://img04.xesimg.com/group_c_bg.jpg) no-repeat;
+  margin:0 auto;
+  overflow:hidden;
+}
+.main_huanshuo{
+  background: url(http://img04.xesimg.com/group_huanshuo_bg.jpg) no-repeat;
+}
+p.group_info_one{
+  font-family: "微软雅黑";
+  font-size:30px;
+  text-align:center;
+  margin:20px auto 35px auto;
+}
+p.group_info_two{
+  font-family: "微软雅黑";
+  font-size:30px;
+  text-align:center;
+  margin:0 auto;
+}
+.countdown{
+  width:1070px;
+  font-family: "微软雅黑";
+  font-size:30px;
+  color:#cd0f0f;
+  text-align:center;
+}
+.countdown .countdown_number{
+  color:#1e1e1e;
+}
+.enter_btn{
+  display:block;
+  width:150px;
+  height:46px;
+  border:0;
+  margin:85px auto;
+  background:url(http://img04.xesimg.com/button/enter_group_a.png) no-repeat;
+  
+}
+
+/*不同状态*/
+p.group_live_end{
+  width:570px;
+  height:116px;
+  line-height: 116px;
+  font-family: "微软雅黑";
+  font-size:30px;
+  background:url(http://img04.xesimg.com/logo/groupEnd2.png?1) left no-repeat;
+  margin:45px auto 0px auto;
+  padding-left:140px;
+}
+.group_living{
+  width:360px;
+  height:116px;
+  font-family: "微软雅黑";
+  font-size:30px;
+  background:url(http://img04.xesimg.com/logo/groupliving2.png?1) left no-repeat;
+  margin:45px auto 0px auto;
+  padding:22px 0px 0 120px;
+}
+p.group_toHome{
+  margin-top:10px;
+  font-size:18px;
+  color:#d40404;
+}
+.logo_pic{
+  width:240px;
+  height:349px;
+  position:absolute;
+  left:180px;
+  top:87px;
+  background:url(http://img04.xesimg.com/logo/fstudy.png) left no-repeat;
+}
+.main_all{
+  width:1070px;
+  height:600px;
+  margin:10px auto;
+}
+.focus_code{
+  text-align: center;
+  margin-top: 20px;
+}
+.focus_code span.jzh_code{
+  margin-right: 20px;
+  display: inline-block;
+  width: 368px;
+  height: 151px;
+  background: url('http://img04.xesimg.com/jzh_codebg.png') no-repeat;
+  position: relative;
+}
+.focus_code span.jzh_code img{
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 120px;
+  height: auto;
+}
+.focus_code span.focus_wxcode{
+  margin-left: 20px;
+  display: inline-block;
+  width: 366px;
+  height: 151px;
+  background: url('http://img04.xesimg.com/focus_wxcodebg.png') no-repeat;
+  position: relative;
+}
+.focus_code span.focus_wxcode img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: auto;
+}
+
+/*直播客服和加qq群*/
+.rightResearchLive {
+  width: 35px;
+  height: 139px;
+  position: fixed;
+  z-index: 119;
+  right: 5px;
+  top: 265px;
+  _top: 300px;
+  outline: none;
+}
+.rightResearchLive ul {
+  background: transparent;
+}
+.rightResearchLive li {
+  overflow: hidden;
+}
+.rightResearchLive li a {
+  display: block;
+  width: 35px;
+  height: 139px;
+}
+.rightResearchLive li #r_copyright {
+  background: url('http://img04.xesimg.com/feedback_live.png') no-repeat 0px 0px;
+}
+
+#copy_notice {
+  text-align: center;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #3399cc;
+  position: fixed;
+  top: 264px;
+  right: 41px;
+  display: none;
+  width: 170px;
+  height: 129px;
+  overflow: hidden;
+}
+#copy_notice p {
+  line-height: 24px;
+  color: #3399cc;
+  font: 14px "Microsoft YaHei", SimHei, arial;
+  overflow: hidden;
+}
+#copy_notice p.copy_notice_num {
+  font-size: 24px;
+}
+#copy_notice p.group_join {
+  margin-top: 3px;
+}
+#copy_notice p.group_join a {
+  background: none;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-right: 3px;
+}
+#copy_notice p.group_join a img {
+  vertical-align: middle;
+}
+.rightResearchLive li a.copy_btn {
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+   background: #3399cc ;
+   color: #fff;
+   overflow: hidden;
+}
+/* 预约直播*/
+.default_live_btn {
+  display: block;
+  width:150px;
+  height:36px;
+  line-height: 36px;
+  background:#bfbfbf;
+  color: #fff;
+  border-radius: 2px;
+  margin:20px auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: '微软雅黑';
+
+}
+.enter_live_btn {
+  background:#ffbc3c;
+  cursor:pointer;
+} 
+.liveOrderFailModal .modal-body,
+.liveOrderSuccessModal .modal-body {
+  text-align: center;
+  height: 420px;
+}
+.orderFailTip,
+.orderSuccessTip {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin-bottom: 10px;
+  color: #999;
+}
+/* 预约直播 二维码*/
+.live-fail-modal {
+  overflow: hidden;
+}
+.live-fail-modal p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
+}
+.live-fail-modal p.success-title {
+  color: #e74c3c;
+  padding: 15px 0;
+}
+.live-fail-modal p.success-pic {
+  padding-bottom: 15px;
+}
+.live-fail-modal p.success-pic img {
+}
+.live-fail-modal p.success-txt span {
+  color: #e74c3c;
+}
+.live-fail-modal p.success-o {
+  font-size: 12px;
+  color: #e74c3c;
+  padding-top: 35px;
+}
+.main_n{
+  background: url(http://img04.xesimg.com/living.png);
+	height: 618px;
+	width:1090px;
+	overflow:hidden;
+	margin: -8px auto;
+}
+.enter_live_btn_new {
+  background:#ff7878;
+  cursor:pointer;
+  margin-top: 38px;
+  margin-right: 186px;
+} 

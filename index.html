@@ -1,0 +1,1886 @@
+<!-- 公共头部 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>商城</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- 这是CSS库文件 -->
+    <link href="./lib/bootstrap/3.3.5-custom/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./lib/bootstrap/3.3.5-custom/js/html5shiv.min.js"></script>
+    <script src="./lib/bootstrap/3.3.5-custom/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./lib/Font-Awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./static/css/default.css">
+    <!-- 这是当前模块样式文件 -->
+    <link rel="stylesheet" type="text/css" href="./static/css/xue.mall.css"/>
+</head>
+
+<body>
+<!-- module.topbar -->
+<!--
+@require widget/Public.Topbar/topbar.less
+@require widget/Module.Dropdown/dropdown.js
+@require widget/Module.Follow/follow.less
+@require widget/Module.Follow/follow.js
+-->
+
+<!-- 登录后 -->
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li class="">
+                <em class="text-danger">你好， 圣诞老人</em>
+                <a href="#">退出</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">消息<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li data-type="1">
+                        <a href="/LearningCenter/message#_1">网校通知<em class="text-danger">(100)</em></a>
+                    </li>
+                    <li data-type="4">
+                        <a href="/LearningCenter/message#_4">教师留言</a>
+                    </li>
+                    <li data-type="3">
+                        <a href="/LearningCenter/message#_3">直播提醒</a>
+                    </li>
+                    <li data-type="5">
+                        <a href="/LearningCenter/message#_5">考试提醒</a>
+                    </li>
+                    <li data-type="2">
+                        <a href="/LearningCenter/message#_2">资料提醒<em class="text-danger">(100)</em></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">购物车 <em class="text-danger">2</em></a></li>
+            <li><a href="#">订单</a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="#">收藏夹</a></li>
+            <li><a href="#">设置</a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">更多<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">线下小班</a></li>
+                    <li><a href="#">线下1对1</a></li>
+                </ul>
+            </li>
+            <li class="phone-400 active">400-800-2211</li>
+        </ul>
+
+    </div>
+</div>
+<!-- 登录前 -->
+
+
+<!--
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li>
+                <span class="xes">学而思网校欢迎你</span>
+                <a href="#" class="login text-danger">请登录</a>
+                <a href="#" class="register">免费注册</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">购物车<em class="text-danger">2</em></a></li>
+            <li><a href="#">订单<em class="text-danger">2</em></a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.speiyou.com/" target="_blank">更多课程</a></li>
+            <li class="phone-400">400-800-2211</li>
+        </ul>
+    </div>
+</div>
+-->
+
+<!-- module.Header -->
+<!--
+@require widget/Public.Header/header.less
+@require he ader.js
+-->
+<!--
+<div class="modele-header-pic">
+   
+    <img src="http://file.xueersi.com/web/2016/06/29/14671698514847.jpg" alt="暑假班抢福利倒计时" usemap="#Map" border="0">
+      <map name="Map" id="Map">
+        <area shape="rect" coords="991,18,1158,65" href="http://zt.xueersi.com/2016xxsjlive/" target="_blank"/>
+  </map>
+    <p class="settime" endtime="2016-7-01 19:15:59" style="right:235px;color:#e74c3c;"></p>
+    <script type="text/javascript">
+			$(function(){
+			   xue.updateEndTime('.settime');//执行倒计时函数
+			});
+	</script>
+</div>
+-->
+<div id="module-header">
+    <div class="h-logo"><a href="#">学而思网校</a></div>
+    <div class="h-search">
+        <input type="text" class="h-text pull-left" placeholder="搜索:秋季满分冲刺班" autocomplete="on">
+        <button type="button" class="btn btn-primary btn-search pull-left">搜索</button>
+    </div>
+    <div class="h-words pull-left">
+        <a target="_blank" href="#" class="text-muted">免费课</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        <a target="_blank" href="#" class="text-muted">11月11天</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        <a target="_blank" href="#" class="text-muted">11月11天</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+    </div>
+    <!-- 头部购物车ui部分调用 -->
+    <!--
+    //@require widget/Module.Dropdown/dropdown.js
+    @require widget/Public.MiniCart/minicart.js
+    @require widget/Public.MiniCart/minicart.less
+-->
+
+    <div id="module-minicart" class="pull-right ui-dropdown-miniCart">
+        <div class="dropdown-handle btn btn-default">
+            <i class="fa fa-shopping-cart pull-left"></i>
+            <a href="http://cart.wx4.0.com" target="_blank" id="myCartUrl">我的购物车</a>
+            <i class="fa fa-angle-right pull-right"></i>
+            <small class="minicart-total badge small">2</small>
+        </div>
+        <!-- 上半部分 -->
+        <div class="dropdown-body">111</div>
+    </div>
+
+</div>
+
+<!-- module.Nav -->
+<!--
+@require widget/Public.Nav/nav.js
+@require widget/Public.Nav/nav.less
+-->
+<div id="module-nav" class="ui-head-nav">
+    <div class="container">
+        <div id="ui-categorys" class="ui-categorys pull-left">
+            <div class="category-dt"><a href="">全部课程分类<i class="ci-right"><s>◇</s></i></a></div>
+            <div class="category-dd">
+                <div class="category-items"></div>
+                <div class="category-layer"></div>
+            </div>
+        </div>
+        <ul class="head-nav pull-left">
+            <li class="current"><a href="">找老师</a></li>
+            <li><a href="">免费课</a></li>
+            <li><a href="">看学霸</a></li>
+            <li><a href="">新鲜事</a></li>
+            <li><a href="">逛书城</a></li>
+            <li><a href="">泡论坛</a></li>
+        </ul>
+        <div class="nav-live-course-info hidden">
+            <a href="#" target="_blank"><img src="./static/img/index-live-info.png" alt=""></a>
+        </div>
+    </div>
+    <!--  直播课程介绍  -->
+    <div class="live-course-help">
+        <div class="course-help-pic">
+            <a href="#" target="_blank" class="help-btn"></a>
+            <span class="help-end-time">关闭剩余时间：<em>5</em>秒</span>
+            <span class="help-close"></span>
+        </div>
+    </div>
+</div>
+
+
+<!--
+    @require widget/Mall.indexTrends/ui-trends.less
+-->
+<div class="ui-index-trends">
+    <div class="index-new-trends">
+        <!-- <div class="trends-title">
+            <span>最新资讯</span>
+            <a href="#">更多</a>
+        </div> -->
+
+        <div class="index-login-items">
+            <div class="media">
+                <!-- 已登录 -->
+
+                <!-- <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://s02.xesimg.com/teacher/2013/08/26/13774956202468.jpg" alt="..."></a>
+                </div> -->
+                <!-- 已登录 -->
+                <div class="media-body">
+                    <!-- 已登录 -->
+                    <!-- <div class="user-name">
+
+                        <h4 class="media-heading pull-left">快乐的小鸟</h4>
+                        <a class="user-v pull-left" href="">
+                            <img src="img/v2.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-sex badge"> <i class="fa fa-venus fa-mars"></i>
+                        </span>
+                        <a href="" class="user-level label label-warning">Lv.20</a>
+                    </div>
+                    <div class="QRcode">
+                        <div class="pull-left">
+
+                            <img src="../static/img/weixin.png" alt="">
+                            <p class="text-center">微信公众号</p>
+                        </div>
+                        <div class="pull-right">
+                            <img src="../static/img/app.png" alt="">
+                            <p class="text-center">APP下载</p>
+                        </div>
+                    </div> -->
+                    <!-- 已登录 end-->
+                    <!-- 未登录 -->
+                    <div class="loginImg">
+                        <a href="#">
+                            <img src="./static/img/loginImg.png" alt="..."></a>
+                    </div>
+                    <div class="QRcode_icon">
+                        <div class="pull-left">
+                            <li></li>
+                            <p class="text-center">微信公众号</p>
+                        </div>
+                        <div class="pull-right">
+                            <li></li>
+                            <p class="text-center">APP下载</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="index-btn-wrap">
+                <!-- 已登录 -->
+                <!-- <a href="#" class="btn btn-danger btn-into-home">立即去学习</a> -->
+                <!-- 已登录 end-->
+                <!-- 未登录  -->
+                <button type="button" class="btn btn-danger">登录</button>
+                <button type="button" class="btn btn-info">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+    @require widget/Public.FocusPic/ui-focusPic.less
+-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides-->
+    <ul class="carousel-inner focus-list" role="listbox">
+        <li class="item active">
+            <a target="_blank" href="http://www.xueersi.com/"
+               style="background: url(http://img04.xesimg.com/skin/helloWeen_2015.jpg) no-repeat top center;" title="2">
+            </a>
+        </li>
+        <li class="item">
+            <a target="_blank" href="http://www.baidu.com/"
+               style="background: url(http://img04.xesimg.com/skin/Mid_Autumn.png) no-repeat top center;" title="1">
+            </a>
+        </li>
+    </ul>
+    <!-- Indicators -->
+    <div class="focus-num-wrap">
+        <ol class="carousel-indicators focus-num">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active">学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">2学霸节免费直播学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="">学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">2学霸节免费直播学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="">学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">2学霸节免费直播学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="">学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">2学霸节免费直播学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="">学霸节免费直播</li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">2学霸节免费直播学霸节免费直播</li>
+        </ol>
+    </div>
+</div>
+<!-- 学习中心区域 -->
+<div class="wrap">
+    <div class="container">
+        <!-- 直播进行中 -->
+        <div class="grade-course-title">
+            <div>
+                <h6 class="live-title">直播讲座</h6>
+                <a href="#" class="more">更多年级讲座<i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="row carousel slide row-page-turn" id="carousel-page-turn-2" data-ride="carousel">
+            <span class="color-blue page-turn page-up " href="#carousel-page-turn-2" role="button" data-slide="prev"><i
+                    class="fa fa-angle-left"></i></span>
+
+            <div class="carousel-inner page-turn-box pull-left" role="listbox">
+                <div class="item active">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="javascript:void(0)" class="live-course-title live-order">
+                <span class=" join-live bg-yellow">
+                 立即预约直播
+                </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-red">
+             直播中,立即进入
+            </span>
+                                    </a>
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 </p>
+
+                                        <p>
+                                            <span class="time">今天&nbsp;&nbsp;15:30-16:30</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<span class="page-turn page-down " href="#carousel-page-turn-2" role="button" data-slide="next">
+			<i class="fa fa-angle-right"></i>
+		</span>
+        </div>
+        <!-- 直播回放 -->
+        <div class="grade-course-title">
+            <div>
+                <h6 class="live-title">直播回放</h6>
+                <a href="#" class="more">更多年级回放<i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="row carousel slide row-page-turn" id="carousel-page-turn-3" data-ride="carousel">
+            <span class="color-blue page-turn page-up " href="#carousel-page-turn-3" role="button" data-slide="prev"><i
+                    class="fa fa-angle-left"></i></span>
+
+            <div class="carousel-inner page-turn-box pull-left" role="listbox">
+                <div class="item active">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="row row-page-turn tab-content">
+                        <div class="live-content-action tab-pane fade active in" role="tabpanel">
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+       直播频道页
+        @require widget/Mall.live/live.less
+        @require widget/Mall.live/live.js
+    -->
+
+
+                            <div class="live-card">
+                                <div class="live-course-box">
+                                    <img src="./static/img/zhibo_message.png" class="live-teacher-photo"/>
+                                    <a href="#" class="live-course-title">
+            <span class="join-live bg-blue">
+             观看直播回放
+            </span>
+                                    </a>
+
+                                </div>
+                                <div class="live-time-tip">
+                                    <div class="live-time-tip-container">
+                                        <p>暑假预初数学直播目标满分班 <span>第3讲</span></p>
+
+                                        <p>
+                                            <span class="teacher">授课老师：张新刚</span>
+                                            <span class="watchNum">666</span>
+                                            <img src="./static/img/ic_views.png"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<span class="page-turn page-down " href="#carousel-page-turn-3" role="button" data-slide="next">
+			<i class="fa fa-angle-right"></i>
+		</span>
+        </div>
+
+        <!-- 课程介绍 -->
+        <!--
+       课程列表：
+        @require widget/Public.Module/glory.less
+        @require widget/Public.Module/courses.less
+        @require widget/Public.Module/glory.js
+        @require widget/Module.Pagination/paginations.js
+    -->
+
+        <div class="grade-course-title">
+            <div>
+                <h6>课程体系</h6>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="class-box">
+                <div class="class-info">
+                    <div>
+                        <a href="#">
+                            <img src="./static/img/primary_school.png" alt="">
+                        </a>
+
+                        <p class="class-name">小学课程体系</p>
+                    </div>
+                    <div class="class-container">
+                        <p class="message">
+                            <i class="fa fa-quote-left"></i>
+                <span>
+                    小学数学结合奥数独创“十二级体系”；英语从剑桥少儿英语起步，中段结合新概念英语教材，高年级进行综合复习；语文重在培养兴趣、品质养成开阔视野。“直播+辅导”，即直播教学结合辅导老师个性化作业和点评服务，让学习更有效！
+                </span>
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+
+                        <div class="subject">
+
+                            <a href="#"></a>
+
+                            <p>语文</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>数学</p>
+                        </div>
+                        <div class="subject marginR_0 ">
+                            <a href="#"></a>
+
+                            <p>英语</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box marginR_24">
+                <div class="class-info">
+                    <div>
+                        <a href="#">
+
+                            <img src="./static/img/middle_school.png" alt="">
+
+                        </a>
+
+                        <p class="class-name">初中课程体系</p>
+                    </div>
+                    <div class="class-container">
+                        <p class="message">
+                            <i class="fa fa-quote-left"></i>
+                <span>
+                   十二年教学积淀，结合对课标和教材的深入调研，形成数、语、英、物、化五大学科完善的直播课程体系，覆盖高频考点、易错点，把握中考动向。根据学员差异，各科根据实际需要分设满分、尖端、联赛、学霸、素养等不同难度班型。
+                </span>
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>语文</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>数学</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>英语</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>物理</p>
+                        </div>
+                        <div class="subject marginR_0 ">
+                            <a href="#"></a>
+
+                            <p>化学</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="class-info">
+                    <div>
+                        <a href="#">
+
+                            <img src="./static/img/high_school.png" alt="">
+
+                        </a>
+
+                        <p class="class-name">高中课程体系</p>
+                    </div>
+                    <div class="class-container">
+                        <p class="message">
+                            <i class="fa fa-quote-left"></i>
+                <span>
+                    高中课程体系由【教材同步】与【高考总复习】组成，覆盖全国16个版本。假期预习，学期中同步与拓展拔高。课程结合定时的直播辅导、在线测评、答疑等服务，使学习习惯与成绩在学霸老师的言传身教中得到锻炼与提升。
+                </span>
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>概述</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>高一</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>高二</p>
+                        </div>
+                        <div class="subject">
+                            <a href="#"></a>
+
+                            <p>高三</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 学员这样说 -->
+        <div class="grade-course-title">
+            <div>
+                <h6>学员这样说</h6>
+            </div>
+        </div>
+        <div class="row carousel slide row-page-turn" id="carousel-page-turn" data-ride="carousel">
+            <span class="color-blue page-turn page-up " href="#carousel-page-turn" role="button" data-slide="prev"><i
+                    class="fa fa-angle-left"></i></span>
+
+            <div class="carousel-inner page-turn-box pull-left" role="listbox">
+                <!--
+       课程列表：
+        @require widget/Public.Module/courses.less
+        @require widget/Public.Module/courses.js
+    -->
+                <div class="item active">
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">对症下药才最有效 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                我上作文直播班的初衷非常明确，是想找出自己作文的毛病。二模成绩从年部11掉到年部13，居然是作文拉了分，满分60只得了47。当时我十分不理解为什么会得这么低的分，事后老师也帮我找了原因，是因为“事件不够鲜明突出，中心与事件不够贴合”.
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_1.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">蔡思美
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">初三 来自辽宁</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">“授之以渔”的学而思 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                若汐一直都保有对数学的喜爱，认为学数学就好像在玩。但是，对于答对的题，她并不能清晰地表达解题思路，这也让我更加迫切地想让孩子进行专门的数学辅导。
+                                无意间了解到学而思网校，和孩子看了一次公开直播课，却着实开拓了我的眼界。在这之前，我对数学竞赛的了解就是买辅导书然后做题...
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_2.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">若汐妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">一年级 来自陕西</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">没想到的用心 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                因为孩子学习比较稳定，基本是年级前三名，尤其擅长数学。经学校老师的许可，开学后将跨级跟学四年级的数学课程。寒假直播课的学习为开学四年级的数学课程打下了非常好的基础，学而思概念式启蒙的优势非常给力，激发了孩子极大的学习兴趣和学习热情，使我们对即将开始的跨级学习充满了信心。
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_3.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">袁奕妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">四年级 来自上海</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">“授之以渔”的学而思 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                若汐一直都保有对数学的喜爱，认为学数学就好像在玩。但是，对于答对的题，她并不能清晰地表达解题思路，这也让我更加迫切地想让孩子进行专门的数学辅导。
+                                无意间了解到学而思网校，和孩子看了一次公开直播课，却着实开拓了我的眼界。在这之前，我对数学竞赛的了解就是买辅导书然后做题...
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_2.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">若汐妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">一年级 来自陕西</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">对症下药才最有效 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                我上作文直播班的初衷非常明确，是想找出自己作文的毛病。二模成绩从年部11掉到年部13，居然是作文拉了分，满分60只得了47。当时我十分不理解为什么会得这么低的分，事后老师也帮我找了原因，是因为“事件不够鲜明突出，中心与事件不够贴合”.
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_1.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">蔡思美
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">初三 来自辽宁</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">没想到的用心 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                因为孩子学习比较稳定，基本是年级前三名，尤其擅长数学。经学校老师的许可，开学后将跨级跟学四年级的数学课程。寒假直播课的学习为开学四年级的数学课程打下了非常好的基础，学而思概念式启蒙的优势非常给力，激发了孩子极大的学习兴趣和学习热情，使我们对即将开始的跨级学习充满了信心。
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_3.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">袁奕妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">四年级 来自上海</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">“授之以渔”的学而思 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                若汐一直都保有对数学的喜爱，认为学数学就好像在玩。但是，对于答对的题，她并不能清晰地表达解题思路，这也让我更加迫切地想让孩子进行专门的数学辅导。
+                                无意间了解到学而思网校，和孩子看了一次公开直播课，却着实开拓了我的眼界。在这之前，我对数学竞赛的了解就是买辅导书然后做题...
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_2.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">若汐妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">一年级 来自陕西</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">没想到的用心 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                因为孩子学习比较稳定，基本是年级前三名，尤其擅长数学。经学校老师的许可，开学后将跨级跟学四年级的数学课程。寒假直播课的学习为开学四年级的数学课程打下了非常好的基础，学而思概念式启蒙的优势非常给力，激发了孩子极大的学习兴趣和学习热情，使我们对即将开始的跨级学习充满了信心。
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_3.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">袁奕妈妈
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">四年级 来自上海</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-list course-small-list">
+                        <div class="course-detail pull-left">
+                            <p class="course-title">
+                                <a href="##" class="title-detail">对症下药才最有效 </a>
+                            </p>
+                            <a href="#" class="tip-for amount-show">
+                                我上作文直播班的初衷非常明确，是想找出自己作文的毛病。二模成绩从年部11掉到年部13，居然是作文拉了分，满分60只得了47。当时我十分不理解为什么会得这么低的分，事后老师也帮我找了原因，是因为“事件不够鲜明突出，中心与事件不够贴合”.
+                            </a>
+                        </div>
+                        <div class="ui-author pull-right">
+                            <p>
+                                <a href="#">
+                                    <img src="./static/img/user_1.png" alt="">
+                                </a>
+                            </p>
+                            <i></i>
+
+                            <p>
+                                <a href="#" class="ui-name">蔡思美
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="#" class="ui-message">初三 来自辽宁</a>
+                            </p>
+
+                            <p>
+                                <a class="ui-more" href="#">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+		<span class="page-turn page-down " href="#carousel-page-turn" role="button" data-slide="next">
+			<i class="fa fa-angle-right"></i>
+		</span>
+        </div>
+        <!-- 常见问题 -->
+        <!--
+       课程列表：
+        @require widget/Public.Module/courses.less
+        @require live.js
+    -->
+        <div class="grade-course-title">
+            <div>
+                <h6>常见问题</h6>
+            </div>
+        </div>
+        <div class="problem">
+            <div class="content">
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">这个直播班和录播班有什么区别？比录播好么？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">什么是直播课？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">直播班的配套讲义是什么格式的？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">购买直播班以后会随堂测的内容在讲义中吗？</a>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="problem">
+            <div class="content">
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">直播班的购买形式？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">您需要下载“学而思网校”APP客户端，通过客户端可提交咱们直播班的作业哦</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">我买的直播班上课时间不合适怎么办？</a>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="problem">
+            <div class="content">
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">我购买了暑期直播班，纸质讲义什么时候邮寄给我呢？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">我在直播班的学习过程中有问题怎么办？</a>
+                </div>
+                <div class="title">
+                    <img src="./static/img/Q.png" alt="">
+                    <a href="#">孩子第一次报名直播班，我很担心不适应上课形式呀？</a>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix answer">
+                    <div class=" pull-left">
+                        <img src="./static/img/A.png" alt="">
+                    </div>
+                    <div class="text pull-left">
+                        <p>
+                            两种课程类型的授课形式不同，直播班的上课时间是固定的，需要学员按时参加；每次课程的安排是“授课老师讲解（知识点＋例题讲解＋问题答疑＝2小时）＋随堂测（半小时）”，只要上课时间合适，孩子都可以学习的。而且课后还可以看回放。
+                        </p>
+
+                        <p>
+                            录播课程只是上课时间相对灵活一些，但对于学员的要求比较高，自主学习能力较强、学习习惯较好的孩子比较适合。而直播班，我们的辅导老师会主动的去关注学员的学习状态。确保学习效果！并且25号24点前您购买还可以获赠与课程对应的录播年卡哈！
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 课程优势 -->
+        <!--
+       课程列表：
+        @require widget/Public.Module/courses.less
+        @require live.js
+    -->
+
+        <div class="grade-course-title">
+            <div>
+                <h6>课程优势</h6>
+            </div>
+        </div>
+        <div class="advantage-box">
+            <div class="advantage-item">
+                <p>专业</p>
+
+                <p>100%面授班优秀教师授课多版本课程，适合全国教材</p>
+            </div>
+            <div class="advantage-item">
+                <p>亲密</p>
+
+                <p>小班辅导，定时高效的答疑个性化作业点评、批改订正</p>
+            </div>
+            <div class="advantage-item">
+                <p>有效</p>
+
+                <p>学习过程，全流程介入引导学习报告，效果追踪可视化
+                </p>
+            </div>
+            <div class="advantage-item">
+                <p>便捷</p>
+
+                <p>足不出户享受优质教学服务随时随地了解学习情况反馈</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 页面配置 -->
+<!-- WPA Button Begin -->
+<!-- WPA Button End -->
+
+<!-- 公共底部 -->
+
+
+<!-- module.footer -->
+<!--
+@require widget/Public.Footer/footer.less
+-->
+<!-- 这是页脚部分代码  -->
+<div id="module-footer">
+    <!-- <div class="foot-service">
+        <div class="service-share" href="http://www.xueersi.com/article/detail/1825">
+            <span>名师</span>
+            <p>38%清华毕业平均教龄5.1年100%面授S级老师</p>
+        </div>
+        <div class="service-system" href="http://www.xueersi.com/article/detail/1824">
+            <span>陪伴</span>
+            <p>直播授课,QQ群,APP随时答疑名师就在你身边</p>
+        </div>
+        <div class="service-live" href="http://www.xueersi.com/article/detail/1814">
+            <span>方便</span>
+            <p>足不出户，免去路途奔波随时随地反复看</p>
+        </div>
+        <div class="service-interaction" href="http://www.xueersi.com/app">
+            <span>有效</span>
+            <p>在线练习及时反馈已累计培养39名中高考状元</p>
+        </div>
+    </div> -->
+
+    <div class="foot-area">
+        <p>
+            <a href="http://www.xueersi.com">网校首页</a>
+            |
+            <a href="http://www.xueersi.com/article/detail/1219">关于我们</a>
+            |
+            <a href="http://www.xueersi.com/article/detail/1220">合作专区</a>
+            |
+            <a href="http://www.xueersi.com/article/detail/1538">联系我们</a>
+            |
+            <a class="text-danger" href="http://www.xueersi.com/article/detail/1495">版权声明</a>
+            |
+            <a href="http://www.xueersi.com/article/">帮助中心</a>
+        </p>
+
+        <p>
+            客服电话： <strong class="text-danger">400-800-2211</strong>
+            （免长途话费） 010-52867461 Copyright &copy; 2009-2015 www.xueersi.com All Rights Reserved
+        </p>
+
+        <p>
+            北京学而思教育科技有限公司 地址：北京市海淀区丹棱街16号海兴大厦B座3层
+            <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备09032638号</a>
+            京公网安备:1101082103
+        </p>
+
+        <p class="link">
+            <a target="_blank" href="https://search.szfw.org/cert/l/CX20120925001738002003" id="___szfw_logo___"><img
+                    src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+        </p>
+
+        <div style="width:140px;height:174px;position:fixed;right:7px;top:196px;z-index:100;">
+            <a href="/LivePlayBack/index/2-1143-6049/2a544c64c66702e453b38703bf3f5e07" target="_blank">
+                <img src="http://x02.xesimg.com/web/2016/04/20/14611348842109.png">
+            </a>
+            <i class="fa fa-remove closeH"></i>
+        </div>
+    </div>
+</div>
+<script src="./lib/jQuery/1.11.1/jquery.min.js"></script>
+<!--    <script src="http://js04.xesimg.com/xue.jquery.min.js"></script>ignore-->
+<script src="./lib/bootstrap/3.3.5-custom/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="./static/js/xue.mall.js"></script>
+<script charset="utf-8" type="text/javascript"
+        src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA0NTAwOF8zNzcxNjVfNDAwODAwMjIxMV8"></script>
+<script>
+    var PAGE_CONFIG = {
+        ID: 'Index',
+        MODULE: 'Mall',
+        TITLE: '商城首页',
+        NAV_FIXED: true // 如果想要头部分类展开的话，设为true，如果不想直接展开设为false
+    };
+</script>
+<script src="./static/js/public.onload.js"></script>
+
+</body>
+<br/><br/>
+</html>

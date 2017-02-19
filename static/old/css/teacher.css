@@ -1,0 +1,652 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-03-05 14:32:27
+ * @version $Id$
+ */
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 arial, tahoma, "\5b8b\4f53", sans-serif;
+}
+body {
+  _background-image: url(about:blank);
+  /*用浏览器空白页面作为背景*/
+
+  _background-attachment: fixed;
+  position: relative;
+  /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new,courier,monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a,
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0076b3;
+}
+a:active {
+  text-decoration: underline;
+  color: #F00;
+}
+a {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+button {
+  font-size: 100%;
+  border: 0;
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+u {
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+.f_blue {
+  color: #0076b3;
+}
+/*大赛样式*/
+body {background: #100139;}
+#header {overflow: hidden;background: url(http://img04.xesimg.com/teacher/h1.jpg) center top no-repeat;}
+#header .jiathis_item {width:980px;height:100px;margin:0 auto;position: relative;}
+#header .jiathis_item .jiathis_style {position: absolute;right:60px;top:8px; z-index: 10;}
+.superstar_teacher {width: 188px;height: 295px; position: absolute;right:10px;top:266px; z-index: 10;}
+
+#header .headpic {overflow: hidden;}
+#header .headpic p {height: 100px;overflow: hidden;}
+#header .headpic .h2 {background: url(http://img04.xesimg.com/teacher/h2.jpg) center top no-repeat;}
+#header .headpic .h3 {background: url(http://img04.xesimg.com/teacher/h3.jpg) center top no-repeat;}
+#header .headpic .h4 {height:99px;background: url(http://img04.xesimg.com/teacher/h5.jpg) center top no-repeat;}
+#header .headpic .h5 {background: url(http://img04.xesimg.com/teacher/h4.jpg) center top no-repeat;}
+#header .headpic .h6 {height:124px;background: url(http://img04.xesimg.com/teacher/h6.jpg) center top no-repeat;}
+#footer {height:342px;background: url(http://img04.xesimg.com/teacher/footer.jpg) center top no-repeat; overflow: hidden;}
+#footer .foot_area {width:980px;margin:210px auto 0;overflow: hidden; padding: 20px 0;}
+#footer .foot_area p {line-height: 180%;text-align: center;color: #ccc;}
+#footer .foot_area p a {color: #ccc;padding: 0 5px;}
+
+
+
+#container {overflow: hidden; background: url(http://img04.xesimg.com/teacher/container.png) center top repeat-y;}
+
+.container_top {height: 590px;background: url(http://img04.xesimg.com/teacher/top1.png) center top no-repeat;}
+.container_fenban {height: 590px;background: url(http://img04.xesimg.com/teacher/top1.jpg) center top no-repeat;}
+
+.panel_con {background: url(http://img04.xesimg.com/teacher/repeat-con.jpg) center top no-repeat; overflow: hidden;}
+.panel_bot {height:569px;background: url(http://img04.xesimg.com/teacher/bottom1.jpg) center top no-repeat; }
+
+.panel_area {width: 980px;margin:auto;overflow: hidden;position: relative;}
+.panel_title {height: 57px;overflow: hidden;margin:10px 0 0 2px;}
+.panel_title .left_title {float: left;width: 500px;}
+.panel_title .right_title {float: right;width: 305px; position: relative;}
+.panel_title .right_title em.btn_follows {display:block;width: 56px;height: 24px; position: absolute;right:10px;top:23px;z-index: 10;cursor: pointer;background: url(http://img04.xesimg.com/teacher/btn_6.png) no-repeat;}
+.panel_title .right_title em.follows_cancel {background: url(http://img04.xesimg.com/teacher/btn_7.png) no-repeat;}
+
+/*说明书和随机事件*/
+.panel_area .article {width:630px;height:500px;color: #ccc;line-height: 200%; position: absolute;left:20px;top:75px;z-index: 10;}
+.panel_area .userietm {width: 285px;height: 500px;position: absolute;right:0px;top:75px;z-index: 10; }
+.panel_area .userietm .userp {color: #9567ff;line-height: 200%;margin-bottom: 20px;}
+.panel_area .userietm .username {color: #ccc;overflow: hidden;_width:100%;}
+.panel_area .userietm .username span.left {float: left;padding-left: 5px;}
+.panel_area .userietm .username span.right {float: right;padding-right: 20px;}
+.panel_area .userietm .username li {height: 20px;line-height: 20px;}
+
+
+/*分班老师*/
+.panel_area .panel_area_con {overflow: hidden;}
+.panel_area .panel_left {float: left;display: inline; width: 660px;height: 417px;background: url(http://img04.xesimg.com/teacher/left_bg.jpg)  no-repeat;overflow: hidden;margin: 60px 0 0 15px;}
+.panel_area .panel_right {float: right;display: inline;width: 285px;height: 417px;overflow: hidden;background: url(http://img04.xesimg.com/teacher/right_bg.jpg)  no-repeat;margin:60px 15px 0 0;}
+.play_content {width: 644px;height: 400px;overflow: hidden;margin:8px 0 0 8px;}
+
+.tabs_teacher {width: 268px;height: 95px;overflow: hidden;background: #000;margin-left:10px;margin-top:8px;}
+.tabs_teacher li {float: left;width: 67px;height: 95px;overflow: hidden;text-align: center;}
+.tabs_teacher li img {display:block;width: 60px;height: 60px;margin:5px auto 7px;}
+.tabs_teacher li span {display: block;color: #ccc;}
+.tabs_teacher li.current {background: #401e63;}
+.tabs_teacher li a {color: #ccc; text-decoration: none;}
+
+.tabs_content {width: 268px;height: 301px;overflow: hidden;margin-left:10px;}
+.tabs_content .stupic {float: left;display: inline;width: 53px;height: 80px;font-size: 12px;line-height: 20px;padding: 17px 5px 0 8px;overflow: hidden;text-align: center;}
+.tabs_content .stupic img {height: 50px;width: 50px;}
+.tabs_content .stupic span {display: block;height: 20px;overflow: hidden;padding: 0 2px;color: #ccc;}
+
+.tips_text_content {width: 940px;height: 55px;overflow: hidden;background: #130735;color: #fdf152;line-height: 200%;padding:15px 20px;margin-top: 15px; position: relative;}
+.btn_rule {display:block;width:79px;height:23px; text-indent: -99999em; background: url(http://img04.xesimg.com/teacher/btn_1.jpg)  no-repeat; position: absolute;right: 10px;top:45px; z-index: 10;}
+
+/*评委*/
+.teacher_judge_content {width: 953px;height: 330px;margin:0 auto;background: #130441;}
+.teacher_judge_content .judge_tc {overflow: hidden;width: 223px;height: 302px;float: left;display: inline; margin:15px 7px 0 ;}
+.teacher_judge_content .judge_tc img {display: block;width: 223px;height: 267px;}
+.teacher_judge_content .judge_tc span {display: block;width: 223px;height: 35px;line-height: 35px;background:#4a17c7;color: #ccc; text-align: center;font-size: 14px; }
+
+.review_list {overflow: hidden;height: 29px;line-height: 26px;background: #000;border-bottom: 1px solid #6028e4;width: 976px;}
+.review_list li {float: left;display: inline;color: #ccc;padding:0 10px;background: url(http://img04.xesimg.com/teacher/line.jpg) right 9px  no-repeat; cursor: pointer;margin-top:3px;}
+.review_list li.current {background: #6028e4;}
+
+
+.left_video {float: left;width: 475px;display: inline;overflow:hidden;}
+.left_video .video_newText {overflow: hidden;}
+.left_video .video_newText img {display:block;width: 475px;height: 315px;margin:10px ;}
+.left_video .video_newText span {display:block;color: #9567ff; text-align: center;font-size: 14px;}
+.left_video .video_newText span a {color: #9567ff;}
+
+.right_video {float: right;width: 470px;display: inline;overflow:hidden;}
+.right_video .video_newText {overflow: hidden;float: left;}
+.right_video .video_newText img {display:block;width: 215px;height: 134px;margin:12px 10px;}
+.right_video .video_newText span {display:block;color: #9567ff; text-align: center;font-size: 14px;}
+.right_video .video_newText span a {color: #9567ff;}
+
+.teacher_feed_content {overflow: hidden;width: 954px;margin:0 auto;}
+.left_feed {float: left;display: inline;width: 657px;height: 456px;background: #130441;overflow: hidden;}
+.right_feed {float: right;display: inline;width: 285px;height: 456px;background: #130441;overflow: hidden;}
+
+/*知识点*/
+.left_feed  .feed_article {overflow: hidden;margin-top:10px;_width:100%;}
+.left_feed  .feed_article .pic {float: left;display: inline;width: 208px;margin-left:10px;}
+.left_feed  .feed_article .pic img {width: 208px;height: 128px;border:2px solid #45078c;}
+.left_feed  .feed_article .article_con {float: right;display: inline;width: 420px;color: #ccc;margin-left:15px;}
+.left_feed  .feed_article .article_con h1 {font-size: 14px;line-height: 30px;}
+.left_feed  .feed_article .article_con .text {line-height:180%;color: #9567ff;}
+.left_feed  .feed_article .article_con .bar {line-height: 30px;}
+.left_feed  .feed_article .article_con .bar a {float:right;display:inline;color: #666;background: url(http://img04.xesimg.com/teacher/icon_1.jpg) 0px 6px  no-repeat;padding-left:20px;margin-right:10px;}
+
+/*新鲜事*/
+.ui_feed {margin:15px 0 30px 15px;overflow: hidden;}
+.ui_feed .ui_avatar {float: left;height: 50px;width: 50px;}
+.ui_feed .ui_avatar img {height: 50px;width: 50px;}
+.ui_feed .feed_detail {float: right;width: 200px;}
+.ui_feed .feed_detail .ui_userinfo {font-size: 14px;color: #ccc;}
+
+.icon {
+    background-image: url("http://img04.xesimg.com/icon.png");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-indent: -9999em;
+    vertical-align: top;
+    width: 20px;
+}
+.icon_yverify {background-position: -100px -24px;}
+.icon_bverify {background-position: -99px 2px;}
+.ui_feed .feed_detail .feed_index_list {font-size: 12px;}
+.ui_feed .feed_detail .feed_index_list a {color: #9567FF;}
+.ui_feed .feed_detail .feed_text {overflow: hidden;}
+.feed_detail .feed_text {color: #9567ff;font-size: 14px;line-height: 180%;word-wrap: break-word;}
+.ui_feed .feed_detail .feed_bar {height: 30px;line-height: 30px;}
+.feed_detail .feed_bar .S_time {color: #666;}
+
+/*pk*/
+.teacher_pk_content {overflow: hidden;width: 954px;margin:0 auto 20px;position: relative;_width:960px;}
+.teacher_pk_content_item {overflow: hidden;width: 954px;margin:0 auto 20px;position: relative;_width:960px;}
+.pk_left_con {float: left;display: inline;width: 475px;height: 362px;background-color: #130441;}
+.pk_right_con {float: right;}
+.pk_usernone {
+  background: url(//img04.xesimg.com/teacher/noneuser.png) no-repeat left 0;
+}
+
+
+.pk_left_con .pk_left_pic {float:right;width: 178px; margin:10px 10px 0 0 ;_margin:10px 5px 0 0;}
+.pk_left_con .pk_left_pic .judge_pk {overflow: hidden;position: relative;}
+.pk_left_con .pk_left_pic .judge_pk .pk_pic {height: 267px;}
+.pk_left_con .pk_left_pic .judge_pk .pk_name {background: #4a17c7;height: 35px;line-height: 35px;color: #fff;padding:0 5px;font-size: 14px;}
+.pk_left_con .pk_left_pic .judge_pk .pk_name span {float: right;display: inline;}
+.pk_left_con .pk_left_pic .judge_pk .pk_name span.name {float: left;}
+.pk_left_con .pk_left_pic .judge_pk .pk_name span.name a {color: #fff;}
+.pk_left_con .pk_left_pic .judge_pk .pk_guan {overflow: hidden;margin-top:8px;}
+.pk_left_con .pk_left_pic .judge_pk .pk_guan .btn_vote {cursor: pointer;float: left;display: inline;width: 87px;height: 34px;background: url(http://img04.xesimg.com/teacher/btn_2.jpg) no-repeat; text-indent: -99999em;}
+.pk_left_con .pk_left_pic .judge_pk .pk_guan .btn_follow {cursor: pointer;float: right;display: inline;width: 87px;height: 34px;background: url(http://img04.xesimg.com/teacher/btn_4.jpg) no-repeat; text-indent: -99999em;}
+.pk_left_con .pk_left_pic .judge_pk .pk_guan .vote_cancel {cursor: default;background: url(http://img04.xesimg.com/teacher/btn_3.jpg) no-repeat;}
+.pk_left_con .pk_left_pic .judge_pk .pk_guan .follow_cancel {cursor: default;background: url(http://img04.xesimg.com/teacher/btn_5.jpg) no-repeat; }
+.pk_left_con .pk_left_pic .judge_pk  .superuser {display: block;width: 35px;height: 102px;background: url(http://img04.xesimg.com/teacher/rqw.jpg) no-repeat; position: absolute;left: 0;top:0;z-index: 1; text-indent: -99999em;}
+.pk_left_con .pk_left_pic .judge_pk  .superstar {display: block;width: 42px;height: 44px;background: url(http://img04.xesimg.com/teacher/star.jpg) no-repeat; position: absolute;right: 5px;top:2px;z-index: 1; text-indent: -99999em;}
+.pkPicBg {width: 177px;height: 135px;background: url(http://img04.xesimg.com/teacher/pk_3.png) no-repeat;position: absolute;left: 390px;top:139px;z-index: 100;}
+
+
+.pk_left_con .pk_left_text {overflow: hidden;float: left;display: inline;width: 285px;}
+.pk_left_con .pk_left_text .userinfo {color: #ccc;line-height: 200%;width: 270px;height:170px;margin:0 auto;padding-top:15px;}
+.pk_left_con .pk_left_text .goin {line-height: 40px;text-align: right;padding-right:10px;}
+.pk_left_con .pk_left_text .goin a {color: #9567ff;}
+.pk_left_con .pk_left_text .videopic {overflow: hidden;}
+.pk_left_con .pk_left_text .videopic a {float: left;display: inline;margin-left:10px;}
+
+/*.pk_left_con .pk_left_text .videopic .left_videopic {float: left;display: inline;width: 128px;margin-left:10px;}
+.pk_left_con .pk_left_text .videopic .right_videopic {float: left;display: inline;width: 128px;margin-left:10px;}
+.pk_left_con .pk_left_text .videopic div a {display: block;width: 128px;height: 128px;overflow: hidden;}
+.pk_left_con .pk_left_text .videopic div span {display: block;color: #fff;text-align: center;background: #4A17C7;height: 25px;line-height: 25px;}
+*/
+
+
+.pk_right_con .pk_left_text {float: right;margin:0;}
+.pk_right_con .pk_left_pic {float: left;margin:10px  0 0 10px;_margin:10px  0 0 5px;}
+
+
+/*轮播样式*/
+.play_content {overflow: hidden; position: relative;}
+.play_content ul.focus_list {width: 644px;height: 400px;overflow: hidden;background:#000;position: relative; left: 0;top: 0;z-index: 1;}
+.play_content ul.focus_list li {overflow: hidden; width: 644px;height: 400px;left: 0; opacity: 0;position: absolute;top: 0;}
+.play_content ul.focus_list li p {overflow: hidden;position: relative;}
+.play_content ul.focus_list li p img {display: block; float: left;width: 644px;height: 400px;}
+.play_content ol {bottom: 8px;position: absolute;right: 8px;z-index: 2;}
+.play_content ol li {background-color: #FFFFFF;border-radius: 15px;color: #666666;cursor: pointer;display: inline;float: left;height: 19px;line-height: 19px;margin: 0 1px;text-align: center;width: 19px;}
+.play_content ol li.active {background: #9567FF;color: #fff;}
+
+/*队长页样式*/
+.captain_title {height: 50px;}
+.captain_title em.btn_follows {display:block;width: 56px;height: 24px; position: absolute;right:35px;top:45px;z-index: 10;cursor: pointer;background: url(http://img04.xesimg.com/teacher/btn_6.png) no-repeat;}
+.captain_title em.follows_cancel {background: url(http://img04.xesimg.com/teacher/btn_7.png) no-repeat;}
+
+.captainInfor {overflow: hidden;width:250px;margin-left:15px;}
+.captainInfor .userName {color: #9567ff;line-height: 200%;}
+.captainInfor .userWeb {line-height: 40px;text-align: right; padding-right:10px;}
+.captainInfor .userWeb a {color: #9567ff;}
+.captainInfor .userInfor {color: #ccc;line-height: 180%;}
+
+/*评论样式*/
+.teacher_comment_content {width: 956px;background: #f7f7f7;margin:0 auto;overflow: hidden;}
+.ui_comment {width: 920px;margin:5px auto 0;overflow: hidden; }
+.ui_comment form.comment_form {margin-bottom: 10px;margin-top:15px;overflow: hidden;}
+.ui_comment form.comment_form .comment_title {color: #999999;line-height: 35px;font-size: 14px;}
+.ui_comment form.comment_form .comment_textarea {overflow: hidden;}
+.ui_comment form.comment_form .comment_textarea textarea {border: 1px solid #CCCCCC;height: 90px;padding: 5px;width: 98%;}
+.ui_comment form.comment_form .comment_func .comment_tips {color: #CC0000;float: left;line-height: 30px;}
+.ui_comment form.comment_form .comment_func .comment_button {float: right;}
+
+.ui_comment form.comment_form .comment_func .comment_button .comment_size { color: #999999;float: left;line-height: 45px;margin-right: 10px;}
+.ui_comment form.comment_form .comment_func .comment_button .comment_size .text_num {font-size: 14px;font-weight: bold;}
+.ui_comment form.comment_form .comment_func .comment_button .btn_submit {font-size: 12px;height: 23px;line-height: 23px;margin: 10px 5px 0 0;width: 50px;}
+.btn_sky {
+    background: none repeat scroll 0 0 #3399CC;
+}
+.btn {
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.notCourse {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #ECECEC;
+    color: #999999;
+    font-size: 16px;
+    line-height: 125px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ui_comment .comment_content {overflow: hidden;}
+.ui_comment .comment_content .comment_list {border-bottom: 1px dashed #ddd;margin-top: 15px;overflow: hidden;padding-bottom: 5px;_width:100%;}
+.ui_comment .comment_list .ui_avatar {display: inline;float: left;width: 60px;}
+.ui_comment .comment_list .ui_avatar .userpic img {height: 50px;width: 50px;}
+.ui_comment .comment_list .feed_detail {display: inline;float: left;margin-left: 5px;width: 850px;}
+.ui_comment .comment_list .feed_detail .feed_text {color: #333;font-size: 14px;line-height: 180%;word-wrap: break-word;}
+.ui_comment .comment_list .feed_detail .feed_bar {color: #999999;height: 30px;line-height: 30px;position: relative;text-align: right;top: 1px;z-index: 10;}
+.ui_comment .comment_list .feed_detail .feed_bar .S_time {display: inline;float: left;text-align: left;width: 100px;color: #999999;}
+/*翻页*/
+.ui_pages {
+    margin: 30px auto;
+    text-align: center;
+}
+.ui_pages li {
+    display: inline-block;
+    width: auto;
+}
+.ui_pages li a, .ui_pages li span {
+    border: 1px solid #CFCFCF;
+    border-radius: 0;
+    color: #333333;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.ui_pages li a:hover {
+    background-color: #0078B0;
+    border-color: #0078B0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.ui_pages li .btn {
+    background: linear-gradient(#FFFFFF, #F0F0F0, #F5F5F5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.ui_pages li .btn:hover {
+    background: none repeat scroll 0 0 #0078B0;
+    border-color: #CFCFCF;
+    color: #FFFFFF;
+}
+.ui_pages li .btn.btn_disable {
+    background-color: #F3F3F3;
+    color: #999999;
+}
+.ui_pages li .btn.btn_disable:hover {
+    background-color: #F3F3F3;
+    color: #999999;
+    cursor: text;
+}
+.ui_pages li.disable .btn {
+    background-color: #F3F3F3;
+    color: #999999;
+}
+.ui_pages li.pages_current {
+    color: #FFFFFF;
+}
+.ui_pages li.pages_current a, .ui_pages li.pages_current span {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #FF6600;
+    font-weight: bold;
+}
+.ui_pages li.pages_current a:hover, .ui_pages li.pages_current span:hover {
+    border-radius: 2px;
+    cursor: text;
+}
+.ui_pages li.pages_more a, .ui_pages li.pages_more span {
+    border: 1px solid #FFFFFF;
+    margin: 0;
+}
+.ui_pages li a.btn:hover {
+    background: none repeat scroll 0 0 #0078B0;
+}
+
+.teacher_infor_con_top {overflow: hidden;height: 395px;}
+.teacher_infor_video {width: 505px;height: 313px;position: absolute;right: 28px;top:30px;z-index: 10;}
+.teacher_infor_video img {width: 556px;height: 313px;}
+
+/*show time*/
+.teacher_time_content {overflow: hidden;width: 955px;margin:0 auto 20px;background: #200556;/*height: 450px;*/}
+.showTimeContent {overflow: hidden;width: 300px;text-align: center;float: left;display: inline;margin:10px 7px 0 10px;}
+.showTimeContent a {display: block;}
+.showTimeContent img {width: 300px;height: 169px;}
+.showTimeContent span {height: 38px;line-height: 38px;color: #9567ff;}
+/*个人主页资料*/
+.teacher_infor_left {float: left;display: inline;margin-top:20px;}
+.teacher_infor_left .captainInfor .userInfor {color: #9567FF;}
+.teacher_infor_right {float: left;display: inline;margin:50px 0 0 20px;}
+.teacher_infor_right li {float: left;display: inline;margin:0px 20px 0 22px;cursor: pointer;}
+
+.teacherInfor {width: 200px;height: 34px;line-height: 34px;overflow: hidden;position: absolute;left:220px;top:316px;z-index: 10;}
+.teacherInfor span {float: left;display: inline;color: #fff;font-size: 14px;width: 110px;}
+.teacherInfor .pk_guan .btn_follow {float: right;display: inline;width: 87px;height: 34px;background: url(http://img04.xesimg.com/teacher/btn_4.jpg) no-repeat; text-indent: -99999em;cursor: pointer;}
+.teacherInfor .pk_guan .follow_cancel {background: url(http://img04.xesimg.com/teacher/btn_5.jpg) no-repeat; cursor: default;}
+
+.teacherInfor .pk_guan .btn_vote {float: left;display: inline;width: 87px;height: 34px;background: url(http://img04.xesimg.com/teacher/btn_2.jpg) no-repeat; text-indent: -99999em;cursor: pointer;}
+.teacherInfor  .pk_guan .vote_cancel {background: url(http://img04.xesimg.com/teacher/btn_3.jpg) no-repeat;cursor: default;}
+
+
+
+
+/*========================/二维码/================================*/
+.qrcode{
+  position: absolute;
+  z-index: 115;
+  top: 9px;
+  left: 50%;
+  margin-left: 500px;
+  background:url("http://img04.xesimg.com/qrcode.jpg?4") 0px no-repeat;
+}
+.qrcode1{
+  top: 137px;
+}
+.hit_qrcode{
+  width: 110px;
+  height: 127px;
+  overflow: hidden;
+  position: relative;
+}
+.hit_qrcode .close{
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  width: 15px;
+  height: 15px;
+  background:url("http://img04.xesimg.com/qrcode_close.jpg") 0px no-repeat;
+}
+.timelimitedtip{
+  color: #333333;
+  margin: 30px 0 20px 0;
+  padding:30px 0 40px 40px; 
+  line-height: 30px;
+  font-size: 14px;
+  background: #EEF9FF;
+  overflow: hidden;
+  border: 1px solid #99C7E8;
+}
+.timelimitedtip a{
+  font-weight: bold;
+}
+.timelimitedtip .special{
+  margin-bottom: 50px;
+}
+.submit_disable{
+  background:#808080; padding: 2px 5px; cursor: default;
+}
+
+
+
+
+/*========================/X年X班/================================*/
+
+.grades_content{
+  width:954px;
+  height:286px;
+  border:3px solid #160536;
+  margin:0 auto;
+  background:#150436;
+}
+.left_popular{
+  width:295px;
+  float:left;
+}
+.left_popular a{
+  overflow:hidden;
+}
+.left_popular a img{ 
+  height:248px;
+  width:295px;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+}
+.popular_num{
+  width:275px;
+  height:38px;
+  background:#361293;
+  color:#fff;
+  font-size:14px;
+  line-height: 38px;
+  overflow:hidden;
+  padding-left:20px;
+  font-family: "宋体";
+  float:left;
+}
+.popular_num span {float:left;display: inline;}
+.popular_num span.nums {}
+.popular_num span.btn_votes{float: right;margin-top:8px;margin-right: 5px;}
+.popular_num span.btn_votes img {width: 82px;height: 23px;}
+.right_mod{
+  width:658px;
+  float:right;
+}
+.people_list{
+  overflow:hidden;
+}
+.people_list li{
+  float:left;
+  margin-left:10px;
+  width:84px;
+  _margin-left:5px;
+
+}
+.pk_vedio{
+  overflow:hidden;
+  margin-top:28px;
+}
+.pk_vedio li{
+  float:left;
+  margin-left:9px;
+  width:210px;
+  _margin-left:5px;
+  _margin-top:28px;
+}
+.pk_vedio a img,.people_list a img{
+  display:block;
+  margin:0;
+  padding:0;
+}
+.pk_vedio li.tec_pic img {width: 82px;height: 82px;}
+.toupiao img{
+  width:82px;
+  height:23px;
+}
+.tecpic{
+  width:82px;
+  height:82px;
+}
+.pk_vedio a img{
+  width:208px;
+  height:112px;
+}
+.toupiao {
+  margin-top:5px;
+  display:block;
+}
+a.vd{
+  display: block;
+  height:35px;
+  width:208px;
+  background:#31174b;
+  text-align:center;
+  font-size:14px;
+  color:#fff;
+  overflow:hidden;
+  line-height:30px;
+}
+.shengyin{
+  width:270px;
+  height:400px;
+  margin:15px auto 0 auto;
+  overflow:hidden;
+}
+.shengyin li{
+  padding-top:7px;
+  height:47px;
+  width:242px;
+  color:#9567ff;
+  margin:0 auto;
+  line-height:20px;
+  border-bottom:1px dashed black;
+  overflow:hidden;
+}
+.shengyin li a {color: #9567ff;}
+li.no_border{
+  border-bottom:none;
+}
+.people_list li a.tec_pic img {width: 82px; height: 82px;}
+.people_list li .toupiao {cursor: pointer; width: 82px; height: 23px;background: url(http://img04.xesimg.com/teacher/flo_01.jpg) no-repeat;}
+.people_list li .toupiao img {display: none;}
+.people_list li .follow_cancel {cursor: default; background: url(http://img04.xesimg.com/teacher/flo_02.jpg) no-repeat;}
+
+
+
+
+
+
+
+
+
+

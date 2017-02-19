@@ -1,0 +1,139 @@
+﻿body {font-family: "微软雅黑", Helvetica, 'Source Sans Pro', sans-serif;}
+li{list-style: none;}
+ul,ol {margin:0;padding:0;}
+i {font-style: normal;}
+em {font-style: normal;}
+.container-fluid {max-width: 640px;background: #fff;margin:10px auto 0;padding:0 ;}
+.container-fluid div {margin:0;padding:0;overflow: hidden;}
+/*微信标题*/
+.container-fluid .video-title-wx {width: 100%;padding:0 10px;}
+.container-fluid .video-title-wx p.title{font-size: 2rem;}
+.container-fluid .video-title-wx p.times{font-size: 14px;}
+.container-fluid .video-title-wx p.times i {color: #2e9ede; }
+
+/*图片样式*/
+.container-fluid #video-pic-wrap { width: 100%; height: 100%; padding:0 10px;}
+.container-fluid #video-pic-wrap img {margin:0 auto;}
+/*视频样式*/
+.container-fluid #video-wrap { width: 100%; height: 100%; padding:0 10px;}
+.container-fluid #video-wrap #liveVideo {width: 100%;}
+/*直播时间（天）*/
+.container-fluid .video-tips {height: 35px; padding:0 10px;}
+.container-fluid .video-tips span {display: inline-block;width:100%;height: 50px;line-height: 3.0rem; color: #ed5565; font-size: 1.8rem; padding:0 10px;background: #f9f9f9;background-size: 85%;text-align: center;}
+.container-fluid .video-tips span i {color:#333;padding-right: 20px;}
+/*直播按钮*/
+.container-fluid .video-btn {height: 45px;overflow: hidden;text-align: center;margin:20px 0;}
+.container-fluid .video-btn-m30 {margin:20px 0 50px 0;}
+.container-fluid .video-btn .enter-btn {width: 200px;line-height: 45px;display: inline-block;font-size: 16px;text-align: center;border-radius: 3px;color: #fff;}
+.container-fluid .video-btn .btn-make {
+    background:#ffbc3c;
+}
+.container-fluid .video-btn .btn-disable {
+    background:#bfbfbf;
+}
+.container-fluid .video-btn .btn-make-live {
+    background:#ed5565;
+}
+.container-fluid .video-btn .btn-back-live {
+    background:#2e9ede;
+}
+/*直播短信提醒*/
+.container-fluid .video-txt-tips {
+    height:40px;font-size: 1.3rem;padding:0 10px;text-align: center;
+}
+.container-fluid .video-txt-tips span {
+    color: #ed5565;line-height: 180%;
+}
+/*课程介绍*/
+.container-fluid .video-course-title {
+    height: 40px;line-height: 40px;border-top:1px solid #ebebeb;border-bottom:1px solid #ebebeb;font-size: 16px;padding: 0 10px;background: #fcfcfc;
+}
+.container-fluid .video-course-con {
+   padding: 0 10px;
+}
+.container-fluid .video-course-con span {
+    display: inline-block;padding:10px;font-size: 1.5rem;
+}
+/*预约弹层*/
+.orderSuccess {
+    width: 280px;height: 260px;position: fixed;z-index: 101;left:50%;top:50%;margin-left: -140px;margin-top:-130px;
+}
+.orderSuccess span {
+    display: block;text-align: center;
+}
+.orderSuccess span.success {font-size: 2rem;color: #ed5565;margin-top: 150px;}
+.orderSuccess span.txt {margin-top: 8px;}
+.orderSuccess .order-box {
+    position: relative;background-image: url(http://www.xueersi.com/static/old/img/orderSuccess.png?20160705);background-size: 50%;background-color: #fff;background-repeat:no-repeat;background-position: center 25px;padding:20px;border-radius: 5px;
+}
+.orderSuccess .order-box span.close-icon {
+    position: absolute;right:10px;top:10px;background:url(http://www.xueersi.com/static/old/img/close-icon.png?20160705) no-repeat;width:16px;height:16px;
+}
+.orderError .order-box{
+    background-image: url(http://www.xueersi.com/static/old/img/orderFail.png?20160705);
+}
+.dialog-mask {
+    width: 100%; height: 100%;position: fixed;top: 0;left: 0;z-index: 10;background-color: #000;opacity: 0.7;
+}
+
+.dialog-mask,.dialog-mask-success {
+    width: 100%; height: 100%;position: fixed;top: 0;left: 0;z-index: 10;background-color: #000;opacity: 0.7;
+}
+.live-fail-modal {
+  overflow: hidden;width: 280px;height: 315px;position: fixed;z-index: 101;left:50%;top:50%;margin-left: -140px;margin-top:-155px;background-color: #fff;border-radius: 5px;text-align: center;
+}
+.live-fail-modal p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+.live-fail-modal p.success-title {
+  color: #e74c3c;
+  padding: 22px 0 0px;
+  font-size: 15px;
+}
+.live-fail-modal p.success-pic {
+  padding-bottom: 0px;
+}
+.live-fail-modal p.success-pic img {
+  width: 100px;
+  height: 100px;
+}
+.live-fail-modal p.success-txt {
+  padding-top:10px;
+}
+.live-fail-modal p.success-txt span {
+  color: #e74c3c;
+}
+.live-fail-modal p.success-o {
+  font-size: 12px;
+  color: #e74c3c;
+}
+.live-fail-modal p.success-user { 
+    font-size: 12px;
+  color: #e74c3c;
+  font-family: '宋体';
+}
+.live-fail-modal span.close-icon {
+    position: absolute;right:10px;top:10px;background:url(/img/close-icon.png) no-repeat;width:16px;height:16px;
+}
+
+.mobile-live-tips {
+    overflow: hidden;text-align: center;font-size: 16px;color: #666;
+}
+
+.mobile-live-tips img {
+    margin:30px auto 20px;
+}
+
+.mobile-live-tips div {
+    line-height: 30px;
+}
+
+.mobile-live-tips .web-live-link {
+    padding:20px 0;font-size: 14px;
+}
+
+.mobile-live-tips .web-live-link span {
+    color: #006699;
+}

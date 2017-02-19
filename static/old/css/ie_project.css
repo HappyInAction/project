@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-07-18 20:17:40
+ * @version $Id$
+ */
+
+/*head*/
+.icon  {
+	*font-size: 0;
+	 *text-indent: 0;
+	 *line-height: 0px;
+
+}
+.icon_public_video {_background: url("http://img04.xesimg.com/ie_project/icon_03.gif") 0 3px no-repeat;}
+.icon_shopping {*cursor: pointer;}
+/*.ui_userinfo {display:inline-block;}*/
+.follow_cancel .addsucess {*font-size: 0;*text-indent: 0;}
+#header .header_box {height: 46px;}
+#header .header_box ul.navs li {_font-weight: bold;}
+
+/*首页*/
+#index_focus .focus_num_wrap ol.focus_num li {overflow: hidden;}
+.index_login .login_from .login_input p label {_line-height: auto;_padding-top: 10px;}
+.ui_feed  {_width:100%;}
+ul.index_notice li i {float:left;}
+ul.index_notice li a {float:left;}
+ul.guide_list li a {_width: 265px;}
+/*课程列表*/
+.ui_filter .filter_item {_width:728px;}
+.ui_filter .filter_handle h2 {_height:28px;}
+.ui_filter .filter_handle .filter_down .icon_course_down {_zoom:1;_display:inline;}
+.course_item {_width:100%;}
+
+.course_detail .course_title em {_background: url("http://img04.xesimg.com/ie_project/btn_03.gif") no-repeat;}
+.course_item_repeat .course_item .ui_avatar {*margin:10px 10px 0 0;*padding-left: 10px;}
+
+.avatar_roll a .icon {*display: block;}
+ul.notice_list li i {*float: left;}
+ul.notice_list li a {*float: left;}
+ul.notice_list li i.icon_square_gray {background-position: -47px -71px\9;*background-position: -47px -71px;}
+
+.course_detail .course_func {_width:100%;}
+.course_detail .course_btnc {_width:100%;}
+
+/*404*/
+.page_404_button {width:100%;}
+.page_404_info li {height:25px;}
+.page_404 .page_404_info li i {float:left;font-size: 0; text-indent: 0;}
+
+
+/*老师列表页*/
+
+.follow_con .ui_follow {margin-top:0\9;*margin-top: 30px;}
+.follow_con .follow_hidden {_height:20px;_overflow:hidden;_padding-top:2px;}
+
+.teacher_item .avatar p {*margin-top:0px;_margin-top:18px;overflow: hidden;}
+.teacher_item .avatar a.ui_username  {*padding-top:15px;_padding-top:0;}
+.teacher_item .avatar p .icon_yverify {*margin-top: 32px;_margin-top:18px;}
+
+
+/*购物流程*/
+
+.header_shop h1.logo {_width:100%;}
+.header_shop .pay_step {height:45px;_background-position: 0 -90px;}
+.header_shop .pay_step ul li {_margin-top:1px;}
+.header_shop .pay_step ul .next_step {_margin-top:2px;}
+.header_shop .pay_step ul li .text_num {*padding:0 0 5px 0;}
+
+.order_button {_width:100%;}
+.finish_order {_width:860px;}
+.recommend .recommend_content {_width:98%;}
+.ui_folds .folds_content .gift_card .cars_form {_width:940px;}
+.ui_folds .folds_content .gift_card .cars_form span input {line-height: 22px;}
+.ui_payment .payment_content {_width:100%;}
+.ui_payment .payment_tabs {_width:980px;}
+.order_address .address_info .info_from p{_width:900px;}
+
+
+table.table_shop .shop_empty {
+_background-position: 0px -299px;
+
+}
+
+/*课程详情*/
+.coures_content .content_player {border:1px solid #e9e9e9;}
+.new_coures_content  .content_player {border:0;}
+.coures_content .content_player .player_list .list_title {_overflow:hidden;_width:230px;}
+.ui_scrolls .scrolls_item .scrolls_con ul li p {*height: 43px;*overflow: hidden;}
+.ui_scrolls .scrolls_item .scrolls_con ul li a {*display:inline-block;}
+
+.listen_cou {_width:100%;}
+.listen_cou .ui_avatar {display:inline;}
+.tabs_title_item {_height: 37px;}
+
+#course_info_box .course_detail .ui_comment .comment_form {_border: 1px solid #f3f3f3;}
+
+.ui_course_consult .odd_course {_width:690px;}
+.ui_course_consult .ui_consult p {_width:100%;}
+#course_info_box .course_detail .table_outline {_margin-bottom: 10px;}
+#course_info_box .course_detail .table_outline td {background: #fafafa;}
+
+.avatar_roll .next .icon_chevron_right {_margin-top:2px;}
+
+.ui_scrolls .scrolls_item .scrolls_con_list ul li {*float:left;*width:100%;}
+
+.coures_content .content_player .player_info .listen_num span {_padding: 2px 0;}
+
+/*个人中心---我的网校*/
+.main_header {*width:100%;}
+.main_tabs_con {_width:100%;*margin-bottom: 10px;}
+.main_tabs_con p.current_class a.current {color: #333;}
+
+.ui_courses .courses_repeat .joint_list {_width:100%;}
+.feed_detail .feed_bar {*width:100%;}
+.w_645 .feed_detail .feed_bar {*width:570px;_width:100%;}
+.feed_comment .ui_comment {*padding:10px 0;_padding:0;}
+.layout .home_side_nav li a {color: #333;}
+.layout .home_side_nav li.current a {color:#fff;}
+.user_student .user_detail .user_level .icon_level {_margin-top: 9px;}
+.home_side_nav .nav_header span {_top:18px;}
+
+.home_side_nav li a.icon_diamond {position: relative;}
+.home_side_nav li a.icon_diamond .icon_news {position: absolute;left:88px;top:1px;z-index: 10;}
+
+.fun_follow_item .follow_list .follow_con_fun .follow_cancel .addsucess {_background: url("http://img04.xesimg.com/ie_project/icon2_05.gif") 3px 0 no-repeat;} 
+.dl_data .myexam_th a {*margin-top:3px;_margin-top: 6px;}
+
+/*个人中心---个人设置*/
+.layout .main_header {_height:40px; }
+.gift_card_info {_height:40px;}
+ .user_profile div { height: 100%;}
+ .user_profile div .labelgroup {_width:260px;margin:0;}
+ .paylists .shopcar_title {_width:100%;}
+.paylists .bank_list {_padding-bottom:20px;}
+.theme_list  {_width:100%;}
+.gift-item .coin_num em {*font-size: 0;*text-indent: 0;}
+.ui_up_avatar .up_avatar_btn .btn_up {display: block;}
+.ui_up_avatar .up_avatar_content .avatar_big  {_width:150px;}
+.wrong_title .wrong_info {height:40px;}
+.my_exam .myexam_th {height:40px;}
+.my_exam .myexam_th .l {float:left;}
+
+.sub_answer .answer {*float: none;*border-top: 0;}
+.test_list_new .answer span, .testcon .answer span {*float: left;}
+.layout .setting_search p a {_color: #fff;}
+.layout .deal_items {_width:100%;}
+
+.ui_sortbar li a.current{*display:inline-block;*padding:2px 5px 1px 5px;}
+.ui_sortbar li.sort_course_num a.current em{ *height: 17px; *width: 12px; *margin-top: -3px;*background-position: -104px -102px;}
+.ui_sortbar li.sort_course_num a.current {_height: 15px;_padding:6px 5px 3px 5px;}
+.ui_sortbar li.sort_trend a.current em{ *height: 17px; *width: 12px; *margin-top: -3px;*background-position: -104px -102px;}
+.ui_sortbar li.sort_trend a.current {_height: 15px;_padding:5px 5px 3px 5px;}
+
+
+.ui_filter .filter_handle h2.filter_down { height: 18px; line-height: 18px; padding: 5px 0;}
+.ui_filter .filter_handle .filter_down .icon_course_down {vertical-align:baseline;  height: 16px; width: 15px; background-position: 6px 8px;}
+
+ul.notice_list li i{ height: 15px; line-height: 15px; padding-top: 3px;}
+.icon{font-size:0; line-height: 0; overflow: hidden; text-indent:-99em; *text-indent:0;}
+
+
+.right-content button{
+	_line-height: 27px;
+	_height: 24px;
+	_margin-left: 73px;
+}
+.user_profile form button{
+	_margin-left: 83px;
+}
+.user_profile p select {
+	_margin-top: 2px;
+}
+.user_address button{
+	_margin-left: 110px;
+}
+
+/*返回顶部*/
+.rightResearch {
+	_position:absolute;
+	_right:0;
+	_top:expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight)-200));
+
+}
+.qrcode_new{
+	_position:absolute;
+	_right:0;
+	_top:100px;
+}
+.sidesbar_ad .exchange_course{
+	_position:absolute;
+	_right:0;
+	_top:290px;
+}
+.wrong_download{
+	_position:absolute;
+	_right:-20px;
+	_top:expression(eval(document.documentElement.scrollTop+35));
+}
+.rightResearch li {
+	_display:inline;
+}
+
+.rightResearch  #copy_notice {
+	_position: absolute;
+	_top: 0px;
+	_right: 65px;
+}
+
+
+.start-study-btn input{
+	padding: 2px 6px;
+}
+
+
+/*翻页*/
+
+.ui_pages li {
+  *display:inline;
+  *zoom:1;
+}
+
+.ui_pages li a, .ui_pages li span {
+	font-family: '宋体';
+}
+.layout .ui_pages li a {color: #333;}
+
+
+/*个人设置*/
+.user_profile div .labelgroup label{
+	_width:50px;
+}
+/*首页短信提示*/
+
+
+.wrapper_body .log .log_left p label, .wrapper_body .register p select{
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+
+
+.feed_media ul .media_item_small {width: expression(this.offsetWidth < 36 ? '36px': true);}
+
+/*学习中心，课程列表 不支持max-width*/
+.joint_list li a{
+	width: expression(this.offsetWidth > 300 ? '300px': true);
+}
+.joint_list li span.notOnline {
+	width: expression(this.offsetWidth > 180 ? '180px': true);
+}
+
+.layout_back .layout_body {
+  _height:expression(this.scrollHeight < 1000 ? "1000px" : "auto");
+}
+/*老师详情页，新鲜事列表，老师V标示下沉*/
+
+.user_profile p input{default_address
+	_height:20px;
+	_padding: 2px 3px;
+}
+/*课程详情页切换箭头居中问题*/
+.main_header .nav_links li.current{_background:url("http://img04.xesimg.com/ie_project/nav_links.jpg") center 35px no-repeat;}
+
+/* 课程详情页，相关课程列，学员数和有意思数数字位置偏上*/
+.listen_cou .cou_detail .cou_info span em{
+	_padding-right: 3px;
+	_vertical-align: middle;
+}
+
+/*tabs*/
+.nav_pills{
+	_margin-bottom: 10px;
+	_overflow: hidden;
+	_height: 22px;
+}
+.main_tabs_con .nav_pills li a{
+	color: #333;
+}
+.main_tabs_con .nav_pills li.current a{
+	color: #fff;
+}
+/*忘记密码*/
+.pass_step ul li .text_num  {*line-height: 20px;}
+
+.advert_first{
+	*margin-top: 20px;
+	_margin-top: 20px;
+}
+/*我的通知页新消息*/
+.nav_pills li .icon_new{
+	_display: block;
+	_position: absolute;
+	_top: -1px;
+	_left: -5px;
+}
+#order_process{
+	_height:100px;
+}
+.test_analysis i{
+	*top:-8px;_top:-7px;
+}
+.nav_pills .current a,.sub_answer .btn{
+	color: #fff !important;
+}
+
+.tagcloud a{
+	_zoom:1;
+	_display:inline;
+	*display:inline;
+	_height:23px;
+	*height:23px;
+	_line-height:23px;
+	*line-height: 23px;
+}
+/*================报名页面=========================*/ 
+.apply_container .usersinfo p span{
+    *zoom:1;
+    *display:inline; 
+    _zoom:1;
+    _display:inline;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*========================/彩蛋/================================*/
+.hitballs{
+	_position:absolute;
+	_bottom:auto;
+    _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight - 175))
+}
+
+/*========================/二维码/================================*/
+.qrcode{
+	_top:9px; 
+}
+.qrcode1{
+	_top: 137px;
+}
+.main_tabs_con .current_class,.nav_pills{
+	_margin-bottom: 0px;
+	margin-bottom: 10px;\9; 
+	*margin-bottom: 0px;/*IE7*/
+}
+/*========================/学习小组中英文数字混排下划线BUG/================================*/
+.course_detail .course_func span a strong{
+	_zoom:1;
+	_font-size:12px;
+	_vertical-align:baseline;
+	_font-family:Verdana;
+}
+.right-content .order_button a{
+	_float: right;
+	_padding: 5px 10px 3px 10px;
+	font-size: 14px;
+	color: #FFF;
+	height: 22px;
+	line-height: 22px;
+}
+.right-content table tr.tfoot td{
+	_text-align: right;
+}
+#copy_notice p.group_join a{
+	_zoom:1;
+	*display:inline;
+	border: 0 none;
+}
+.grade_promote{
+	_zoom:1;
+	*display:inline;
+	_clear:none;
+	*clear:none;
+}
+.wrapper_body .log .register .grade_option .tips{
+	*height: 19px;
+	*line-height: 19px;
+	*padding: 0 40px 0 10px;
+	*float: none;
+	*zoom:1;
+	_height: 19px;
+	_line-height: 19px;
+	_float: none;
+	_zoom:1;
+	_padding: 0 40px 0 10px;
+}
+.study_plan_con .con_mod .ui_avatar{
+	*position:static;
+}
+.lookFocusItem {border:1px solid #e9e9e9;}
+#header .header_menu .loginbar li{_margin-right: 0;}
+.group_tips .direct_left{width:350px;}
+
+.look_broadcast .broadcast_item .bcitem_container .bcitem_ctop .bcitem_cname {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+}
+.look_broadcast .broadcast_item .bcitem_container .bcitem_ctop .bccour_hover {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+}

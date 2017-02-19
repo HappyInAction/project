@@ -1,0 +1,654 @@
+<!-- 公共头部 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商城</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- 这是CSS库文件 -->
+    <link href="../lib/bootstrap/3.3.5-custom/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="../lib/bootstrap/3.3.5-custom/js/html5shiv.min.js"></script>
+      <script src="../lib/bootstrap/3.3.5-custom/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../lib/Font-Awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/default.css">
+    <!-- 这是当前模块样式文件 -->
+        <link rel="stylesheet" type="text/css" href="../static/css/xue.mall.css" />
+</head>
+
+<body>
+    <!-- module.topbar -->
+    <!--
+    @require widget/Public.Topbar/topbar.less
+    @require widget/Module.Dropdown/dropdown.js
+    @require widget/Module.Follow/follow.less
+    @require widget/Module.Follow/follow.js    
+-->
+
+<!-- 登录后 -->
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li class="">
+                <em class="text-danger">你好，人</em>
+                <a href="#">退出</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">消息<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li data-type="1">
+                        <a href="/LearningCenter/message#_1">网校通知<em class="text-danger">(100)</em></a>
+                    </li>
+                    <li data-type="4">
+                        <a href="/LearningCenter/message#_4">教师留言</a>
+                    </li>
+                    <li data-type="3">
+                        <a href="/LearningCenter/message#_3">直播提醒</a>
+                    </li>
+                    <li data-type="5">
+                        <a href="/LearningCenter/message#_5">考试提醒</a>
+                    </li>
+                    <li data-type="2">
+                        <a href="/LearningCenter/message#_2">资料提醒<em class="text-danger">(100)</em></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">购物车 <em class="text-danger">2</em></a></li>
+            <li><a href="#">订单</a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="#">收藏夹</a></li>
+            <li><a href="#">设置</a></li>
+            <li class="ui-dropdown">
+                    <span class="dropdown-handle">更多<i class="fa fa-angle-down dropdown-icon"></i></span>
+                    <ul class="dropdown-body">
+                            <li><a href="#">线下小班</a></li>
+                            <li><a href="#">线下1对1</a></li>
+                    </ul>
+            </li>
+            <li class="phone-400 active">400-800-2211</li>
+        </ul>
+
+    </div>
+</div>
+<!-- 登录前 -->
+
+
+<!--
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li>
+                <span class="xes">学而思网校欢迎你</span>
+                <a href="#" class="login text-danger">请登录</a>
+                <a href="#" class="register">免费注册</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">购物车<em class="text-danger">2</em></a></li>
+            <li><a href="#">订单<em class="text-danger">2</em></a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.speiyou.com/" target="_blank">更多课程</a></li>
+            <li class="phone-400">400-800-2211</li>
+        </ul>
+    </div>
+</div>
+-->
+
+    <!-- module.Header -->
+    <!--
+    @require widget/Public.Header/header.less
+    @require he ader.js
+-->
+
+<div class="modele-header-pic">
+    <img src="http://file.xueersi.com/web/2016/08/04/14703101042088.jpg" alt="暑假班抢福利倒计时" usemap="#Map" border="0">
+      <map name="Map" id="Map">
+        <area shape="rect" coords="991,18,1158,65" href="http://zt.xueersi.com/2016xxsjlive/" target="_blank"/>
+  </map>
+    <p class="settime" endtime="2016-8-7 19:15:59" style="right:245px;color:#e74c3c;"></p>
+</div>
+<div id="module-header">
+    <div class="h-logo"><a href="#">学而思网校</a></div>
+    <div class="h-search">
+        <input type="text" class="h-text pull-left" placeholder="搜索:秋季满分冲刺班" autocomplete="on">
+        <button type="button" class="btn btn-primary btn-search pull-left">搜索</button>
+    </div>
+    <div class="h-words pull-left">
+        <a target="_blank" href="#" class="text-muted">免费课</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        <a target="_blank" href="#" class="text-muted">11月11天</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        <a target="_blank" href="#" class="text-muted">11月11天</a>
+        <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+    </div>
+    <!-- 头部购物车ui部分调用 -->
+    <!--
+    //@require widget/Module.Dropdown/dropdown.js
+    @require widget/Public.MiniCart/minicart.js
+    @require widget/Public.MiniCart/minicart.less
+-->
+
+<div id="module-minicart" class="pull-right ui-dropdown-miniCart">
+    <div class="dropdown-handle btn btn-default">
+        <i class="fa fa-shopping-cart pull-left"></i>
+        <a href="http://cart.wx4.0.com" target="_blank" id="myCartUrl">我的购物车</a>
+        <i class="fa fa-angle-right pull-right"></i>
+        <small class="minicart-total badge small">2</small>
+    </div>
+    <!-- 上半部分 -->
+    <div class="dropdown-body">111</div>
+</div>
+
+</div>
+
+    <!-- module.Nav -->
+    <!--
+    @require widget/Public.Nav/nav.js
+    @require widget/Public.Nav/nav.less
+-->
+<div id="module-nav" class="ui-head-nav">
+    <div class="container">
+        <div id="ui-categorys" class="ui-categorys pull-left">
+            <div class="category-dt"><a href=""><i class="ci-right"><s>◇</s></i></a></div>
+            <div class="category-dd">
+                <div class="category-items"></div>
+                <div class="category-layer"></div>
+            </div>
+        </div>
+        <ul class="head-nav pull-left">
+           <li class="find-course "><a href="#">选课程</a></li>
+            <li><a href="">免费课</a></li>
+            <li><a href="">看学霸</a></li>
+            <li><a href="">新鲜事</a></li>
+            <li><a href="">逛书城</a></li>
+            <li><a href="">泡论坛</a></li>
+        </ul>
+       <div class="nav-live-course-info hidden">
+            <a href="#"><img src="../static/img/index-live-info.png" alt=""></a>
+        </div>
+    </div>
+    <!--  直播课程介绍
+    <div class="live-course-help">
+        <div class="course-help-pic">
+            <a href="#" target="_blank" class="help-btn"></a>
+            <span class="help-end-time">关闭剩余时间：<em>10</em>秒</span>
+            <span class="help-close"></span>
+        </div>
+    </div>  -->
+</div>
+
+
+
+
+
+
+
+<!-- 学习中心区域 -->
+<div class="wrap">
+    <div class="container">
+        <ol id="module-breadcrumb" class="breadcrumb">
+            <li><a href="#">课程分类</a></li>
+            <li class="active">三年级</li>
+        </ol>
+        <div class="row">
+            <!--   12栏的用这个    -->
+            <div class="col-md-12">
+                <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="col-course-title">
+    <a class="course-sort-label" href="#">
+        <span class="icon-fa"><i class="fa fa-angle-left"></i></span><span class="txt"> 选择秋季课程</span>
+    </a>
+    <span class="title">初一数学暑期课程</span>
+    <a class="course-sort-label l-right" href="#">
+        <span class="icon-fa"><i class="fa fa-angle-right"></i></span> <span class="txt"> 选择秋季课程</span>
+    </a>
+</div>
+<ul class="select-subject-list">
+   <li class="select-title">选择学科</li>
+    <li class="current"><a href="#">语文</a></li>
+    <li><a href="#">数学</a></li>
+    <li><a href="#">英语</a></li>
+    <li><a href="#">化学</a></li>
+    <li><a href="#">物理</a></li>
+</ul>
+<ul class="select-subject-list select-edition-list">
+    <li class="select-title">选择版本</li>
+    <li class="current"><a href="#">人教版</a></li>
+    <li><a href="#">沪科版</a></li>
+    <li><a href="#">北师版</a></li>
+    <li><a href="#">尖端版</a></li>
+    <li><a href="#">竞赛版</a></li>
+</ul>
+
+            </div>
+            <div class="col-md-12">
+                <div class="add-selector-pic">
+                    <img src="http://r01.xesimg.com/web/2016/04/20/14611181672040.jpg" />
+                </div>
+                <div class="add-selector-seo">
+                    <img src="http://r01.xesimg.com/web/2016/04/20/14611181672040.jpg" />
+                </div>
+            </div>
+            <!--   12栏结束    -->
+            <!--   左右分栏的用这个    -->
+            <div class="col-md-12 top m10 mb10">
+                <!-- *********************** 内容区域开始 ********************** -->
+                <ul class="screen-rank preletive">
+                    <li class="popular-rank active"><a href="##">上课时间</a></li>
+                    <li><a href="##">课程满意度</a></li>
+                    <li class="Onlylive-select">
+                        共 <strong>12</strong> 个课程，已有 <strong>2000</strong> 名学员报名
+                    </li>
+                </ul>
+                <div class="panel-default top m10">
+                    <div class="panel-body pd0 wd110">
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                        <!--
+   课程列表：
+    @require widget/Public.Module/courses.less           
+    @require widget/Public.Module/courses_dialog.less           
+    @require widget/Public.Module/courses.js      
+    @require widget/Public.Module/courses_dialog.js   
+    @require widget/Public.Module/xue.userinfo.min.js    @require widget/Module.Pagination/paginations.js    
+-->
+
+<div class="live-course-rank-list">
+    <div class="rank-time">
+      <p class="time">
+           <span> <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">07月13日-07月23日<strong>13:30-15:15</strong></a></span>
+            <span class="satisfy">授课老师：<a href="http://www.xueersi.com/t/hongran/">洪然</a></span>
+             <span class="satisfy">课程满意度：<a target="_blank" href="http://www.xueersi.com/article/detail/1910">99.99</a></span>
+        </p>
+        <p class="difficulty"><a href="#">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度</a> </p>
+    </div>
+    <div class="rank-limit-places">剩余名额：<strong>5人</strong></div>
+    <div class="rank-money"><strong class="former">￥1300</strong><br/><del>￥9000</del></div>
+    <div class="rank-btn"><a href="#" class="btn btn-gray">立即报名</a></div>
+</div>
+<!-- 
+<strong class="addReport">热报</strong> 
+  <div class="rank-coach"><img class="img-left" src="http://x03.xesimg.com/teacher/2016/01/14/14527565784475.jpg"/><span>辅导老师：<em>珠珠珠珠珠老师</em></span><a href="#"><img class="img-weixin" src="img/qq-big.png"/></a></div>
+
+-->
+                    </div>
+                </div>
+
+                <!-- *********************** 内容区域结束 *********************** -->
+            </div>
+        </div>
+        <!-- row end -->
+
+        <div class="ui-pages text-center"></div>
+    </div>
+</div>
+<!-- 公共底部 -->
+
+
+
+
+
+    <!-- module.footer -->
+    <!--
+    @require widget/Public.Footer/footer.less
+-->
+   <!-- 这是页脚部分代码  -->
+    <div id="module-footer">
+        <!-- <div class="foot-service">
+            <div class="service-share" href="http://www.xueersi.com/article/detail/1825">
+                <span>名师</span>
+                <p>38%清华毕业平均教龄5.1年100%面授S级老师</p>
+            </div>
+            <div class="service-system" href="http://www.xueersi.com/article/detail/1824">
+                <span>陪伴</span>
+                <p>直播授课,QQ群,APP随时答疑名师就在你身边</p>
+            </div>
+            <div class="service-live" href="http://www.xueersi.com/article/detail/1814">
+                <span>方便</span>
+                <p>足不出户，免去路途奔波随时随地反复看</p>
+            </div>
+            <div class="service-interaction" href="http://www.xueersi.com/app">
+                <span>有效</span>
+                <p>在线练习及时反馈已累计培养39名中高考状元</p>
+            </div>
+        </div> -->
+
+        <div class="foot-area">
+            <p>
+                <a href="http://www.xueersi.com">网校首页</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1219">关于我们</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1220">合作专区</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1538">联系我们</a>
+                |
+                <a class="text-danger" href="http://www.xueersi.com/article/detail/1495">版权声明</a>
+                |
+                <a href="http://www.xueersi.com/article/">帮助中心</a>
+            </p>
+            <p>
+                客服电话： <strong class="text-danger">400-800-2211</strong>
+                （免长途话费） 010-52867461 Copyright &copy; 2009-2015 www.xueersi.com All Rights Reserved
+            </p>
+            <p>
+                北京学而思教育科技有限公司 地址：北京市海淀区丹棱街16号海兴大厦B座3层
+                <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备09032638号</a>
+                京公网安备:1101082103
+            </p>
+            <p class="link">
+                <a target="_blank" href="https://search.szfw.org/cert/l/CX20120925001738002003" id="___szfw_logo___"><img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+            </p>
+            <div style="width:140px;height:174px;position:fixed;right:7px;top:196px;z-index:100;">
+                    <a href="/LivePlayBack/index/2-1143-6049/2a544c64c66702e453b38703bf3f5e07" target="_blank">
+                        <img src="http://x02.xesimg.com/web/2016/04/20/14611348842109.png">
+                    </a>
+                    <i class="fa fa-remove closeH"></i>
+            </div>
+    </div>
+    </div>
+     <script src="../lib/jQuery/1.11.1/jquery.min.js"></script> 
+<!--    <script src="http://js04.xesimg.com/xue.jquery.min.js"></script>ignore-->
+    <script src="../lib/bootstrap/3.3.5-custom/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../static/js/xue.mall.js"></script>
+<script>
+			$(function(){
+			   xue.updateEndTime('.settime');//执行倒计时函数
+			});
+	</script>
+<script src="../static/js/public.onload.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,688 @@
+body{
+	overflow: hidden;
+	padding:0;
+	margin:0;
+	color:#333;
+}
+li{
+	list-style:none;
+}
+ ul{
+	padding:0;
+	margin:0
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+p{
+	padding:0;
+	margin:0;
+}
+.warp {
+	position:relative;
+	width:100%;
+}
+.row{
+	width:100%;
+	position:relative;
+	height:800px;
+	overflow:hidden;
+}
+.row1,.row3{
+	background:#70b8e1;
+}
+.row2,.row4{
+	background:#e19b70;
+}
+.con{
+	width:10px;
+	height:10px;
+	margin:-5px 0 0 -5px;
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+.con div{
+	position:absolute;
+	z-index:100;
+	opacity:0;
+}
+.r1-p-1{
+	width:70px;
+	height:112px;
+	background:url("http://img04.xesimg.com/app_down/1-part-1.png") no-repeat;
+	margin:-56px 0 0 -35px;
+	top:236px;
+	left:374px;
+}
+.r1-p-2{
+	width:70px;
+	height:112px;
+	margin:-56px 0 0 -35px;
+	background:url("http://img04.xesimg.com/app_down/1-part-2.png") no-repeat;
+	top:235px;
+	left:-228px;
+}
+.r1-p-3{
+	width:95px;
+	height:168px;
+	margin:-84px 0 0 -47px;
+	background:url("http://img04.xesimg.com/app_down/1-part-3.png") no-repeat;
+	top:100px;
+	left:466px;
+}
+.r1-p-4{
+	width:95px;
+	height:168px;
+	margin:-84px 0 0 -47px;
+	background:url("http://img04.xesimg.com/app_down/1-part-4.png") no-repeat;
+	top:200px;
+	left:-400px;
+}
+.r1-p-5{
+	width:254px;
+	height:57px;
+	margin:-28px 0 0 -121px;
+	background:url("http://img04.xesimg.com/app_down/1-part-5.png") no-repeat;
+	top:-100px;
+	left:275px;
+}
+.r1-title{
+	width:338px;
+	height:173px;
+	margin:-86px 0 0 -169px;
+	background:url("http://img04.xesimg.com/app_down/1-title.png") no-repeat;
+	top:-230px;
+	left:20px;
+}
+.r1-doc{
+	width:207px;
+	height:424px;
+	margin:-212px 0 0 -103px;
+	background:url("http://img04.xesimg.com/app_down/1-doc.png") no-repeat;
+	top:-60px;
+	left:0;
+}
+.r1-bg{
+	width:702px;
+	height:179px;
+	margin:-90px 0 0 -351px;
+	background:url("http://img04.xesimg.com/app_down/1-bg.png") no-repeat;
+	top:400px;
+	left:0;
+	z-index:50 !important;
+}
+
+/*第二屏*/
+.r2-p-1{
+	width:155px;
+	height:157px;
+	margin:-79px 0 0 -78px;
+	background:url("http://img04.xesimg.com/app_down/2-part-1.png") no-repeat;
+	top:250px;
+	left:-450px;
+}
+.r2-p-2{
+	width:71px;
+	height:72px;
+	margin:-36px 0 0 -36px;
+	background:url("http://img04.xesimg.com/app_down/2-part-2.png") no-repeat;
+	top:280px;
+	left:-360px;
+}
+.r2-p-3{
+	width:55px;
+	height:96px;
+	margin:-48px 0 0 -27px;
+	background:url("http://img04.xesimg.com/app_down/2-part-3.png") no-repeat;
+	top:110px;
+	left:-480px;
+}
+.r2-p-4{
+	width:288px;
+	height:167px;
+	margin:-84px 0 0 -144px;
+	background:url("http://img04.xesimg.com/app_down/2-part-4.png") no-repeat;
+	top:144px;
+	left:360px;
+}
+.r2-p-5{
+	width:58px;
+	height:84px;
+	margin:-42px 0 0 -29px;
+	background:url("http://img04.xesimg.com/app_down/2-part-5.png") no-repeat;
+	top:-50px;
+	left:184px;
+}
+.r2-title{
+	width:543px;
+	height:160px;
+	margin:-80px 0 0 -271px;
+	background:url("http://img04.xesimg.com/app_down/2-title.png") no-repeat;
+	top:-230px;
+	left:0;
+}
+.r2-doc{
+	width:193px;
+	height:421px;
+	margin:-210px 0 0 -96px;
+	background:url("http://img04.xesimg.com/app_down/2-doc.png") no-repeat;
+	top:-50px;
+	left:14px;
+}
+.r2-bg{
+	width:624px;
+	height:252px;
+	margin:-127px 0 0 -312px;
+	background:url("http://img04.xesimg.com/app_down/2-bg.png") no-repeat;
+	top:450px;
+	left:0;
+}
+
+/*第三屏*/
+.r3-p-1{
+	width:123px;
+	height:178px;
+	margin:-89px 0 0 -61px;
+	background:url("http://img04.xesimg.com/app_down/3-part-1.png") no-repeat;
+	top:290px;
+	left:414px;
+}
+.r3-p-2{
+	width:98px;
+	height:127px;
+	margin:-64px 0 0 -49px;
+	background:url("http://img04.xesimg.com/app_down/3-part-2.png") no-repeat;
+	top:260px;
+	left:-300px;
+}
+.r3-p-3{
+	width:123px;
+	height:178px;
+	margin:-89px 0 0 -61px;
+	background:url("http://img04.xesimg.com/app_down/3-part-3.png") no-repeat;
+	top:110px;
+	left:-408px;
+}
+.r3-p-4{
+	width:140px;
+	height:110px;
+	margin:-55px 0 0 -70px;
+	background:url("http://img04.xesimg.com/app_down/3-part-4.png") no-repeat;
+	top:0;
+	left:300px;
+	z-index:300 !important;
+}
+.r3-title{
+	width:618px;
+	height:135px;
+	margin:-67px 0 0 -309px;
+	background:url("http://img04.xesimg.com/app_down/3-title.png") no-repeat;
+	top:-230px;
+	left:0;
+}
+.r3-doc{
+	width:206px;
+	height:424px;
+	margin:-212px 0 0 -103px;
+	background:url("http://img04.xesimg.com/app_down/3-doc.png") no-repeat;
+	top:-50px;
+	left:0;
+}
+.r3-bg{
+	width:1048px;
+	height:403px;
+	margin:-201px 0 0 -524px;
+	background:url("http://img04.xesimg.com/app_down/3-bg.png") no-repeat;
+	top:400px;
+	left:0;
+	z-index:50 !important;
+}
+
+/*第四屏*/
+.r4-p-1{
+	width:82px;
+	height:99px;
+	margin:-50px 0 0 -41px;
+	background:url("http://img04.xesimg.com/app_down/4-part-1.png") no-repeat;
+	top:320px;
+	left:-460px;
+}
+.r4-p-2{
+	width:107px;
+	height:352px;
+	margin:-176px 0 0 -54px;
+	background:url("http://img04.xesimg.com/app_down/4-part-2.png") no-repeat;
+	top:300px;
+	left:540px;
+}
+.r4-p-3{
+	width:42px;
+	height:64px;
+	margin:-32px 0 0 -21px;
+	background:url("http://img04.xesimg.com/app_down/4-part-3.png") no-repeat;
+	top:0;
+	left:480px;
+}
+.r4-p-4{
+	width:163px;
+	height:136px;
+	margin:-68px 0 0 -82px;
+	background:url("http://img04.xesimg.com/app_down/4-part-4.png") no-repeat;
+	top:-200px;
+	left:0;
+	z-index:300 !important;
+}
+.r4-title{
+	width:479px;
+	height:135px;
+	margin:-67px 0 0 -240px;
+	background:url("http://img04.xesimg.com/app_down/4-title.png") no-repeat;
+	top:-230px;
+	left:0;
+}
+.r4-doc{
+	width:158px;
+	height:424px;
+	margin:-212px 0 0 -79px;
+	background:url("http://img04.xesimg.com/app_down/4-doc.png") no-repeat;
+	top:-100px;
+	left:0;
+}
+.r4-bg{
+	width:494px;
+	height:316px;
+	margin:-158px 0 0 -247px;
+	background:url("http://img04.xesimg.com/app_down/4-bg.png") no-repeat;
+	top:365px;
+	left:0;
+}
+
+/*弹出层*/
+.down-win{
+	position:fixed;
+	z-index:4000;
+	top:50%;
+	left:50%;
+	width:765px;
+	height:410px;
+	margin:-205px 0 0 -382px;
+	background:#fff;
+	border-radius:16px;
+	padding:40px 0px 26px 30px;
+}
+.down-win .left{
+	float:left;
+	padding-right:40px;
+	border-right:1px solid #ccc;
+}
+.down-win .down-way{
+	font-family: "Microsoft YaHei";
+	font-size:18px;
+	margin-bottom:20px;
+}
+.down-win .qrcode{
+	width:225px;
+	height:225px;
+	background:url("http://img04.xesimg.com/app_down/jzh-qrcode.png") no-repeat;
+	margin-bottom:10px;
+}
+.down-win .intro{
+	font-family: "宋体";
+	font-size:12px;
+	line-height:22px;
+	margin-bottom:20px;
+}
+.down-win a.enter-qq{
+	display: block;
+	width:160px;
+	height:40px;
+	line-height:40px;
+	padding-left:50px;
+	color:#70b8e1;
+	font-family: "宋体";
+	font-size:14px;
+	border-radius: 5px;
+	border:1px solid #70b8e1;
+	background:url("http://img04.xesimg.com/app_down/qq_group.png") 16px 9px no-repeat;
+}
+.down-win a.enter-qq:hover{
+	color:#fff;
+	background:url("http://img04.xesimg.com/app_down/qq_group.png") 16px 9px no-repeat #70b8e1;
+}
+.down-win .right{
+	float:left;
+	width:440px;
+	padding-left:40px;
+}
+.down-win .enter-mod{
+	width:310px;
+	margin-bottom:20px;
+}
+.down-win #phone_enter{
+	width: 300px;
+	height: 40px;
+	padding-left:10px;
+	color: #999999;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.down-win #verify_enter{
+	width: 212px;
+	height: 40px;
+	padding-left:10px;
+	color: #999999;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	*float:left;
+}
+.down-win .verify{
+	float:right;
+	margin:4px 0 0 0;
+}
+.down-win a.send-msg{
+	width:154px;
+	height:36px;
+	border-radius: 2px;
+	text-align:center;
+	color:#fff;
+	background:#70b8e1;
+	line-height:36px;
+	margin-bottom:40px;
+}
+.down-win a.send-msg:hover{
+	background:#5a93b4;
+}
+.down-win .down-url{
+	font-size:14px;
+	font-family: "宋体";
+	line-height:28px;
+}
+.down-win .down-url a{
+	display: inline;
+	font-weight: 700;
+	text-decoration: underline;
+	color:#2244dd;;
+}
+.down-win a.close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:1001;
+	width:32px;
+	height:32px;
+	font-family:cursive,"Microsoft YaHei";
+	font-size:23px;
+	color:#979797;
+	line-height:32px;
+	text-align: center;
+	border-radius: 16px;
+	background:#dcdcdc;
+}
+.down-win a.close:hover{
+	color:#fff;
+	background:#70b8e1;
+}
+.shade-mod{
+	display:none;
+	width: 100%;
+	height: 2000px;
+	opacity: 0.7;
+	background: #000;
+	z-index: 3000;
+	position: fixed;
+	top: 0;
+}
+.shade-mod-top{
+	display:none;
+	width: 100%;
+	height: 2000px;
+	z-index: 5000;
+	position: fixed;
+	top: 0;
+}
+.scroll-nav{
+	position:fixed;
+	top:50%;
+	right:50px;
+	z-index:800;
+	width:20px;
+	height:147px;
+	margin:-63px 0 0 -10px;
+	background:url("http://img04.xesimg.com/app_down/scroll-dot.png") no-repeat;
+}
+.scroll-nav div{
+	width:20px;
+	height:20px;
+	margin-top:20px;
+	cursor:pointer;
+}
+.scroll-nav span{
+	display:block;
+	width:42px;
+	height:42px;
+	position:absolute;
+	top:-11px; /*31px*/
+	right:-11px;
+	z-index:800;
+	background:url("http://img04.xesimg.com/app_down/scroll-arc.png") no-repeat;
+}
+.download-btn {
+	position:fixed;
+	bottom:0px;
+	z-index:2000;
+	height:80px;
+	width:100%;
+}
+.download-btn p{
+	width:580px;
+	height:100%;
+	margin:0 auto;
+	overflow: hidden;
+}
+.download-btn p a.phone{
+	float:left;
+	width:210px;
+	height:60px;
+	background:url("http://img04.xesimg.com/app_down/down_jzh.png") no-repeat;
+}
+.download-btn p a.web{
+	float:right;
+	width:210px;
+	height:60px;
+	background:url("http://img04.xesimg.com/app_down/web_jzh.png") no-repeat;
+}
+.head-logo{
+	position:fixed;
+	top:10px;
+	left:50%;
+	margin-left:-560px;
+	z-index:2000;
+	width:1120px;
+	height:40px;
+}
+.head-logo .logo{
+	float:left;
+	width:363px;
+	height:36px;
+	background:url("http://img04.xesimg.com/app_down/logo.png") no-repeat;
+}
+.head-logo .kefu{
+	float:right;
+	width:240px;
+	height:36px;
+	background:url("http://img04.xesimg.com/app_down/400phone.png") no-repeat;
+}
+
+/*无动画效果*/
+.no-animate div{
+	opacity:1;
+}
+/*第一屏无动画*/
+.no-animate .r1-p-1{
+	top:165px;
+	left:274px;
+}
+.no-animate .r1-p-2{
+	top:97px;
+	left:-192px;
+}
+.no-animate .r1-p-3{
+	top:-68px;
+	left:380px;
+}
+.no-animate .r1-p-4{
+	top:-18px;
+	left:-306px;
+}
+.no-animate .r1-p-5{
+	top:20px;
+	left:188px;
+}
+.no-animate .r1-doc{
+	top:73px;
+}
+.no-animate .r1-bg{
+	top:240px;
+}
+
+/*第二屏无动画*/
+.no-animate .r2-p-1{
+	top:75px;
+	left:-320px;
+}
+.no-animate .r2-p-2{
+	top:120px;
+	left:-190px;
+}
+.no-animate .r2-p-3{
+	top:-50px;
+	left:-445px;
+}
+.no-animate .r2-p-4{
+	top:4px;
+	left:200px;
+}
+.no-animate .r2-p-5{
+	top:50px;
+	left:124px;
+}
+.no-animate .r2-doc{
+	top:130px;
+}
+.no-animate .r2-bg{
+	top:365px;
+}
+
+/*第三屏无动画*/
+.no-animate .r3-p-1{
+	top:175px;
+	left:204px;
+}
+.no-animate .r3-p-2{
+	top:180px;
+	left:-210px;
+}
+.no-animate .r3-p-3{
+	top:30px;
+	left:-328px;
+}
+.no-animate .r3-p-4{
+	top:-14px;
+	left:90px;
+}
+.no-animate .r3-doc{
+	top:110px;
+}
+.no-animate .r3-bg{
+	top:140px;
+}
+
+/*第四屏无动画*/
+.no-animate .r4-p-1{
+	top:320px;
+	left:-325px;
+}
+.no-animate .r4-p-2{
+	top:180px;
+	left:325px;
+}
+.no-animate .r4-p-3{
+	top:-90px;
+	left:200px;
+}
+.no-animate .r4-p-4{
+	top:-37px;
+	left:0px;
+}
+.no-animate .r4-doc{
+	top:110px;
+}
+.no-animate .r4-bg{
+	top:205px;
+}
+
+
+.blue-font{
+	color:#2244dd;
+}
+.red-font{
+	color:#ec7c73;
+}
+.waveing{
+	-webkit-animation: bellshake 2s linear 1s  infinite;
+	-moz-animation: bellshake  2s linear 1s  infinite;
+	animation: bellshake  2s linear 1s  infinite;
+}
+/*animate*/
+@-webkit-keyframes waveing { 
+  0%    { -webkit-transform:rotate(0deg)}
+  10%   { -webkit-transform:rotate(0deg)}
+  20%   { -webkit-transform:rotate(5deg)}
+  30%   { -webkit-transform:rotate(15deg)}
+  40%   { -webkit-transform:rotate(25deg)} 
+  50%   { -webkit-transform:rotate(40deg)}
+  60%   { -webkit-transform:rotate(25deg)}
+  70%   { -webkit-transform:rotate(15deg)}
+  80%   { -webkit-transform:rotate(5deg)}
+  90%   { -webkit-transform:rotate(5deg)}
+  100%  { -webkit-transform:rotate(0deg)}
+}
+ @-webkit-keyframes bellshake{
+  	0%{-webkit-transform:rotate(0deg)}
+  	5%{-webkit-transform:rotate(18deg)}
+  	15%{-webkit-transform:rotate(-15deg)}
+  	25%{-webkit-transform:rotate(12deg)}
+  	35%{-webkit-transform:rotate(-9deg)}
+  	45%{-webkit-transform:rotate(6deg)}
+  	55%{-webkit-transform:rotate(-3deg)}
+  	60%{-webkit-transform:rotate(0deg)}
+  	100%{-webkit-transform:rotate(0deg)}
+  }
+  
+@-moz-keyframes waveing { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -moz-transform: translateY(-3px); }
+  50% {opacity:1; -moz-transform: translateY(-7px); }
+  75% {opacity: 0.7; -moz-transform: translateY(-3px); }
+  100% { opacity: 0.3; -moz-transform: translateY(-0px); } }
+
+@-ms-keyframes waveing { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -ms-transform: translateY(-3px); }
+  50% {opacity:1; -ms-transform: translateY(-7px); }
+  75% {opacity: 0.7; -ms-transform: translateY(-3px); }
+  100% { opacity: 0.3; -ms-transform: translateY(-0px); } }
+
+@-o-keyframes waveing { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; -o-transform: translateY(-3px); }
+  50% {opacity:1; -o-transform: translateY(-7px); }
+  75% {opacity: 0.7; -o-transform: translateY(-3px); }
+  100% { opacity: 0.3; -o-transform: translateY(-0px); } }
+
+@keyframes waveing { 0% { opacity: 0.3; }
+  25% { opacity: 0.7; transform: translateY(-3px); }
+  50% {opacity:1; transform: translateY(-7px); }
+  75% {opacity: 0.7; transform: translateY(-3px); }
+  100% { opacity: 0.3; transform: translateY(-0px); } }
+
+  }

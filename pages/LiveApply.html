@@ -1,0 +1,345 @@
+<!-- 公共头部 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商城</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- 这是CSS库文件 -->
+    <link href="/lib/bootstrap/3.3.5-custom/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/Font-Awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/default.css">
+    <!-- 这是当前模块样式文件 -->
+        <link rel="stylesheet" type="text/css" href="/static/css/xue.mall.css" />
+</head>
+
+<body>
+    <!-- module.topbar -->
+    <!--
+    @require widget/Public.Topbar/topbar.less
+    @require widget/Module.Dropdown/dropdown.js
+-->
+
+<!-- 登录后 -->
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li class="">
+                <em class="text-danger">你好，圣诞老人</em>
+                <a href="#">退出</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">消息<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li data-type="1">
+                        <a href="/LearningCenter/message#_1">网校通知<em class="text-danger">(100)</em></a>
+                    </li>
+                    <li data-type="4">
+                        <a href="/LearningCenter/message#_4">教师留言</a>
+                    </li>
+                    <li data-type="3">
+                        <a href="/LearningCenter/message#_3">直播提醒</a>
+                    </li>
+                    <li data-type="5">
+                        <a href="/LearningCenter/message#_5">考试提醒</a>
+                    </li>
+                    <li data-type="2">
+                        <a href="/LearningCenter/message#_2">资料提醒<em class="text-danger">(100)</em></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">购物车 <em class="text-danger">2</em></a></li>
+            <li><a href="#">订单</a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="#">收藏夹</a></li>
+            <li><a href="#">设置</a></li>
+            <li class="ui-dropdown">
+                    <span class="dropdown-handle">更多<i class="fa fa-angle-down dropdown-icon"></i></span>
+                    <ul class="dropdown-body">
+                            <li><a href="#">线下小班</a></li>
+                            <li><a href="#">线下1对1</a></li>
+                    </ul>
+            </li>
+            <li class="phone-400 active">400-800-2211</li>
+        </ul>
+
+    </div>
+</div>
+<!-- 登录前 -->
+
+
+<!--
+<div id="module-topbar">
+    <div class="ui-header-menu">
+        <ul class="topleft-bar pull-left list-unstyled breadcrumb">
+            <li>
+                <span class="xes">学而思网校欢迎你</span>
+                <a href="#" class="login text-danger">请登录</a>
+                <a href="#" class="register">免费注册</a>
+            </li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">移动网校<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">IPAD版</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topright-bar pull-right pull-right breadcrumb">
+            <li><a href="#">网校首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">购物车<em class="text-danger">2</em></a></li>
+            <li><a href="#">订单<em class="text-danger">2</em></a></li>
+            <li class="ui-dropdown">
+                <span class="dropdown-handle">卡激活<i class="fa fa-angle-down dropdown-icon"></i></span>
+                <ul class="dropdown-body">
+                    <li><a href="#">代金卡</a></li>
+                    <li><a href="#">听课证</a></li>
+                    <li><a href="#">课程绑定卡</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.speiyou.com/" target="_blank">更多课程</a></li>
+            <li class="phone-400">400-800-2211</li>
+        </ul>
+    </div>
+</div>
+-->
+
+    <!-- module.Header -->
+    <!--
+    @require widget/Public.Header/header.less
+-->
+
+    <div id="module-header">
+        <div class="h-logo"><a herf="#">学而思网校</a></div>
+        <div class="h-search">
+            <input type="text" class="h-text pull-left" placeholder="搜索:秋季满分冲刺班" autocomplete="on">
+            <button type="button" class="btn btn-primary btn-search pull-left">搜索</button>
+        </div>
+        <div class="h-words pull-left">
+            <a target="_blank" href="#" class="text-muted">免费课</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+            <a target="_blank" href="#" class="text-muted">11月11天</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+            <a target="_blank" href="#" class="text-muted">11月11天</a>
+            <a target="_blank" href="#" class="text-muted">9.9抢购</a>
+        </div>
+        <!-- 头部购物车ui部分调用 -->
+        <!--
+    //@require widget/Module.Dropdown/dropdown.js
+    @require widget/Public.MiniCart/minicart.js
+    @require widget/Public.MiniCart/minicart.less
+-->
+
+<div id="module-minicart" class="pull-right ui-dropdown-miniCart">
+    <div class="dropdown-handle btn btn-default">
+        <i class="fa fa-shopping-cart pull-left"></i>
+        <a href="#" target="_blank">我的购物车</a>
+        <i class="fa fa-angle-right pull-right"></i>
+        <small class="minicart-total badge small">2</small>
+    </div>
+    <!-- 上半部分 -->
+    <div class="dropdown-body">111</div>
+</div>
+
+    </div>
+
+    <!-- module.Nav -->
+    <!--
+    @require widget/Public.Nav/nav.js
+    @require widget/Public.Nav/nav.less
+-->
+<div id="module-nav" class="ui-head-nav">
+    <div class="container">
+        <div id="ui-categorys" class="ui-categorys pull-left">
+            <div class="category-dt"><a href="">全部课程分类<i class="ci-right"><s>◇</s></i></a></div>
+            <div class="category-dd">
+                <div class="category-items"></div>
+                <div class="category-layer"></div>
+            </div>
+        </div>
+        <ul class="head-nav pull-left">
+            <li class="current"><a href="">找老师</a></li>
+            <li><a href="">免费课</a></li>
+            <li><a href="">看学霸</a></li>
+            <li><a href="">新鲜事</a></li>
+            <li><a href="">逛书城</a></li>
+            <li><a href="">泡论坛</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- 学习中心区域 -->
+<div class="container">
+    <div class="row top m20">
+
+<!--   12栏的用这个    -->
+      <div class="col-md-12">
+          <!--
+   报名页面
+    @require widget/Mall.LiveApply/LiveApply.less
+    @require widget/Mall.LiveApply/LiveApply.js
+-->
+
+<div id="containerItem">
+    <div class="apply_container">
+        <div class="overview">
+            <div class="applyinfo">
+                <a class="application" href="http://login.xueersi.com/user/login/aHR0cDovL3d3dy54dWVlcnNpLmNvbS9TaWdudXAvZGV0YWlsLzgyMw==">
+                    <img src="http://img04.xesimg.com/button/baoming_rightnow.png">
+                </a>
+                <p class="settime" endtime="">剩余：<span>1</span>天<span>1</span>时<span>2</span>分<span>16</span>秒</p>
+                <p>
+                    <span>已报名：<b class="red">99</b>名</span>
+                    <!-- 总人数大于0时-->
+                    <span>剩余名额：<b class="red">1</b>名</span>
+                    <!-- end-->
+                </p>
+            </div>
+            <div class="special">
+                <div class="usersinfo">
+                    <form class="form_check" id="form">
+                        <p>
+                            <label>用户名：</label>
+                            <span id="stu_name">zhaoyuantong@100tal.com</span>
+                        </p>
+                        <p>
+                            <label>姓名：</label>
+                            <input type="text" name="realname" value="赵远通">
+                        </p>
+                        <p>
+                            <label>手机：</label>
+                            <input type="tel" name="phone" value="13621278919">
+                        </p>
+                        <p>
+                            <label>邮箱：</label>
+                            <input type="text" name="mail" value="zhaoyuantong@100tal.com">
+                        </p>
+                        <p class="prompt">为了更好地服务，请核对信息是否正确，如果错误，请及时改正！</p>
+                        <p class="prompt">
+                            <input type="hidden" name="signup_id" value="823">
+                            <button name="applybtn" type="button" id="apply_button"></button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+<!--   12栏结束    -->
+
+
+
+    </div><!-- row end -->
+</div>
+<!-- 页面配置 -->
+
+
+<!-- 公共底部 -->
+
+
+
+
+
+    <!-- module.footer -->
+    <!--
+    @require widget/Public.Footer/footer.less
+-->
+   <!-- 这是页脚部分代码  -->
+    <div id="module-footer">
+        <div class="foot-service">
+            <a target="_blank" class="service-share" href="http://www.xueersi.com/article/detail/1825">
+                <span>名师</span>
+                <p>38%清华毕业平均教龄5.1年100%面授S级老师</p>
+            </a>
+            <a target="_blank" class="service-system" href="http://www.xueersi.com/article/detail/1824">
+                <span>陪伴</span>
+                <p>直播授课,QQ群,APP随时答疑名师就在你身边</p>
+            </a>
+            <a target="_blank" class="service-live" href="http://www.xueersi.com/article/detail/1814">
+                <span>方便</span>
+                <p>足不出户，免去路途奔波随时随地反复看</p>
+            </a>
+            <a target="_blank" class="service-interaction" href="http://www.xueersi.com/app">
+                <span>有效</span>
+                <p>在线练习及时反馈已累计培养39名中高考状元</p>
+            </a>
+        </div>
+
+        <div class="foot-area">
+            <p>
+                <a href="http://www.xueersi.com">网校首页</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1219">关于我们</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1220">合作专区</a>
+                |
+                <a href="http://www.xueersi.com/article/detail/1538">联系我们</a>
+                |
+                <a class="text-danger" href="http://www.xueersi.com/article/detail/1495">版权声明</a>
+                |
+                <a href="http://www.xueersi.com/article/">帮助中心</a>
+            </p>
+            <p>
+                客服电话： <strong class="text-danger">400-800-2211</strong>
+                （免长途话费） Copyright &copy; 2009-2015 www.xueersi.com All Rights Reserved
+            </p>
+            <p>
+                北京学而思教育科技有限公司
+                <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备09032638号</a>
+                京公网安备:1101082103
+            </p>
+            <p class="link">
+                <a target="_blank" href="https://search.szfw.org/cert/l/CX20120925001738002003" id="___szfw_logo___"><img src="http://x04.xesimg.com/web/201209/13487953879693.png"></a>
+            </p>
+        </div>
+    </div>
+     <script src="/lib/jQuery/1.11.1/jquery.min.js"></script> 
+<!--    <script src="http://js04.xesimg.com/xue.jquery.min.js"></script>ignore-->
+    <script src="/lib/bootstrap/3.3.5-custom/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/static/js/xue.mall.js"></script>
+<script>
+    var PAGE_CONFIG = {
+        ID: 'Index',
+        MODULE: 'Mall',
+        TITLE: '商城首页',
+        NAV_FIXED: false // 如果想要头部分类展开的话，设为true，如果不想直接展开设为false
+    };
+
+</script>
+<script src="/static/js/public.onload.js"></script>
+    
+</body>
+
+</html>
+
